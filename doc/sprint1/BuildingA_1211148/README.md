@@ -152,5 +152,5 @@ Seguem-se duas imagens, relativas aos dois pisos, com o cabeamento e dispositivo
 
                                                               Planta do piso 1:
 
-![BuildingA_Floor1_Medidas](BuildingA_Floor1_Medidas.PNG)
+![BuildingA_Floor1_Design](BuildingA_Floor1_Design.PNG)
 
