@@ -106,6 +106,8 @@ ou reorganizadas com facilidade, sem ter que alterar o cabo principal** (é cone
 Em suma, ao instalar estes dispositivos em cada piso do edifício, deve ter-se em conta a posição dos mesmos já que uma posição estratégica irá diminuir os custos
 totais da obra.
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### 2. Medidas e dimensões das divisões ###
 
 Seguem-se duas imagens, relativas aos dois pisos, com as medidas e áreas de cada divisão (valores aproximados, resultantes da conversão da escala).
