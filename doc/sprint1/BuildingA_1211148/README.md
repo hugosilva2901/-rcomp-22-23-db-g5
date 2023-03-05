@@ -107,3 +107,16 @@ Em suma, ao instalar estes dispositivos em cada piso do edifício, deve ter-se e
 totais da obra.
 
 ### 2. Medidas e dimensões das divisões ###
+
+Seguem-se duas imagens, relativas aos dois pisos, com as medidas e áreas de cada divisão (valores aproximados, resultantes da conversão da escala).
+
+                                                                                  Planta do piso 0 com a medidas:
+
+
+![BuildingA_Floor0_Medidas](BuildingA_Floor0_Medidas.PNG)
+
+                                                                                  Planta do piso 1 com as medidas:
+
+![BuildingA_Floor1_Medidas](BuildingA_Floor1_Medidas.PNG)
+
+Tendo as medidas das paredes, podemos calcular a área de cada uma das divisões.
