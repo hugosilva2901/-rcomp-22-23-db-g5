@@ -11,6 +11,7 @@ está dividido em dois pisos.
 ### Índice: ###
 
 1. **Regras de cabeamento e visão geral da estruturação do Edifício A**
+2. **Medidas e dimensões das divisões**
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -104,3 +105,5 @@ Em geral, os **Consolidation Points (CPs)** são instalados em áreas centraliza
 ou reorganizadas com facilidade, sem ter que alterar o cabo principal** (é conectado ao cabo de rede principal, que por sua vez é conectado a um switch ou router).
 Em suma, ao instalar estes dispositivos em cada piso do edifício, deve ter-se em conta a posição dos mesmos, já que uma posição estratégica irá diminuir os custos
 totais da obra.
+
+### 2. Medidas e dimensões das divisões ###
