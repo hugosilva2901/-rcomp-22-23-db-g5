@@ -62,7 +62,7 @@ de até 10 GB/s** em distâncias de **até 100 metros**. É recomendado para apl
 velocidade** em distâncias maiores.
 
 **Cat7** é um tipo de cabo de cobre projetado para suportar a **rede Ethernet de alta velocidade a taxas de transferência de dados** ainda mais altas e em 
-distâncias maiores do que o Cat6a. É um cabo d **totalmente blindado** (STP), o que proporciona **melhor resistência ao ruído e interferência** do que cabos 
+distâncias maiores do que o Cat6a. É um cabo **totalmente blindado** (STP), o que proporciona **melhor resistência ao ruído e interferência** do que cabos 
 não blindados como o Cat5e e o Cat6.
 
 No entanto, é importante realçar que o Cat7 **não é um padrão oficialmente reconhecido pela Telecommunications Industry Association (TIA) ou pela International 
@@ -147,7 +147,6 @@ Tendo as medidas das paredes, podemos calcular a área de cada uma das divisões
 Seguem-se duas imagens, relativas aos dois pisos, com o cabeamento e dispositivos completos, seguindo as regras descritas a cima.
 
                                                               Planta do piso 0:
-
 
 ![BuildingA_Floor0_Design](BuildingA_Floor0_Design.PNG)
 
