@@ -63,6 +63,12 @@ velocidade** em distâncias maiores.
 distâncias maiores do que o Cat6a. É um cabo de par trançado **totalmente blindado** (STP), o que proporciona **melhor resistência ao ruído e interferência** 
 do que cabos não blindados como o Cat5e e o Cat6.
 
-No entanto, é importante notar que o Cat7 não é um padrão oficialmente reconhecido pela Telecommunications Industry Association (TIA) ou pela International 
-Organization for Standardization (ISO). Embora esteja amplamente disponível, sua compatibilidade com outros equipamentos de rede e sua prova futura não são 
-garantidos. Como resultado, o Cat6a é frequentemente a escolha preferida para instalações Ethernet de alto desempenho.
+No entanto, é importante realçar que o Cat7 **não é um padrão oficialmente reconhecido pela Telecommunications Industry Association (TIA) ou pela International 
+Organization for Standardization (ISO)**. Embora esteja amplamente disponível, sua **compatibilidade com outros equipamentos de rede e sua prova futura não são 
+garantidos**. Como resultado, o Cat6a é frequentemente a escolha preferida para instalações Ethernet de alto desempenho, e vai ser também utilizado no cabeamento 
+deste edifício. 
+
+Como fios de fibra, vão ser utilizados **cabos de fibra ótica de modo único**, também conhecidos como monomodo. São projetados para **transmitir sinais de luz num 
+único caminho**. Eles são feitos com um **núcleo menor e mais denso** do que os cabos de modo múltiplo, permitindo que os **sinais de luz sejam transmitidos em 
+distâncias maiores com menos atenuação de sinal**. As únicas desvantagens destes cabos são **o custo**, que é mais elevado do que os cabos de modo múltiplo, e a
+**menor resistência a danos físicos**. 
