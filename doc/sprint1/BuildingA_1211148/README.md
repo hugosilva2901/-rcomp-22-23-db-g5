@@ -12,6 +12,7 @@ está dividido em dois pisos.
 
 1. **Regras de cabeamento e visão geral da estruturação do Edifício A**
 2. **Medidas e dimensões das divisões**
+3. **Cabeamento e instalação dos dispositivos**
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -38,12 +39,12 @@ Seguem-se algumas especificações deste edifício presentes no enunciado deste 
   sobre o teto rebaixado é perfeito para instalar canaletas de cabos e pontos de acesso sem fio. Este andar não possui canaletas de cabos subterrâneos.
 
 
-                                                                                  Planta do piso 0 (presente no enunciado):
+                                                                  Planta do piso 0 (presente no enunciado):
 
 
 ![BuildingA_Floor0](BuildingA_Floor0.PNG)
 
-                                                                                  Planta do piso 1 (presente no enunciado):
+                                                                  Planta do piso 1 (presente no enunciado):
 
 ![BuildingA_Floor1](BuildingA_Floor1.PNG)
 
@@ -112,12 +113,12 @@ totais da obra.
 
 Seguem-se duas imagens, relativas aos dois pisos, com as medidas e áreas de cada divisão (valores aproximados, resultantes da conversão da escala).
 
-                                                                                  Planta do piso 0 com a medidas:
+                                                          Planta do piso 0 com as medidas:
 
 
 ![BuildingA_Floor0_Medidas](BuildingA_Floor0_Medidas.PNG)
 
-                                                                                  Planta do piso 1 com as medidas:
+                                                          Planta do piso 1 com as medidas:
 
 ![BuildingA_Floor1_Medidas](BuildingA_Floor1_Medidas.PNG)
 
@@ -129,15 +130,28 @@ Tendo as medidas das paredes, podemos calcular a área de cada uma das divisões
 |   A.0.2 |      5      |      3,75       |  18,75   |
 |   A.0.3 |      5      |      4,88       |   24,4   |
 |   A.0.4 |    7,25     |      5,25       |  38,06   |
-|   A.0.5 |    4.63     |        6        |  27,78   |
+|   A.0.5 |    4,63     |        6        |  27,78   |
 |   A.0.6 |     7,5     |        6        |    45    |
 |   A.1.1 |    7,25     |       3,4       |  24,65   |
-|   A.1.2 |    7.25     |       3,4       |  24,65   |
+|   A.1.2 |    7,25     |       3,4       |  24,65   |
 |   A.1.3 |    7,25     |       3,4       |  24,65   |
 |   A.1.4 |    7,25     |       7,5       |  54,38   |
-|   A.1.5 |    4,25     |       5.5       |  23.38   |
-|   A.1.6 |      7      |      5,75       |  40.25   |
-|   A.1.7 |    4,75     |      5,75       |  27.31   |
+|   A.1.5 |    4,25     |       5.5       |  23,38   |
+|   A.1.6 |      7      |      5,75       |  40,25   |
+|   A.1.7 |    4,75     |      5,75       |  27,31   |
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### 3. Cabeamento e instalação dos dispositivos ###
+
+Seguem-se duas imagens, relativas aos dois pisos, com o cabeamento e dispositivos completos, seguindo as regras descritas a cima.
+
+                                                              Planta do piso 0:
 
 
+![BuildingA_Floor0_Design](BuildingA_Floor0_Design.PNG)
+
+                                                              Planta do piso 1:
+
+![BuildingA_Floor1_Medidas](BuildingA_Floor1_Medidas.PNG)
 
