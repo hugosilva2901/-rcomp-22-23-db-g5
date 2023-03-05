@@ -3,7 +3,7 @@
 ===========================================================================
 
 ### Introdução: ###
-Este ficheiro documenta o planeamento e estruturamento do Edifício A, que 
+Este ficheiro documenta o planeamento e estruturação do Edifício A, que 
 está dividido em dois pisos.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -103,7 +103,7 @@ facilmente gerenciados e conectados, **reduzindo os custos de manutenção e aum
 
 Em geral, os **Consolidation Points (CPs)** são instalados em áreas centralizadas e acessíveis, e o seu objetivo é permitir que **novas conexões sejam adicionadas 
 ou reorganizadas com facilidade, sem ter que alterar o cabo principal** (é conectado ao cabo de rede principal, que por sua vez é conectado a um switch ou router).
-Em suma, ao instalar estes dispositivos em cada piso do edifício, deve ter-se em conta a posição dos mesmos, já que uma posição estratégica irá diminuir os custos
+Em suma, ao instalar estes dispositivos em cada piso do edifício, deve ter-se em conta a posição dos mesmos já que uma posição estratégica irá diminuir os custos
 totais da obra.
 
 ### 2. Medidas e dimensões das divisões ###
