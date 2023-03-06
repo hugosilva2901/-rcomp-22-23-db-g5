@@ -157,3 +157,31 @@ Seguem-se duas imagens, relativas aos dois pisos, com o cabeamento e dispositivo
 
 ### 4. Materiais necessários e inventário ###
 
+_4.1 Número de outlets (tomadas)_
+
+| Divisão | Largura (m) | Comprimento (m) | Área(m2) | Nº de outlets |
+|--------:|:-----------:|:---------------:|:--------:|:-------------:|
+|   A.0.1 |      5      |       5,5       |   27,5   |       5       |
+|   A.0.2 |      5      |      3,75       |  18,75   |       3       |
+|   A.0.3 |      5      |      4,88       |   24,4   |       4       |
+|   A.0.4 |    7,25     |      5,25       |  38,06   |       7       |
+|   A.0.5 |    4,63     |        6        |  27,78   |       5       |
+|   A.0.6 |     7,5     |        6        |    45    |       9       |
+|   A.1.1 |    7,25     |       3,4       |  24,65   |       4       |
+|   A.1.2 |    7,25     |       3,4       |  24,65   |       4       |
+|   A.1.3 |    7,25     |       3,4       |  24,65   |       4       |
+|   A.1.4 |    7,25     |       7,5       |  54,38   |      10       |
+|   A.1.5 |    4,25     |       5.5       |  23,38   |       4       |
+|   A.1.6 |      7      |      5,75       |  40,25   |       8       |
+|   A.1.7 |    4,75     |      5,75       |  27,31   |       5       |
+
+
+Nº de outlets no piso 0: 33
+
+Nº de outlets no piso 1: 39
+
+Total: 72 (1 tomada em cada piso reservada para o Access Point)
+
+_4.2 Comprimemto dos cabos e outros_
+
+
