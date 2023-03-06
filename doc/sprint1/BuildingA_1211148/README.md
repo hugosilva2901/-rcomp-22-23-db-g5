@@ -13,10 +13,11 @@ está dividido em dois pisos.
 1. **Regras de cabeamento e visão geral da estruturação do Edifício A**
 2. **Medidas e dimensões das divisões**
 3. **Cabeamento e instalação dos dispositivos**
+4. **Materiais necessários e inventário**
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### 1. Regras de cabeamento e estruturação geral do Edifício A: ###
+### 1. Regras de cabeamento e estruturação geral do Edifício A ###
 
 _1.1 Informação geral_
 
@@ -153,4 +154,6 @@ Seguem-se duas imagens, relativas aos dois pisos, com o cabeamento e dispositivo
                                                               Planta do piso 1:
 
 ![BuildingA_Floor1_Design](BuildingA_Floor1_Design.PNG)
+
+### 4. Materiais necessários e inventário ###
 
