@@ -125,7 +125,7 @@ Seguem-se duas imagens, relativas aos dois pisos, com as medidas e áreas de cad
 
 Tendo as medidas das paredes, podemos calcular a área de cada uma das divisões.
 
-| Divisao | Largura (m) | Comprimento (m) | Área(m2) |
+| Divisão | Largura (m) | Comprimento (m) | Área(m2) |
 |--------:|:-----------:|:---------------:|:--------:|
 |   A.0.1 |      5      |       5,5       |   27,5   |
 |   A.0.2 |      5      |      3,75       |  18,75   |
