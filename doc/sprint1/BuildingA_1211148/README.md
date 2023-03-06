@@ -39,12 +39,12 @@ Seguem-se algumas especificações deste edifício presentes no enunciado deste 
   sobre o teto rebaixado é perfeito para instalar canaletas de cabos e pontos de acesso sem fio. Este andar não possui canaletas de cabos subterrâneos.
 
 
-                                                                  Planta do piso 0 (presente no enunciado):
+                                                              Planta do piso 0 (presente no enunciado):
 
 
 ![BuildingA_Floor0](BuildingA_Floor0.PNG)
 
-                                                                  Planta do piso 1 (presente no enunciado):
+                                                              Planta do piso 1 (presente no enunciado):
 
 ![BuildingA_Floor1](BuildingA_Floor1.PNG)
 
@@ -113,12 +113,12 @@ totais da obra.
 
 Seguem-se duas imagens, relativas aos dois pisos, com as medidas e áreas de cada divisão (valores aproximados, resultantes da conversão da escala).
 
-                                                          Planta do piso 0 com as medidas:
+                                                              Planta do piso 0 com as medidas:
 
 
 ![BuildingA_Floor0_Medidas](BuildingA_Floor0_Medidas.PNG)
 
-                                                          Planta do piso 1 com as medidas:
+                                                              Planta do piso 1 com as medidas:
 
 ![BuildingA_Floor1_Medidas](BuildingA_Floor1_Medidas.PNG)
 
