@@ -3,7 +3,7 @@
 ===========================================================================
 
 ### Introdução: ###
-Este ficheiro documenta o planeamento e estruturação do Edifício A, que se encontra dividido em dois pisos.
+Este ficheiro documenta o planeamento e estruturação do Edifício C, que se encontra dividido em dois pisos.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
