@@ -14,7 +14,7 @@ Este ficheiro documenta o planeamento e estruturação do Edifício C, que se en
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### 1. Regras de cabeamento e estruturação geral do Edifício A ###
+### 1. Regras de cabeamento e estruturação geral do Edifício C ###
 
 _1.1 Informação geral_
 
