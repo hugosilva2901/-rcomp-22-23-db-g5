@@ -14,6 +14,7 @@ está dividido em dois pisos.
 2. **Medidas e dimensões das divisões**
 3. **Cabeamento e instalação dos dispositivos**
 4. **Materiais necessários e inventário**
+5. **Hardware total necessário**
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -182,6 +183,36 @@ Nº de outlets no piso 1: 29
 
 Total: 62 (1 tomada em cada piso reservada para o Access Point)
 
-_4.2 Comprimemto dos cabos e outros_
+_4.2 Comprimemto dos cabos e outros materiais úteis_
+
+                                                              Piso 0:
+
+* Fio de cobre Cat6a
+
+* Fibra ótica de modo único
+
+* Patch pannels e patch cords
+
+* Outros materiais úteis
 
 
+
+                                                              Piso 1:
+
+* Fio de cobre Cat6a
+
+* Fibra ótica de modo único
+
+* Patch pannels e patch cords
+
+* Outros materiais úteis
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### 5. Hardware total necessário ###
+
+|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords |
+|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|
+| **Piso 0** |                        |                                   |         |               |              |             |
+| **Piso 1** |                        |                                   |         |               |              |             |
+| **Total**  |                        |                                   |         |               |              |             |   
