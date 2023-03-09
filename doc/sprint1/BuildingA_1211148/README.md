@@ -13,8 +13,8 @@ está dividido em dois pisos.
 1. **Regras de cabeamento e visão geral da estruturação do Edifício A**
 2. **Medidas e dimensões das divisões**
 3. **Cabeamento e instalação dos dispositivos**
-4. **Materiais necessários e inventário**
-5. **Hardware total necessário**
+4. **Materiais necessários**
+5. **Hardware total necessário (inventário)**
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -92,7 +92,7 @@ em redes sem fio para **estender a cobertura da rede e fornecer conectividade se
 são conectados a um switch ou router de rede com fio para fornecer uma conexão de rede sem fio. Um access point tem uma cobertura de cerca de **30 a 50 metros de
 raio**.
 
-_1.6 Patch Panels, Path Cords, Consolidation Points e Switches_
+_1.6 Patch Panels, Path Cords e Consolidation Points_
 
 Dado que estaremos a utilizar cabos Cat6a, todas as restantes ligações e dispositivos utilizarão também Cat6a.
 
@@ -174,7 +174,7 @@ _4.1 Número de outlets (tomadas de rede)_
 |   A.1.2 |    7,25     |       3,4       |   24,65   |       4       |
 |   A.1.3 |    7,25     |       3,4       |   24,65   |       4       |
 |   A.1.4 |    7,25     |       7,5       |   54,38   |       0       |
-|   A.1.5 |    4,25     |       5.5       |   23,38   |       4       |
+|   A.1.5 |    4,25     |       5,5       |   23,38   |       4       |
 |   A.1.6 |      7      |      5,75       |   40,25   |       8       |
 |   A.1.7 |    4,75     |      5,75       |   27,31   |       5       |
 
@@ -191,9 +191,24 @@ _4.2 Comprimemto dos cabos e outros materiais úteis_
 
 * Fio de cobre Cat6a
 
+| Divisão | Nº de outlets | Comprimento total aproximado (m) |
+|--------:|:-------------:|:--------------------------------:|
+|   A.0.1 |       5       |                                  |
+|   A.0.2 |       3       |                                  |
+|   A.0.3 |       4       |                                  |
+|   A.0.4 |       7       |                                  |
+|   A.0.5 |       5       |                                  |
+|   A.0.6 |       9       |                                  |
+
+Total:
+
 * Fibra ótica de modo único
 
+
+
 * Patch pannels e patch cords
+
+Dado que no piso 0 existem 33 outlets, será necessário um patch panel de 48 portas.
 
 * Outros materiais úteis
 
@@ -203,18 +218,35 @@ _4.2 Comprimemto dos cabos e outros materiais úteis_
 
 * Fio de cobre Cat6a
 
+| Divisão | Nº de outlets | Comprimento total aproximado (m) |
+|--------:|:-------------:|:--------------------------------:|
+|   A.1.1 |       4       |                                  |
+|   A.1.2 |       4       |                                  |
+|   A.1.3 |       4       |                                  |
+|   A.1.4 |       0       |                                  |
+|   A.1.5 |       4       |                                  |
+|   A.1.6 |       8       |                                  |
+|   A.1.7 |       5       |                                  |
+
+Total:
+
 * Fibra ótica de modo único
 
+
+Total:
+
 * Patch pannels e patch cords
+
+Dado que no piso 1 existem 29 outlets, será necessário um patch panel de 30 portas.
 
 * Outros materiais úteis
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### 5. Hardware total necessário ###
+### 5. Hardware total necessário (inventário) ###
 
 |            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords |
 |------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|
-| **Piso 0** |                        |                                   |         |               |              |             |
-| **Piso 1** |                        |                                   |         |               |              |             |
-| **Total**  |                        |                                   |         |               |              |             |   
+| **Piso 0** |                        |                                   |   33    |       1       |      1       |             |
+| **Piso 1** |                        |                                   |   29    |       1       |      1       |             |
+| **Total**  |                        |                                   |   62    |       2       |      2       |             |   
