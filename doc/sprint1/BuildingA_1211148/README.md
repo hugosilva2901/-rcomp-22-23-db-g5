@@ -50,11 +50,11 @@ Seguem-se algumas especificações deste edifício presentes no enunciado deste 
 
 ![BuildingA_Floor1](BuildingA_Floor1.PNG)
 
-_1.2 Número de outlets (tomadas)_
+_1.2 Número de outlets (tomadas de rede)_
 
 Generalizando, um espaço de escritório padrão pode exigir aproximadamente uma tomada de rede a cada 10 a 15 metros quadrados, enquanto um espaço residencial
-pode exigir uma tomada a cada 20 a 30 metros quadrados. No entanto, dadas as condições exigidas pelo enunciado, vamos considerar que serão necessárias **2
-tomadas por cada 10 metros quadrados**.
+pode exigir uma tomada de rede a cada 20 a 30 metros quadrados. No entanto, dadas as condições exigidas pelo enunciado, vamos considerar que serão necessárias 
+**2 tomadas de rede por cada 10 metros quadrados**.
 
 _1.3 Cabeamento_
 
@@ -82,8 +82,8 @@ _1.4 Cross-conection_
 Os cross-connects são normalmente instalados em **DataCenters**, centrais telefónicas e outras instalações de telecomunicações. Eles fornecem uma maneira eficiente
 de gerenciar e organizar as conexões entre vários componentes de rede, como switches, routers e servidores. Nesta planta existem um **MC (Main Cross-Connect)**, um
 **IC (Intermediate Cross-Connect)** e dois **HC's (Horizontal Cross-Connect)**. Podemos estimar que **a área total abrangida pelo HC não deve exceder os 1000 m2** e
-que **a distância máxima entre uma tomada e um HC** deve ser de, aproximadamente, **80 metros**. Relativamente às **distâncias entre os cross-connects**, cada uma
-não deve exceder os **500 metros**.
+que **a distância máxima entre uma tomada de rede e um HC** deve ser de, aproximadamente, **80 metros**. Relativamente às **distâncias entre os cross-connects**, cada 
+uma não deve exceder os **500 metros**.
 
 _1.5 Access Points_
 
@@ -160,7 +160,7 @@ Seguem-se duas imagens, relativas aos dois pisos, com o cabeamento e dispositivo
 
 ### 4. Materiais necessários e inventário ###
 
-_4.1 Número de outlets (tomadas)_
+_4.1 Número de outlets (tomadas de rede)_
 
 | Divisão | Largura (m) | Comprimento (m) | Área (m2) | Nº de outlets |
 |--------:|:-----------:|:---------------:|:---------:|:-------------:|
@@ -183,7 +183,7 @@ Nº de outlets no piso 0: 33
 
 Nº de outlets no piso 1: 29
 
-Total: 62 (1 tomada em cada piso reservada para o Access Point)
+Total: 62 (1 tomada de rede em cada piso reservada para o Access Point)
 
 _4.2 Comprimemto dos cabos e outros materiais úteis_
 
