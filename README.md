@@ -1,29 +1,12 @@
-# README #
+RCOMP 2022-2023 Group 5 Project repository 
+===========================================
+# 1. Team members #
+* 1201551 - António Martingo
+* 1221693 - Hugo Silva
+* 1211016 - João Rodrigues
+* 1211148 - Joana Perpétuo
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+# 2. Sprints #
+* [Sprint 1](doc/sprint1/)
+* [Sprint 2](doc/sprint2/)
+* [Sprint 3](doc/sprint3/)
