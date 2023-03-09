@@ -100,6 +100,8 @@ Um **patch cord** é um cabo curto com conectores em ambas as extremidades que �
 diferentes componentes de rede, como switches, routers ou firewalls.
 
 Um **patch panel** é um painel que possui vários conectores que são usados para conectar diferentes dispositivos de rede a um sistema de cabeamento estruturado.
+Os patch panels mais comuns em ambientes de rede empresarial possuem **entre 24 e 48 portas**. No entanto, é possível encontrar patch panels com um número menor 
+ou maior de portas, dependendo das necessidades de cada ambiente de rede.
 
 Em geral, os patch panels e patch cords são usados em conjunto para **criar uma infraestrutura de rede organizada e confiável**, permitindo que os cabos sejam
 facilmente gerenciados e conectados, **reduzindo os custos de manutenção e aumentando a eficiência do sistema de cabeamento estruturado**.
@@ -126,21 +128,21 @@ Seguem-se duas imagens, relativas aos dois pisos, com as medidas e áreas de cad
 
 Tendo as medidas das paredes, podemos calcular a área de cada uma das divisões.
 
-| Divisão | Largura (m) | Comprimento (m) | Área(m2) |
-|--------:|:-----------:|:---------------:|:--------:|
-|   A.0.1 |      5      |       5,5       |   27,5   |
-|   A.0.2 |      5      |      3,75       |  18,75   |
-|   A.0.3 |      5      |      4,88       |   24,4   |
-|   A.0.4 |    7,25     |      5,25       |  38,06   |
-|   A.0.5 |    4,63     |        6        |  27,78   |
-|   A.0.6 |     7,5     |        6        |    45    |
-|   A.1.1 |    7,25     |       3,4       |  24,65   |
-|   A.1.2 |    7,25     |       3,4       |  24,65   |
-|   A.1.3 |    7,25     |       3,4       |  24,65   |
-|   A.1.4 |    7,25     |       7,5       |  54,38   |
-|   A.1.5 |    4,25     |       5.5       |  23,38   |
-|   A.1.6 |      7      |      5,75       |  40,25   |
-|   A.1.7 |    4,75     |      5,75       |  27,31   |
+| Divisão | Largura (m) | Comprimento (m) | Área (m2) |
+|--------:|:-----------:|:---------------:|:---------:|
+|   A.0.1 |      5      |       5,5       |   27,5    |
+|   A.0.2 |      5      |      3,75       |   18,75   |
+|   A.0.3 |      5      |      4,88       |   24,4    |
+|   A.0.4 |    7,25     |      5,25       |   38,06   |
+|   A.0.5 |    4,63     |        6        |   27,78   |
+|   A.0.6 |     7,5     |        6        |    45     |
+|   A.1.1 |    7,25     |       3,4       |   24,65   |
+|   A.1.2 |    7,25     |       3,4       |   24,65   |
+|   A.1.3 |    7,25     |       3,4       |   24,65   |
+|   A.1.4 |    7,25     |       7,5       |   54,38   |
+|   A.1.5 |    4,25     |       5.5       |   23,38   |
+|   A.1.6 |      7      |      5,75       |   40,25   |
+|   A.1.7 |    4,75     |      5,75       |   27,31   |
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -160,21 +162,21 @@ Seguem-se duas imagens, relativas aos dois pisos, com o cabeamento e dispositivo
 
 _4.1 Número de outlets (tomadas)_
 
-| Divisão | Largura (m) | Comprimento (m) | Área(m2) | Nº de outlets |
-|--------:|:-----------:|:---------------:|:--------:|:-------------:|
-|   A.0.1 |      5      |       5,5       |   27,5   |       5       |
-|   A.0.2 |      5      |      3,75       |  18,75   |       3       |
-|   A.0.3 |      5      |      4,88       |   24,4   |       4       |
-|   A.0.4 |    7,25     |      5,25       |  38,06   |       7       |
-|   A.0.5 |    4,63     |        6        |  27,78   |       5       |
-|   A.0.6 |     7,5     |        6        |    45    |       9       |
-|   A.1.1 |    7,25     |       3,4       |  24,65   |       4       |
-|   A.1.2 |    7,25     |       3,4       |  24,65   |       4       |
-|   A.1.3 |    7,25     |       3,4       |  24,65   |       4       |
-|   A.1.4 |    7,25     |       7,5       |  54,38   |       0       |
-|   A.1.5 |    4,25     |       5.5       |  23,38   |       4       |
-|   A.1.6 |      7      |      5,75       |  40,25   |       8       |
-|   A.1.7 |    4,75     |      5,75       |  27,31   |       5       |
+| Divisão | Largura (m) | Comprimento (m) | Área (m2) | Nº de outlets |
+|--------:|:-----------:|:---------------:|:---------:|:-------------:|
+|   A.0.1 |      5      |       5,5       |   27,5    |       5       |
+|   A.0.2 |      5      |      3,75       |   18,75   |       3       |
+|   A.0.3 |      5      |      4,88       |   24,4    |       4       |
+|   A.0.4 |    7,25     |      5,25       |   38,06   |       7       |
+|   A.0.5 |    4,63     |        6        |   27,78   |       5       |
+|   A.0.6 |     7,5     |        6        |    45     |       9       |
+|   A.1.1 |    7,25     |       3,4       |   24,65   |       4       |
+|   A.1.2 |    7,25     |       3,4       |   24,65   |       4       |
+|   A.1.3 |    7,25     |       3,4       |   24,65   |       4       |
+|   A.1.4 |    7,25     |       7,5       |   54,38   |       0       |
+|   A.1.5 |    4,25     |       5.5       |   23,38   |       4       |
+|   A.1.6 |      7      |      5,75       |   40,25   |       8       |
+|   A.1.7 |    4,75     |      5,75       |   27,31   |       5       |
 
 
 Nº de outlets no piso 0: 33
