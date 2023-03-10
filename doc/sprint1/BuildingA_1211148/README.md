@@ -167,7 +167,7 @@ _4.1 Número de outlets (tomadas de rede)_
 |   A.0.1 |      5      |       5,5       |   27,5    |       5       |
 |   A.0.2 |      5      |      3,75       |   18,75   |       3       |
 |   A.0.3 |      5      |      4,88       |   24,4    |       4       |
-|   A.0.4 |    7,25     |      5,25       |   38,06   |       7       |
+|   A.0.4 |    7,25     |      5,25       |   38,06   |     7 + 1     |
 |   A.0.5 |    4,63     |        6        |   27,78   |       5       |
 |   A.0.6 |     7,5     |        6        |    45     |       9       |
 |   A.1.1 |    7,25     |       3,4       |   24,65   |       4       |
@@ -176,14 +176,14 @@ _4.1 Número de outlets (tomadas de rede)_
 |   A.1.4 |    7,25     |       7,5       |   54,38   |       0       |
 |   A.1.5 |    4,25     |       5,5       |   23,38   |       4       |
 |   A.1.6 |      7      |      5,75       |   40,25   |       8       |
-|   A.1.7 |    4,75     |      5,75       |   27,31   |       5       |
+|   A.1.7 |    4,75     |      5,75       |   27,31   |     5 + 1     |
 
 
-Nº de outlets no piso 0: 33
+Nº de outlets no piso 0: 33 + 1 reservado para o Access Point
 
-Nº de outlets no piso 1: 29
+Nº de outlets no piso 1: 29 + 1 reservado para o Access Point
 
-Total: 62 (1 tomada de rede em cada piso reservada para o Access Point)
+Total: 64
 
 _4.2 Comprimemto dos cabos e outros materiais úteis_
 
@@ -247,6 +247,6 @@ Dado que no piso 1 existem 29 outlets, será necessário um patch panel de 30 po
 
 |            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords |
 |------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|
-| **Piso 0** |                        |                                   |   33    |       1       |      1       |             |
-| **Piso 1** |                        |                                   |   29    |       1       |      1       |             |
-| **Total**  |                        |                                   |   62    |       2       |      2       |             |   
+| **Piso 0** |                        |                                   |   34    |       1       |      1       |             |
+| **Piso 1** |                        |                                   |   30    |       1       |      1       |             |
+| **Total**  |                        |                                   |   64    |       2       |      2       |             |   
