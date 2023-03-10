@@ -38,7 +38,7 @@ Assim, a abordagem segue os seguintes passos:
 
 _2.1 Medição da área das salas_
 
-## 3. Regras de cabeamento e estruturação geral do Edifício A ##
+## 3. Regras de cabeamento e estruturação geral do Edifício D ##
 
 _3.1 Estrutura do edifício_
 

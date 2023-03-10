@@ -208,7 +208,7 @@ Total:
 
 * Patch pannels e patch cords
 
-Dado que no piso 0 existem 33 outlets, será necessário um patch panel de 48 portas.
+Dado que no piso 0 existem 34 outlets, será necessário um patch panel de 48 portas.
 
 * Outros materiais úteis
 
@@ -237,7 +237,7 @@ Total:
 
 * Patch pannels e patch cords
 
-Dado que no piso 1 existem 29 outlets, será necessário um patch panel de 30 portas.
+Dado que no piso 1 existem 30 outlets, será necessário um patch panel de 30 portas.
 
 * Outros materiais úteis
 

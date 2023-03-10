@@ -5,7 +5,7 @@ RCOMP 2022-2023 Project - Sprint 1 planning
 # 1. Sprint's backlog #
 
 * T1.1 - Development of a structured cabling project for building A, encompassing the campus backbone.
-* T1.2 -Development of a structured cabling project for building B.
+* T1.2 - Development of a structured cabling project for building B.
 * T1.3 - Development of a structured cabling project for building C.
 * T1.4 - Development of a structured cabling project for building D.
 
@@ -21,6 +21,7 @@ In this section, all technical decisions taken in the planning meeting should be
 * IPv4 networks' addresses and routers' addresses
 * Routing protocols, AS identifiers and area identifiers
 * Application protocols outlining (further coordination may be required between members)
+* 
 # 3. Subtasks assignment #
 
 * 1211148 - Structured cable design for building A, including the campus backbone
