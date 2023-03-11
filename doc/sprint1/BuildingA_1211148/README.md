@@ -214,7 +214,7 @@ Total:
 Dado que no piso 0 existem 34 outlets, serão necessários pelo menos 2 patch panels de 24 portas. No entanto, pode ser necessário considerar a escalabilidade 
 futura do sistema de rede e planear para mais portas do que o necessário atualmente.
 
-
+Serão necessários 34 patch cords para ligar os patch panels aos outlets.
 
 * Outros materiais úteis
 
@@ -245,6 +245,8 @@ Total:
 Dado que no piso 1 existem 30 outlets, serão necessários pelo menos 2 patch panels de 24 portas. No entanto, pode ser necessário considerar a escalabilidade
 futura do sistema de rede e planear para mais portas do que o necessário atualmente.
 
+Serão necessários 34 patch cords para ligar os patch panels aos outlets.
+
 * Outros materiais úteis
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -253,6 +255,6 @@ futura do sistema de rede e planear para mais portas do que o necessário atualm
 
 |            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords |
 |------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|
-| **Piso 0** |                        |                                   |   34    |       1       |              |             |
-| **Piso 1** |                        |                                   |   30    |       1       |              |             |
-| **Total**  |                        |                                   |   64    |       2       |              |             |   
+| **Piso 0** |                        |                                   |   34    |       1       |              |     34      |
+| **Piso 1** |                        |                                   |   30    |       1       |              |     30      |
+| **Total**  |                        |                                   |   64    |       2       |              |     64      |   
