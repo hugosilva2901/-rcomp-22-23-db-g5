@@ -74,7 +74,7 @@ deste edifício.
 
 Como fios de fibra vão ser utilizados **cabos de fibra ótica de modo único**, também conhecidos como monomodo. São projetados para **transmitir sinais de luz num
 único caminho**. Eles são feitos com um **núcleo menor e mais denso** do que os cabos de modo múltiplo, permitindo que os **sinais de luz sejam transmitidos em
-distâncias maiores com menos atenuação de sinal**. As únicas desvantagens destes cabos são **o custo**, que é mais elevado do que os cabos de modo múltiplo, e a
+distâncias maiores com menos atenuação de sinal**. As únicas desvantagens destes cabos são **o custo**, sendo mais elevado do que os cabos de modo múltiplo, e a
 **menor resistência a danos físicos**.
 
 _1.4 Cross-conection_
