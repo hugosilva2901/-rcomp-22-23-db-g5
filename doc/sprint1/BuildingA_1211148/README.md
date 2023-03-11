@@ -37,7 +37,7 @@ Seguem-se algumas especificações deste edifício presentes no enunciado deste 
 
 * A altura do teto no piso 0 é de 4 metros. Áreas comuns, como o hall de entrada, WC's e escadas, não requerem tomadas de rede.
 
-* A altura do teto do piso 1 é de 3 metros, no entanto existe um teto amovível, colocado a 2,5 metros do chão, cobrindo todo o andar. O espaço sobre o 
+* A altura do teto do piso 1 é de 3 metros, no entanto, existe um teto amovível, colocado a 2,5 metros do chão, cobrindo todo o andar. O espaço sobre o 
   teto é perfeito para instalar canaletas de cabos e pontos de acesso sem fio. Este andar não possui canaletas de cabos subterrâneos.
 
 
@@ -60,15 +60,15 @@ _1.3 Cabeamento_
 
 Ambos os padrões de cabeamento **568A** e **568B** para redes Ethernet podem ser usados com vários tipos de cabos de cobre, incluindo cabos de Categoria 5e
 (Cat5e), Categoria 6 (Cat6) e Categoria 6a (Cat6a). O cabo *Cat6a* fornece um **desempenho bastante alto** e pode suportar **taxas de transferência de dados
-de até 10 GB/s** em distâncias de **até 100 metros**. É recomendado para aplicações de alta performance que exigem **conectividade confiável** e de **alta
+de até 10 GB/s** em distâncias de **até 100 metros**. É recomendado para aplicações de alto desempenho que exigem **conectividade confiável** e de **alta
 velocidade** em distâncias maiores.
 
 **Cat7** é um tipo de cabo de cobre projetado para suportar a **rede Ethernet de alta velocidade a taxas de transferência de dados** ainda mais altas e em
-distâncias maiores do que o Cat6a. É um cabo **totalmente blindado** (STP), o que proporciona **melhor resistência ao ruído e interferência** do que cabos
+distâncias maiores do que o Cat6a. É um cabo **totalmente blindado** (STP), proporcionando **melhor resistência ao ruído e interferência** do que cabos
 não blindados como o Cat5e e o Cat6.
 
 No entanto, é importante realçar que o Cat7 **não é um padrão oficialmente reconhecido pela Telecommunications Industry Association (TIA) ou pela International
-Organization for Standardization (ISO)**. Embora esteja amplamente disponível, sua **compatibilidade com outros equipamentos de rede e sua prova futura não são
+Organization for Standardization (ISO)**. Embora esteja amplamente disponível, a sua **compatibilidade com outros equipamentos de rede e sua prova futura não são
 garantidos**. Como resultado, o Cat6a é frequentemente a escolha preferida para instalações Ethernet de alto desempenho, e vai ser também utilizado no cabeamento
 deste edifício.
 
@@ -96,11 +96,11 @@ _1.6 Patch Panels, Path Cords e Consolidation Points_
 
 Dado que estaremos a utilizar cabos Cat6a, todas as restantes ligações e dispositivos utilizarão também Cat6a.
 
-Um **patch panel** é um painel que possui vários conectores que são usados para conectar diferentes dispositivos de rede a um sistema de cabeamento estruturado.
+Um **patch panel** é um painel que possui vários conectores usados para conectar diferentes dispositivos de rede a um sistema de cabeamento estruturado.
 Os patch panels mais comuns em ambientes de rede empresarial possuem **entre 24 e 48 portas**. No entanto, é possível encontrar patch panels com um número menor 
 ou maior de portas, dependendo das necessidades de cada ambiente de rede.
 
-Um **patch cord** é um cabo curto com conectores em ambas as extremidades que é usado para conectar um dispositivo de rede a um patch panel, ou para interconectar
+Um **patch cord** é um cabo curto com conectores em ambas as extremidades usado para conectar um dispositivo de rede a um patch panel, ou para interconectar
 diferentes componentes de rede, como switches, routers ou firewalls. O número exato de patch cords necessários dependerá da distância entre as tomadas de rede e o
 patch panel. **Cada tomada de rede precisa de um patch cord** para se conectar ao patch panel, portanto, **o número total de patch cords necessários será igual ao número
 de tomadas de rede** que precisam ser conectadas. No entanto, se as tomadas de rede estiverem espalhadas por vários ambientes e com distâncias consideráveis entre si,
@@ -212,7 +212,7 @@ Total:
 
 * Patch pannels e patch cords
 
-Dado que no piso 0 existem 34 outlets, serão necessários 2 patch panels de 24 portas. No entanto, pode ser necessário levar em consideração a 
+Dado que no piso 0 existem 34 outlets, serão necessários pelo menos 2 patch panels de 24 portas. No entanto, pode ser necessário levar em consideração a 
 escalabilidade futura do sistema de rede e planejar para mais portas do que o necessário atualmente.
 
 
@@ -243,8 +243,8 @@ Total:
 
 * Patch pannels e patch cords
 
-Dado que no piso 1 existem 30 outlets, serão necessários 2 patch panels de 24 portas. No entanto, pode ser necessário levar em consideração a escalabilidade 
-futura do sistema de rede e planejar para mais portas do que o necessário atualmente.
+Dado que no piso 1 existem 30 outlets, serão necessários pelo menos 2 patch panels de 24 portas. No entanto, pode ser necessário levar em consideração a 
+escalabilidade futura do sistema de rede e planear para mais portas do que o necessário atualmente.
 
 * Outros materiais úteis
 
