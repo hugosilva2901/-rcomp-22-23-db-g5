@@ -151,7 +151,7 @@ Tendo as medidas das paredes, podemos calcular a área de cada uma das divisões
 
 ### 3. Cabeamento e instalação dos dispositivos ###
 
-Seguem-se duas imagens, relativas aos dois pisos, com o cabeamento e dispositivos completos, seguindo as regras descritas a cima.
+Seguem-se duas imagens, relativas aos dois pisos, com o cabeamento e dispositivos instalados, seguindo as regras descritas a cima.
 
                                                               Planta do piso 0:
 
