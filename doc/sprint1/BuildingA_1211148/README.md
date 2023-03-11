@@ -94,7 +94,7 @@ raio**.
 
 _1.6 Patch Panels, Path Cords e Consolidation Points_
 
-Dado que estaremos a utilizar cabos Cat6a, todas as restantes ligações e dispositivos utilizarão também Cat6a.
+Dado que estaremos a utilizar cabos Cat6a, as restantes ligações e dispositivos utilizarão também Cat6a.
 
 Um **patch panel** é um painel que possui vários conectores usados para conectar diferentes dispositivos de rede a um sistema de cabeamento estruturado.
 Os patch panels mais comuns em ambientes de rede empresarial possuem **entre 24 e 48 portas**. No entanto, é possível encontrar patch panels com um número menor 
@@ -212,8 +212,8 @@ Total:
 
 * Patch pannels e patch cords
 
-Dado que no piso 0 existem 34 outlets, serão necessários pelo menos 2 patch panels de 24 portas. No entanto, pode ser necessário levar em consideração a 
-escalabilidade futura do sistema de rede e planejar para mais portas do que o necessário atualmente.
+Dado que no piso 0 existem 34 outlets, serão necessários pelo menos 2 patch panels de 24 portas. No entanto, pode ser necessário considerar a escalabilidade 
+futura do sistema de rede e planejar para mais portas do que o necessário atualmente.
 
 
 
@@ -243,8 +243,8 @@ Total:
 
 * Patch pannels e patch cords
 
-Dado que no piso 1 existem 30 outlets, serão necessários pelo menos 2 patch panels de 24 portas. No entanto, pode ser necessário levar em consideração a 
-escalabilidade futura do sistema de rede e planear para mais portas do que o necessário atualmente.
+Dado que no piso 1 existem 30 outlets, serão necessários pelo menos 2 patch panels de 24 portas. No entanto, pode ser necessário considerar a escalabilidade
+futura do sistema de rede e planear para mais portas do que o necessário atualmente.
 
 * Outros materiais úteis
 
@@ -254,6 +254,6 @@ escalabilidade futura do sistema de rede e planear para mais portas do que o nec
 
 |            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords |
 |------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|
-| **Piso 0** |                        |                                   |   34    |       1       |      2       |             |
-| **Piso 1** |                        |                                   |   30    |       1       |      2       |             |
-| **Total**  |                        |                                   |   64    |       2       |      4       |             |   
+| **Piso 0** |                        |                                   |   34    |       1       |              |             |
+| **Piso 1** |                        |                                   |   30    |       1       |              |             |
+| **Total**  |                        |                                   |   64    |       2       |              |             |   
