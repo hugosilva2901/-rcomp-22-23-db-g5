@@ -212,7 +212,7 @@ Total:
 * Patch pannels e patch cords
 
 Dado que no piso 0 existem 34 outlets, serão necessários pelo menos 2 patch panels de 24 portas. No entanto, pode ser necessário considerar a escalabilidade 
-futura do sistema de rede e planejar para mais portas do que o necessário atualmente.
+futura do sistema de rede e planear para mais portas do que o necessário atualmente.
 
 
 
