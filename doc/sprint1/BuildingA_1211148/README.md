@@ -35,10 +35,10 @@ Seguem-se algumas especificações deste edifício presentes no enunciado deste 
 * O piso 0 possui uma canaleta de cabos sob o piso conectada à vala técnica externa. Acesso à canaleta de cabos sob o piso está disponível nos pontos
   marcados na planta na imagem abaixo. Além disso, cabo passagens para o andar acima estão disponíveis.
 
-* A altura do teto no piso 0 é de 4 metros. Áreas comuns, como o hall de entrada, banheiros e escadas, não requerem tomadas de rede.
+* A altura do teto no piso 0 é de 4 metros. Áreas comuns, como o hall de entrada, WC's e escadas, não requerem tomadas de rede.
 
-* A altura do teto do piso 1 é de 3 metros, no entanto existe um teto rebaixado amovível, colocado a 2,5 metros do chão, cobrindo todo o andar. O espaço
-  sobre o teto rebaixado é perfeito para instalar canaletas de cabos e pontos de acesso sem fio. Este andar não possui canaletas de cabos subterrâneos.
+* A altura do teto do piso 1 é de 3 metros, no entanto existe um teto amovível, colocado a 2,5 metros do chão, cobrindo todo o andar. O espaço sobre o 
+  teto é perfeito para instalar canaletas de cabos e pontos de acesso sem fio. Este andar não possui canaletas de cabos subterrâneos.
 
 
                                                               Planta do piso 0 (presente no enunciado):
@@ -96,12 +96,16 @@ _1.6 Patch Panels, Path Cords e Consolidation Points_
 
 Dado que estaremos a utilizar cabos Cat6a, todas as restantes ligações e dispositivos utilizarão também Cat6a.
 
-Um **patch cord** é um cabo curto com conectores em ambas as extremidades que é usado para conectar um dispositivo de rede a um patch panel, ou para interconectar
-diferentes componentes de rede, como switches, routers ou firewalls.
-
 Um **patch panel** é um painel que possui vários conectores que são usados para conectar diferentes dispositivos de rede a um sistema de cabeamento estruturado.
 Os patch panels mais comuns em ambientes de rede empresarial possuem **entre 24 e 48 portas**. No entanto, é possível encontrar patch panels com um número menor 
 ou maior de portas, dependendo das necessidades de cada ambiente de rede.
+
+Um **patch cord** é um cabo curto com conectores em ambas as extremidades que é usado para conectar um dispositivo de rede a um patch panel, ou para interconectar
+diferentes componentes de rede, como switches, routers ou firewalls. O número exato de patch cords necessários dependerá da distância entre as tomadas de rede e o
+patch panel. **Cada tomada de rede precisa de um patch cord** para se conectar ao patch panel, portanto, **o número total de patch cords necessários será igual ao número
+de tomadas de rede** que precisam ser conectadas. No entanto, se as tomadas de rede estiverem espalhadas por vários ambientes e com distâncias consideráveis entre si,
+será necessário **patch cords mais longos para alcançar o patch panel**. Nesse caso, calcular-se-ia o comprimento necessário para cada patch cord e adicionar uma **margem
+de segurança** para acomodar qualquer mudança futura no layout da rede.
 
 Em geral, os patch panels e patch cords são usados em conjunto para **criar uma infraestrutura de rede organizada e confiável**, permitindo que os cabos sejam
 facilmente gerenciados e conectados, **reduzindo os custos de manutenção e aumentando a eficiência do sistema de cabeamento estruturado**.
@@ -204,11 +208,14 @@ Total:
 
 * Fibra ótica de modo único
 
-
+Total:
 
 * Patch pannels e patch cords
 
-Dado que no piso 0 existem 34 outlets, será necessário um patch panel de 48 portas.
+Dado que no piso 0 existem 34 outlets, serão necessários 2 patch panels de 24 portas. No entanto, pode ser necessário levar em consideração a 
+escalabilidade futura do sistema de rede e planejar para mais portas do que o necessário atualmente.
+
+
 
 * Outros materiais úteis
 
@@ -232,12 +239,12 @@ Total:
 
 * Fibra ótica de modo único
 
-
 Total:
 
 * Patch pannels e patch cords
 
-Dado que no piso 1 existem 30 outlets, será necessário um patch panel de 30 portas.
+Dado que no piso 1 existem 30 outlets, serão necessários 2 patch panels de 24 portas. No entanto, pode ser necessário levar em consideração a escalabilidade 
+futura do sistema de rede e planejar para mais portas do que o necessário atualmente.
 
 * Outros materiais úteis
 
@@ -247,6 +254,6 @@ Dado que no piso 1 existem 30 outlets, será necessário um patch panel de 30 po
 
 |            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords |
 |------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|
-| **Piso 0** |                        |                                   |   34    |       1       |      1       |             |
-| **Piso 1** |                        |                                   |   30    |       1       |      1       |             |
-| **Total**  |                        |                                   |   64    |       2       |      2       |             |   
+| **Piso 0** |                        |                                   |   34    |       1       |      2       |             |
+| **Piso 1** |                        |                                   |   30    |       1       |      2       |             |
+| **Total**  |                        |                                   |   64    |       2       |      4       |             |   
