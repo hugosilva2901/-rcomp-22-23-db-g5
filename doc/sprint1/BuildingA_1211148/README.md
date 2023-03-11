@@ -200,7 +200,7 @@ _4.2 Comprimemto dos cabos e outros materiais úteis_
 |   A.0.1 |       5       |                                  |
 |   A.0.2 |       3       |                                  |
 |   A.0.3 |       4       |                                  |
-|   A.0.4 |       7       |                                  |
+|   A.0.4 |     7 + 1     |                                  |
 |   A.0.5 |       5       |                                  |
 |   A.0.6 |       9       |                                  |
 
@@ -233,7 +233,7 @@ futura do sistema de rede e planejar para mais portas do que o necessário atual
 |   A.1.4 |       0       |                                  |
 |   A.1.5 |       4       |                                  |
 |   A.1.6 |       8       |                                  |
-|   A.1.7 |       5       |                                  |
+|   A.1.7 |     5 + 1     |                                  |
 
 Total:
 
