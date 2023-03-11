@@ -11,9 +11,9 @@ RCOMP 2022-2023 Project - Sprint 1 planning
 
 # 2. Technical decisions and coordination #
 # TO BE DISCUSSED AND UPDATED !!! #
-In this section, all technical decisions taken in the planning meeting should be mentioned. 		Most importantly, all technical decisions impacting on the subtasks implementation must be settled on this 		meeting and specified here.
+The following were the design decisions made for the project, and are to be followed by all members of the project:
 
-#### Examples: ####
+* Copper cable type: CAT6a
 * Backbone cable types to be used
 * VLAN IDs to be used
 * VTP domains
