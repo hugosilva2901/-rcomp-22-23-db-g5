@@ -14,14 +14,8 @@ RCOMP 2022-2023 Project - Sprint 1 planning
 The following were the design decisions made for the project, and are to be followed by all members of the project:
 
 * Copper cable type: CAT6a
-* Backbone cable types to be used
-* VLAN IDs to be used
-* VTP domains
-* WiFi channels
-* IPv4 networks' addresses and routers' addresses
-* Routing protocols, AS identifiers and area identifiers
-* Application protocols outlining (further coordination may be required between members)
-* 
+* Fiber cable type: Mono-mode
+
 # 3. Subtasks assignment #
 
 * 1211148 - Structured cable design for building A, including the campus backbone

@@ -1,6 +1,6 @@
 # RCOMP 2022/2023 - SPRINT 1 EDIFÍCIO D - 1211016 #
 
-===========================================================================
+============================================================================================
 
 ## Introdução: ##
 Este ficheiro tem o propósito de documentar o desenvolvimento de um projeto de cabeamento estruturado do Edifício D, que está dividido em dois pisos.
@@ -73,13 +73,14 @@ Assim, a abordagem segue os seguintes passos:
 ## 3. Regras de cabeamento e estruturação geral do Edifício D ##
 
 ### 3.1 Estrutura do edifício ###
+O edifício D é composto por dois pisos e ocupa um espaço de 30x30 metros.
 
                                                               Planta do piso 0 (presente no enunciado):
 
 
 ![BuildingD_floor0](BuildingD_floor0.png)
 
-#### Considerações: ####
+#### Considerações (piso 0) : ####
 
 * A entrada de cabos no edifício é feita através de uma vala subterrânea com entrada na sala D.0.15, sala esta que tem condições para alojar um Cross Connect.
 * Neste piso há passagem de cabos subterrânea.
@@ -95,7 +96,7 @@ Assim, a abordagem segue os seguintes passos:
 
 ![BuildingD_floor1](BuildingD_floor1.png)
 
-#### Considerações: ####
+#### Considerações (piso 1) : ####
 
 * A entrada de cabos no edifício é feita por uma coluna com entrada na sala D.1.8, sala esta que tem condições para alojar Cross Connects.
 * Neste piso **não** há passagem de cabos subterrânea.
@@ -104,3 +105,45 @@ Assim, a abordagem segue os seguintes passos:
 * O mesmo se aplica à sala a halls de entrada, corredores e WC's.
 * Nas restantes aplica-se o número de outlets por divisão standard.
 * É necessária cobertura **WLAN (Wi-Fi)** em todo o piso.
+
+## 4. Medidas e dimensões das divisões ##
+
+* A tabela seguinte apresenta as medidas das divisões do edifício D, bem como o número de outlets necessários para cada divisão.
+* As medições das salas D.0.15, D.0.16 e D.1.8 não foram consideradas, uma vez que estas não necessitam de outlets.
+* As medições das salas D.0.1, D.0.2 e D.0.3 não foram consideradas, uma vez que o número de outlets é diferente do standard.
+
+| Divisão | Largura (m) | Comprimento (m) | Área (m2) | Nº de outlets |
+|--------:|:-----------:|:---------------:|:---------:|:-------------:|
+|   D.0.1 |     ---     |       ---       |    ---    |       6       |
+|   D.0.2 |     ---     |       ---       |    ---    |       6       |
+|   D.0.3 |     ---     |       ---       |    ---    |      10       |
+|   D.0.4 |     3.2     |       6.6       |   21.12   |       4       |
+|   D.0.5 |     3.2     |       6.6       |   21.12   |       4       |
+|   D.0.6 |     3.2     |       6.6       |   21.12   |       4       |
+|   D.0.7 |     3.2     |       6.6       |   21.12   |       4       |
+|   D.0.8 |     3.2     |       6.6       |   21.12   |       4       |
+|   D.0.9 |     3.2     |       6.6       |   21.12   |       4       |
+|  D.0.10 |     3.2     |       6.6       |   21.12   |  4 + 1 (AP)   |
+|  D.0.11 |     3.2     |       6.6       |   21.12   |       4       |
+|  D.0.12 |     3.2     |       6.6       |   21.12   |       4       |
+|  D.0.13 |     3.2     |       6.6       |   21.12   |       4       |
+|  D.0.14 |     3.2     |       6.6       |   21.12   |       4       |
+|  D.0.15 |     ---     |       ---       |    ---    |       0       |
+|  D.0.16 |     ---     |       ---       |    ---    |       0       |
+|   D.1.1 |    4.15     |       6.6       |   27.39   |       5       |
+|   D.1.2 |     3.2     |       6.6       |   21.12   |       4       |
+|   D.1.3 |     3.2     |       6.6       |   21.12   |       4       |
+|   D.1.4 |     3.2     |       6.6       |   21.12   |       4       |
+|   D.1.5 |     3.2     |       6.6       |   21.12   |       4       |
+|   D.1.6 |     3.2     |       6.6       |   21.12   |  4 + 1 (AP)   |
+|   D.1.7 |     3.2     |       6.6       |   21.12   |       4       |
+|   D.1.8 |     ---     |       ---       |    ---    |       0       |
+|   D.1.9 |     3.2     |       6.6       |   21.12   |       4       |
+|  D.1.10 |     3.2     |       6.6       |   21.12   |       4       |
+|  D.1.11 |     3.2     |       6.6       |   21.12   |       4       |
+|  D.1.12 |     3.2     |       6.6       |   21.12   |       4       |
+|  D.1.13 |    3.77     |      5.85       |   22.05   |       4       |
+|  D.1.14 |    3.77     |      5.85       |   22.05   |       4       |
+|  D.1.15 |    3.77     |      5.47       |   20.62   |       4       |
+|  D.1.16 |    3.77     |      5.47       |   20.62   |       4       |
+|  D.1.17 |    3.77     |      5.47       |   20.62   |       4       |
