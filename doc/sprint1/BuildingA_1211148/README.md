@@ -194,6 +194,14 @@ _4.2 Comprimemto dos cabos e outros materiais úteis_
 
 * Fio de cobre Cat6a
 
+Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
+
+    comprimento total = nº de outlets x comprimento médio + margem de segurança
+
+Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
+
+    comprimento total = altura + comprimento + margem de segurança
+
 | Divisão | Nº de outlets | Comprimento total aproximado (m) |
 |--------:|:-------------:|:--------------------------------:|
 |   A.0.1 |       5       |                                  |
@@ -207,6 +215,10 @@ Total:
 
 * Fibra ótica de modo único
 
+| Divisão | Comprimento total aproximado (m) |
+|--------:|:--------------------------------:|
+|   A.0.4 |                                  |
+
 Total:
 
 * Patch pannels e patch cords
@@ -214,7 +226,7 @@ Total:
 Dado que no piso 0 existem 34 outlets, serão necessários pelo menos 2 patch panels de 24 portas. No entanto, pode ser necessário considerar a escalabilidade 
 futura do sistema de rede e planear para mais portas do que o necessário atualmente.
 
-Serão necessários 34 patch cords para ligar os patch panels aos outlets.
+Serão necessários 34 patch cords para ligar os patch panels aos outlets (com cerca de 5 metros).
 
 * Outros materiais úteis
 
@@ -223,6 +235,14 @@ Serão necessários 34 patch cords para ligar os patch panels aos outlets.
                                                               Piso 1:
 
 * Fio de cobre Cat6a
+
+Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
+
+    comprimento total = nº de outlets x comprimento médio + margem de segurança
+
+Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
+
+    comprimento total = altura + comprimento + margem de segurança
 
 | Divisão | Nº de outlets | Comprimento total aproximado (m) |
 |--------:|:-------------:|:--------------------------------:|
@@ -238,6 +258,10 @@ Total:
 
 * Fibra ótica de modo único
 
+Main Cross-Connect até ao Intermediate Cross-Connect:
+Intermediary Cross-Connect até ao Horizontal Cross-Connect (piso 0):
+Intermediary Cross-Connect até ao Horizontal Cross-Connect (piso 1):
+
 Total:
 
 * Patch pannels e patch cords
@@ -245,7 +269,7 @@ Total:
 Dado que no piso 1 existem 30 outlets, serão necessários pelo menos 2 patch panels de 24 portas. No entanto, pode ser necessário considerar a escalabilidade
 futura do sistema de rede e planear para mais portas do que o necessário atualmente.
 
-Serão necessários 34 patch cords para ligar os patch panels aos outlets.
+Serão necessários 34 patch cords para ligar os patch panels aos outlets (com cerca de 5 metros).
 
 * Outros materiais úteis
 
@@ -255,6 +279,6 @@ Serão necessários 34 patch cords para ligar os patch panels aos outlets.
 
 |            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords |
 |------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|
-| **Piso 0** |                        |                                   |   34    |       1       |              |     34      |
-| **Piso 1** |                        |                                   |   30    |       1       |              |     30      |
-| **Total**  |                        |                                   |   64    |       2       |              |     64      |   
+| **Piso 0** |                        |                                   |   34    |       1       |      2       |     34      |
+| **Piso 1** |                        |                                   |   30    |       1       |      2       |     30      |
+| **Total**  |                        |                                   |   64    |       2       |      4       |     64      |   
