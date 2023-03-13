@@ -242,7 +242,7 @@ Para calcular o comprimento de fio de cobre necessário para os outlets, foi uti
 
 Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
 
-    comprimento total = altura + comprimento
+    comprimento total = altura do teto amovível + comprimento até ao AP
 
 | Divisão | Nº de outlets | Comprimento total aproximado (m) |
 |--------:|:-------------:|:--------------------------------:|
@@ -258,10 +258,10 @@ Para calcular o comprimento de fio de cobre necessário para o access point, foi
 -> 35,00 m
 
 2 Consolidation Points:
--> 11,50 + 2,50 + 1 = 15,00 m
--> 32,50 + 2,50 + 1 = 36,00 m
+-> 4 * (11,50 + 2,50 + 1) = 48,00 m
+-> 4 * (32,50 + 2,50 + 1) = 144,00 m
 
-Total: 773,15 m + 77,32 m (+ margem de segurança de 10%)
+Total: 914,15 m + 45,71 m (margem de segurança de 5%) = 959.86 m
 
 * Fibra ótica de modo único
 
