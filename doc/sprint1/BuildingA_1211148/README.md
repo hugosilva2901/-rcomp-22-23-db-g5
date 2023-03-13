@@ -238,23 +238,30 @@ Serão necessários 34 patch cords para ligar os patch panels aos outlets (com c
 
 Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
 
-    comprimento total = nº de outlets x comprimento médio + margem de segurança
+    comprimento total = nº de outlets x (comprimento médio + altura do teto amovível + altura do HC/CP)
 
 Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
 
-    comprimento total = altura + comprimento + margem de segurança
+    comprimento total = altura + comprimento
 
 | Divisão | Nº de outlets | Comprimento total aproximado (m) |
 |--------:|:-------------:|:--------------------------------:|
-|   A.1.1 |       4       |                                  |
-|   A.1.2 |       4       |                                  |
-|   A.1.3 |       4       |                                  |
-|   A.1.4 |       0       |                                  |
-|   A.1.5 |       4       |                                  |
-|   A.1.6 |       8       |                                  |
-|   A.1.7 |     5 + 1     |                                  |
+|   A.1.1 |       4       | 4 * (23,94 + 2,5 + 1) = 109,76 m |
+|   A.1.2 |       4       | 4 * (18.06 + 2,5 + 1) = 86,24 m  |
+|   A.1.3 |       4       | 4 * (13.88 + 2,5 + 1) = 69,52 m  |
+|   A.1.4 |       0       |                0                 |
+|   A.1.5 |       4       | 4 * (10,50 + 2,5 + 1) = 56,00 m  |
+|   A.1.6 |       8       | 8 * (17,36 + 2,5 + 1) = 166,88 m |
+|   A.1.7 |     5 + 1     | 5 * (36,25 + 2,5 + 1) = 198,75 m |
 
-Total:
+1 Access Point:
+-> 35,00 m
+
+2 Consolidation Points:
+-> 11,50 + 2,50 + 1 = 15,00 m
+-> 32,50 + 2,50 + 1 = 36,00 m
+
+Total: 773,15 m + 77,32 m (+ margem de segurança de 10%)
 
 * Fibra ótica de modo único
 
