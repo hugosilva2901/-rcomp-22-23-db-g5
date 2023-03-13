@@ -196,11 +196,11 @@ _4.2 Comprimemto dos cabos e outros materiais úteis_
 
 Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
 
-    comprimento total = nº de outlets x comprimento médio + margem de segurança
+    comprimento total = nº de outlets x (comprimento médio + altura do teto amovível + altura do HC/CP)
 
 Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
 
-    comprimento total = altura + comprimento + margem de segurança
+    comprimento total = altura do teto amovível + comprimento até ao AP
 
 | Divisão | Nº de outlets | Comprimento total aproximado (m) |
 |--------:|:-------------:|:--------------------------------:|
