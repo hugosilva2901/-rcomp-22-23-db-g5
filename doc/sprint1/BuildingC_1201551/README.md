@@ -10,7 +10,10 @@ Este ficheiro documenta o planeamento e estruturação do Edifício C, que se en
 ### Índice: ###
 
 1. **Regras de cabeamento e visão geral da estrutura do Edifício C**
-
+2. **Medidas e dimensões das divisões**
+3. **Cabeamento e instalação dos dispositivos**
+4. **Materiais necessários**
+5. **Hardware total necessário (inventário)**
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -60,7 +63,9 @@ As seguintes especificacões do edifício C foram fornecidas pelo enunciado:
 
 _1.2 Número de tomadas de rede_
 
-Indo de encontro às especificações fornecidas pelo enunciado, serão necessárias 2 tomadas de rede por cada 10 metros quadrados de área.
+Generalizando, um espaço de escritório padrão pode exigir aproximadamente uma tomada de rede a cada 10 a 15 metros quadrados, enquanto um espaço residencial
+pode exigir uma tomada de rede a cada 20 a 30 metros quadrados. No entanto, dadas as condições exigidas pelo enunciado, vamos considerar que serão necessárias
+**2 tomadas de rede por cada 10 metros quadrados**.
 
 _1.3 Cabeamento_
 
@@ -119,8 +124,8 @@ totais da obra.
 
 ### 2. Medidas e dimensões das divisões ###
 
-As seguintes medidas foram calculadas com base nas plantas e escala fornecidas pelo enunciado.
-Seguem-se duas imagens, relativas aos dois pisos, com as medidas e áreas de cada divisão (valores aproximados, resultantes da conversão da escala).
+Seguem-se duas imagens, relativas aos dois pisos, com as medidas de cada divisão (valores aproximados, resultantes da conversão da escala).
+As respetivas areas sao calculadas nas tabelas seguintes.
 
                                                                                  Planta do piso 0 com as medidas:
 
@@ -145,14 +150,213 @@ Piso 0:
 |   C.0.2 |    7,22     |      8,70       |   62,81   |
 |   C.0.3 |    7,22     |      11,11      |   80,21   |
 |   C.0.4 |    6,94     |      7,78       |   38,06   |
-|   C.0.5 |     4--     |       --        |    --     |
-|   C.0.6 |     --      |       --        |    --     |
-|   C.0.7 |     --      |       --        |    --     |
-|   C.0.8 |     --      |       --        |    --     |
-|   C.0.9 |     --      |       --        |    --     |
-|  C.0.10 |     --      |       --        |    --     |
-|  C.0.11 |     --      |       --        |    --     |
-|  C.0.12 |     --      |       --        |    --     |
-|  C.0.13 |     --      |       --        |   ----    |
-|  C.0.14 |     --      |       --        |    ---    |
-|  C.0.15 |     --      |       --        |    --     |
+|   C.0.5 |    3,15     |      6,48       |   20,41   |
+|   C.0.6 |    3,15     |      6,48       |   20,41   |
+|   C.0.7 |    3,15     |      6,48       |   20,41   |
+|   C.0.8 |    3,15     |      6,48       |   20,41   |
+|   C.0.9 |    3,15     |      6,48       |   20,41   |
+|  C.0.10 |    3,15     |      6,48       |   20,41   |
+|  C.0.11 |    3,15     |      6,48       |   20,41   |
+|  C.0.12 |    3,15     |      6,48       |   20,41   |
+|  C.0.13 |    3,15     |      6,48       |   20,41   |
+|  C.0.14 |    2,41     |      3,15       |   7,59    |
+|  C.0.15 |    4,07     |      3,15       |   12,82   |
+
+
+Piso 1:
+
+| Divisão | Largura (m) | Comprimento (m) | Área (m2) |
+|--------:|:-----------:|:---------------:|:---------:|
+|   C.1.1 |    7,59     |      5,19       |   39,39   |
+|   C.1.2 |    3,15     |      5,19       |   16,34   |
+|   C.1.3 |    3,15     |      5,19       |   16,34   |
+|   C.1.4 |    3,15     |      5,19       |   16,34   |
+|   C.1.5 |    3,15     |      5,19       |   16,34   |
+|   C.1.6 |    3,15     |      5,19       |   16,34   |
+|   C.1.7 |    3,15     |      5,19       |   16,34   |
+|   C.1.8 |    6,67     |      1,85       |   12,34   |
+|   C.1.9 |    3,33     |      5,19       |   17,28   |
+|  C.1.10 |    3,33     |      5,19       |   17,28   |
+|  C.1.11 |    3,33     |      5,19       |   17,28   |
+|  C.1.12 |    3,33     |      5,19       |   17,28   |
+|  C.1.13 |    3,33     |      5,19       |   17,28   |
+|  C.1.14 |    3,33     |      5,19       |   17,28   |
+|  C.1.15 |    3,33     |      5,19       |   17,28   |
+|  C.1.16 |    3,33     |      5,19       |   17,28   |
+|  C.1.17 |    3,33     |      5,19       |   17,28   |
+|  C.1.18 |    3,33     |      5,19       |   17,28   |
+|  C.1.19 |    3,33     |      5,19       |   17,28   |
+|  C.1.20 |    3,33     |      5,19       |   17,28   |
+
+## 3. Cabeamento e instalação dos dispositivos ###
+
+Seguem-se duas imagens, relativas aos dois pisos, com o cabeamento e dispositivos instalados, seguindo as regras descritas a cima.
+
+                                                              Planta do piso 0:
+
+----------------------------------------------------------------------------------------------------------------------------
+
+                                                              Planta do piso 1:
+
+----------------------------------------------------------------------------------------------------------------------------
+
+### 4. Materiais necessários e inventário ###
+
+_4.1 Número de outlets (tomadas de rede)_
+
+Para o piso 0, temos:
+
+| Divisão | Largura (m) | Comprimento (m) | Área (m2) | Nº de outlets |
+|--------:|:-----------:|:---------------:|:---------:|:-------------:|
+|   C.0.1 |    7,22     |      8,33       |   60,14   |      12       |
+|   C.0.2 |    7,22     |      8,70       |   62,81   |      12       |
+|   C.0.3 |    7,22     |      11,11      |   80,21   |      16       |
+|   C.0.4 |    6,94     |      7,78       |   38,06   |       8       |
+|   C.0.5 |    3,15     |      6,48       |   20,41   |       4       |
+|   C.0.6 |    3,15     |      6,48       |   20,41   |       4       |
+|   C.0.7 |    3,15     |      6,48       |   20,41   |       4       |
+|   C.0.8 |    3,15     |      6,48       |   20,41   |       4       |
+|   C.0.9 |    3,15     |      6,48       |   20,41   |       4       |
+|  C.0.10 |    3,15     |      6,48       |   20,41   |       4       |
+|  C.0.11 |    3,15     |      6,48       |   20,41   |       4       |
+|  C.0.12 |    3,15     |      6,48       |   20,41   |       4       |
+|  C.0.13 |    3,15     |      6,48       |   20,41   |       4       |
+|  C.0.14 |    2,41     |      3,15       |   7,59    |       2       |
+|  C.0.15 |    4,07     |      3,15       |   12,82   |       2       |
+
+Para o piso 1, temos:
+
+| Divisão | Largura (m) | Comprimento (m) | Área (m2) | Nº de outlets |
+|--------:|:-----------:|:---------------:|:---------:|:-------------:|
+|   C.1.1 |    7,59     |      5,19       |   39,39   |       8       |
+|   C.1.2 |    3,15     |      5,19       |   16,34   |       3       |
+|   C.1.3 |    3,15     |      5,19       |   16,34   |       3       |
+|   C.1.4 |    3,15     |      5,19       |   16,34   |       3       |
+|   C.1.5 |    3,15     |      5,19       |   16,34   |       3       |
+|   C.1.6 |    3,15     |      5,19       |   16,34   |       3       |
+|   C.1.7 |    3,15     |      5,19       |   16,34   |       3       |
+|   C.1.8 |    6,67     |      1,85       |   12,34   |       2       |
+|   C.1.9 |    3,33     |      5,19       |   17,28   |       3       |
+|  C.1.10 |    3,33     |      5,19       |   17,28   |       3       |
+|  C.1.11 |    3,33     |      5,19       |   17,28   |       3       |
+|  C.1.12 |    3,33     |      5,19       |   17,28   |       3       |
+|  C.1.13 |    3,33     |      5,19       |   17,28   |       3       |
+|  C.1.14 |    3,33     |      5,19       |   17,28   |       3       |
+|  C.1.15 |    3,33     |      5,19       |   17,28   |       3       |
+|  C.1.16 |    3,33     |      5,19       |   17,28   |       3       |
+|  C.1.17 |    3,33     |      5,19       |   17,28   |       3       |
+|  C.1.18 |    3,33     |      5,19       |   17,28   |       3       |
+|  C.1.19 |    3,33     |      5,19       |   17,28   |       3       |
+|  C.1.20 |    3,33     |      5,19       |   17,28   |       3       |
+
+
+Nº de outlets no piso 0: 88 + x reservado para o Access Point
+
+Nº de outlets no piso 1: 64 + x reservado para o Access Point
+
+Total: 152 + x reservado para o Access Point
+
+//TODO em baixo
+_4.2 Comprimemto dos cabos e outros materiais úteis_
+
+                                                              Piso 0:
+
+* Fio de cobre Cat6a
+
+Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
+
+    comprimento total = nº de outlets x comprimento médio + margem de segurança
+
+Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
+
+    comprimento total = altura + comprimento + margem de segurança
+
+| Divisão | Nº de outlets | Comprimento total aproximado (m) |
+|--------:|:-------------:|:--------------------------------:|
+|   C.0.1 |       5       |                                  |
+|   C.0.2 |       3       |                                  |
+|   C.0.3 |       4       |                                  |
+|   C.0.4 |     7 + 1     |                                  |
+|   C.0.5 |       5       |                                  |
+|   C.0.6 |       9       |                                  |
+|   C.0.7 |       9       |                                  |
+|   C.0.8 |       9       |                                  |
+|   C.0.9 |       9       |                                  |
+|  C.0.10 |       9       |                                  |
+|  C.0.11 |       9       |                                  |
+|  C.0.12 |       9       |                                  |
+|  C.0.13 |       9       |                                  |
+|  C.0.14 |       9       |                                  |
+|  C.0.15 |       9       |                                  |
+
+Total:
+
+* Fibra ótica de modo único
+
+| Divisão | Comprimento total aproximado (m) |
+|--------:|:--------------------------------:|
+|   A.0.4 |                                  |
+
+Total:
+
+* Patch pannels e patch cords
+
+Dado que no piso 0 existem 34 outlets, serão necessários pelo menos 2 patch panels de 24 portas. No entanto, pode ser necessário considerar a escalabilidade
+futura do sistema de rede e planear para mais portas do que o necessário atualmente.
+
+Serão necessários 34 patch cords para ligar os patch panels aos outlets (com cerca de 5 metros).
+
+* Outros materiais úteis
+
+
+
+                                                              Piso 1:
+
+* Fio de cobre Cat6a
+
+Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
+
+    comprimento total = nº de outlets x comprimento médio + margem de segurança
+
+Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
+
+    comprimento total = altura + comprimento + margem de segurança
+
+| Divisão | Nº de outlets | Comprimento total aproximado (m) |
+|--------:|:-------------:|:--------------------------------:|
+|   A.1.1 |       4       |                                  |
+|   A.1.2 |       4       |                                  |
+|   A.1.3 |       4       |                                  |
+|   A.1.4 |       0       |                                  |
+|   A.1.5 |       4       |                                  |
+|   A.1.6 |       8       |                                  |
+|   A.1.7 |     5 + 1     |                                  |
+
+Total:
+
+* Fibra ótica de modo único
+
+Main Cross-Connect até ao Intermediate Cross-Connect:
+Intermediary Cross-Connect até ao Horizontal Cross-Connect (piso 0):
+Intermediary Cross-Connect até ao Horizontal Cross-Connect (piso 1):
+
+Total:
+
+* Patch pannels e patch cords
+
+Dado que no piso 1 existem 30 outlets, serão necessários pelo menos 2 patch panels de 24 portas. No entanto, pode ser necessário considerar a escalabilidade
+futura do sistema de rede e planear para mais portas do que o necessário atualmente.
+
+Serão necessários 34 patch cords para ligar os patch panels aos outlets (com cerca de 5 metros).
+
+* Outros materiais úteis
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### 5. Hardware total necessário (inventário) ###
+
+|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords |
+|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|
+| **Piso 0** |                        |                                   |   34    |       1       |      2       |     34      |
+| **Piso 1** |                        |                                   |   30    |       1       |      2       |     30      |
+| **Total**  |                        |                                   |   64    |       2       |      4       |     64      |   
