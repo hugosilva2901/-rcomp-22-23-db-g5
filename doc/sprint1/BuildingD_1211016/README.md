@@ -1,6 +1,6 @@
 # RCOMP 2022/2023 - SPRINT 1 EDIFÍCIO D - 1211016 #
 
-============================================================================================
+==============================================================================
 
 ## Introdução: ##
 Este ficheiro tem o propósito de documentar o desenvolvimento de um projeto de cabeamento estruturado do Edifício D, que está dividido em dois pisos.
@@ -12,6 +12,8 @@ Este ficheiro tem o propósito de documentar o desenvolvimento de um projeto de 
 2. **Abordagem no design da estrura de cabelagem do edifício**
 3. **Regras de cabeamento e visão geral da estruturação do edifício D**
 4. **Medidas e dimensões das divisões**
+5. **Design da solução**
+6. **Inventário**
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## 1. Considerações gerais e normativas de cabeamento ##
@@ -75,7 +77,7 @@ Assim, a abordagem segue os seguintes passos:
 ### 3.1 Estrutura do edifício ###
 O edifício D é composto por dois pisos e ocupa um espaço de 30x30 metros.
 
-                                                              Planta do piso 0 (presente no enunciado):
+                          Planta do piso 0 (presente no enunciado):
 
 
 ![BuildingD_floor0](BuildingD_floor0.png)
@@ -92,7 +94,7 @@ O edifício D é composto por dois pisos e ocupa um espaço de 30x30 metros.
 * É necessária cobertura **WLAN (Wi-Fi)** em todo o piso.
 
 
-                                                              Planta do piso 1 (presente no enunciado):
+                          Planta do piso 1 (presente no enunciado):
 
 ![BuildingD_floor1](BuildingD_floor1.png)
 
@@ -116,7 +118,7 @@ O edifício D é composto por dois pisos e ocupa um espaço de 30x30 metros.
 |--------:|:-----------:|:---------------:|:---------:|:-------------:|
 |   D.0.1 |     ---     |       ---       |    ---    |       6       |
 |   D.0.2 |     ---     |       ---       |    ---    |       6       |
-|   D.0.3 |     ---     |       ---       |    ---    |      10       |
+|   D.0.3 |     ---     |       ---       |    ---    |       8       |
 |   D.0.4 |     3.2     |       6.6       |   21.12   |       4       |
 |   D.0.5 |     3.2     |       6.6       |   21.12   |       4       |
 |   D.0.6 |     3.2     |       6.6       |   21.12   |       4       |
@@ -147,3 +149,28 @@ O edifício D é composto por dois pisos e ocupa um espaço de 30x30 metros.
 |  D.1.15 |    3.77     |      5.47       |   20.62   |       4       |
 |  D.1.16 |    3.77     |      5.47       |   20.62   |       4       |
 |  D.1.17 |    3.77     |      5.47       |   20.62   |       4       |
+
+Nº de outlets no piso 0: 64 + 1 reservado para o Access Point
+
+Nº de outlets no piso 1: 65 + 1 reservado para o Access Point
+
+Total: 131 outlets
+
+## 5. Design da solução ##
+
+### 5.1. Esquema do layout das outlets ###
+
+                          Outlets do piso 0 :
+
+![BuildingD_floor0_outlets](BuildingD_floor0_outlets.png)
+    
+                          Outlets do piso 1 :
+
+![BuildingD_floor1_outlets](BuildingD_floor1_outlets.png)
+
+#### Considerações (posicionameto de outlets) : ####
+
+* O posicionamento das outlets foi feito de forma a que estivessem o mais dispersas entre si, para ser possível a instalação de workstations e outros dispositivos em praticamente qualquer ponto das divisôes.
+* Todos os outlets estão "embutidos" nas paredes, para não haverem cabos expostos.
+* Os outlets dedicados aos Access Points ocupam uma posição central em cada um dos pisos para a cobertura do seu alcance (30m de raio) fosse suficiente para todo o piso.
+* O número de outlets por sala segue as especificações do enunciado.
