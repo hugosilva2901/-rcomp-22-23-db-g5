@@ -295,7 +295,7 @@ Total:
 
 | Divisão | Comprimento total aproximado (m) |
 |--------:|:--------------------------------:|
-|   A.0.4 |                                  |
+|   C.0.X |                                  |
 
 Total:
 
@@ -324,13 +324,26 @@ Para calcular o comprimento de fio de cobre necessário para o access point, foi
 
 | Divisão | Nº de outlets | Comprimento total aproximado (m) |
 |--------:|:-------------:|:--------------------------------:|
-|   A.1.1 |       4       |                                  |
-|   A.1.2 |       4       |                                  |
-|   A.1.3 |       4       |                                  |
-|   A.1.4 |       0       |                                  |
-|   A.1.5 |       4       |                                  |
-|   A.1.6 |       8       |                                  |
-|   A.1.7 |     5 + 1     |                                  |
+|   C.1.1 |       4       |                                  |
+|   C.1.2 |       4       |                                  |
+|   C.1.3 |       4       |                                  |
+|   C.1.4 |       0       |                                  |
+|   C.1.5 |       4       |                                  |
+|   C.1.6 |       8       |                                  |
+|   C.1.7 |     5 + 1     |                                  |
+|   C.1.8 |     5 + 1     |                                  |
+|   C.1.9 |     5 + 1     |                                  |
+|  C.1.10 |     5 + 1     |                                  |
+|  C.1.11 |     5 + 1     |                                  |
+|  C.1.12 |     5 + 1     |                                  |
+|  C.1.13 |     5 + 1     |                                  |
+|  C.1.14 |     5 + 1     |                                  |
+|  C.1.15 |     5 + 1     |                                  |
+|  C.1.16 |     5 + 1     |                                  |
+|  C.1.17 |     5 + 1     |                                  |
+|  C.1.18 |     5 + 1     |                                  |
+|  C.1.19 |     5 + 1     |                                  |
+|  C.1.20 |     5 + 1     |                                  |
 
 Total:
 
@@ -357,6 +370,6 @@ Serão necessários 34 patch cords para ligar os patch panels aos outlets (com c
 
 |            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords |
 |------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|
-| **Piso 0** |                        |                                   |   34    |       1       |      2       |     34      |
-| **Piso 1** |                        |                                   |   30    |       1       |      2       |     30      |
-| **Total**  |                        |                                   |   64    |       2       |      4       |     64      |   
+| **Piso 0** |                        |                                   |    X    |       X       |      X       |      X      |
+| **Piso 1** |                        |                                   |    X    |       X       |      X       |      X      |
+| **Total**  |                        |                                   |    X    |       X       |      X       |      X      |   
