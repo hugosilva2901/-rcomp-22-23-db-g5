@@ -226,7 +226,7 @@ Total:
 Dado que no piso 0 existem 34 outlets, serão necessários pelo menos 2 patch panels de 24 portas. No entanto, pode ser necessário considerar a escalabilidade 
 futura do sistema de rede e planear para mais portas do que o necessário atualmente.
 
-Serão necessários 34 patch cords para ligar os patch panels aos outlets (com cerca de 5 metros).
+Serão necessários 34 patch cords para ligar os patch panels aos outlets.
 
 * Outros materiais úteis
 
@@ -265,18 +265,19 @@ Total: 914,15 m + 45,71 m (margem de segurança de 5%) = 959.86 m
 
 * Fibra ótica de modo único
 
-Main Cross-Connect até ao Intermediate Cross-Connect:
-Intermediary Cross-Connect até ao Horizontal Cross-Connect (piso 0):
-Intermediary Cross-Connect até ao Horizontal Cross-Connect (piso 1):
+Main Cross-Connect até ao Intermediate Cross-Connect/Horizontal Cross-Connect: 1,25 m
+Intermediary Cross-Connect até ao Horizontal Cross-Connect: patch cord (cerca de 1 m)
+Main Cross-Connect até ao exterior: 5,00 m
+Conexão com o piso 0: 2,5 + 2,5 (altura do teto) = 5,00 m
 
-Total:
+Total: 12,25 m
 
 * Patch pannels e patch cords
 
 Dado que no piso 1 existem 30 outlets, serão necessários pelo menos 2 patch panels de 24 portas. No entanto, pode ser necessário considerar a escalabilidade
 futura do sistema de rede e planear para mais portas do que o necessário atualmente.
 
-Serão necessários 34 patch cords para ligar os patch panels aos outlets (com cerca de 5 metros).
+Serão necessários 34 patch cords para ligar os patch panels aos outlets.
 
 * Outros materiais úteis
 
