@@ -250,8 +250,8 @@ Para calcular o comprimento de fio de cobre necessário para o access point, foi
 |   A.1.2 |       4       | 4 * (18.06 + 2,5 + 1) = 86,24 m  |
 |   A.1.3 |       4       | 4 * (13.88 + 2,5 + 1) = 69,52 m  |
 |   A.1.4 |       0       |                0                 |
-|   A.1.5 |       4       |        4 * ( + 2,5 + 1) =        |
-|   A.1.6 |       8       |        8 * ( + 2,5 + 1) =        |
+|   A.1.5 |       4       |   4 * (8,56 + 2,5 + 1) = 48,24   |
+|   A.1.6 |       8       |  8 * (17,72 + 2,5 + 1) = 169,76  |
 |   A.1.7 |     5 + 1     | 5 * (36,25 + 2,5 + 1) = 198,75 m |
 
 1 Access Point:
@@ -261,7 +261,7 @@ Para calcular o comprimento de fio de cobre necessário para o access point, foi
 -> 4 * (11,50 + 2,50 + 1) = 48,00 m
 -> 4 * (32,50 + 2,50 + 1) = 144,00 m
 
-Total:  (margem de segurança de 5%) = 
+Total: 909,27 + 90.93 (margem de segurança de 5%) = 1000.20 m
 
 * Fibra ótica de modo único
 
