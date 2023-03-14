@@ -196,30 +196,37 @@ _4.2 Comprimemto dos cabos e outros materiais úteis_
 
 Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
 
-    comprimento total = nº de outlets x (comprimento médio + altura do teto amovível + altura do HC/CP)
+    comprimento total = nº de outlets x (comprimento médio + altura do HC/CP)
 
 Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
 
-    comprimento total = altura do teto amovível + comprimento até ao AP
+    comprimento total = comprimento até ao AP
 
 | Divisão | Nº de outlets | Comprimento total aproximado (m) |
 |--------:|:-------------:|:--------------------------------:|
-|   A.0.1 |       5       |                                  |
-|   A.0.2 |       3       |                                  |
-|   A.0.3 |       4       |                                  |
-|   A.0.4 |     7 + 1     |                                  |
-|   A.0.5 |       5       |                                  |
-|   A.0.6 |       9       |                                  |
+|   A.0.1 |       5       |     5 * (22,24 + 1) = 116,20     |
+|   A.0.2 |       3       |     3 * (16,67 + 1) = 53,01      |
+|   A.0.3 |       4       |     4 * (11,65 + 1) = 50,60      |
+|   A.0.4 |     7 + 1     |      7 * (7,83 + 1) = 61,81      |
+|   A.0.5 |       5       |      5 * (7,10 + 1) = 40,50      |
+|   A.0.6 |       9       |     9 * (16,54 + 1) = 157,86     |
 
-Total:
+1 Access Point:
+-> 2,4 m
+
+2 Consolidation Points:
+-> 4 * (16,80 + 1) = 71,20 m
+-> 4 * (17,00 + 1) = 72,00 m
+
+Total: 625,58 + 31,28 (margem de segurança de 5%) = 656,86 m
 
 * Fibra ótica de modo único
 
 | Divisão | Comprimento total aproximado (m) |
 |--------:|:--------------------------------:|
-|   A.0.4 |                                  |
+|   A.0.4 |               2,40               |
 
-Total:
+Total: 2,40 m
 
 * Patch pannels e patch cords
 
@@ -230,7 +237,12 @@ Serão necessários 34 patch cords para ligar os patch panels aos outlets.
 
 * Outros materiais úteis
 
-
+Podem ser necessários outros materiais úteis como, por exemplo, **estruturas de suporte** utilizadas para proteger os equipamentos de telecomunicações, manter 
+a organização dos cabos e a segurança dos mesmos. São usadas para suportar e organizar equipamentos de tecnologia, como servidores, switches, routers e outros 
+dispositivos similares. Eles são usados em DataCenters, salas de servidores e outros locais onde vários equipamentos de TI precisam ser armazenados e 
+gerenciados num único espaço. Neste edifício seria recomendado o uso destas estruturas para manter os **Cross-Connects seguros** como também os **Consolidation
+Points**, os **patch panels** e, eventualmente, outro hardware que possa ser adquirido (como switches). As estruturas de suporte podem ser de vários tipos e
+tamanhos, atentendo sempre às necessidades do edifício.
 
                                                               Piso 1:
 
@@ -244,15 +256,15 @@ Para calcular o comprimento de fio de cobre necessário para o access point, foi
 
     comprimento total = altura do teto amovível + comprimento até ao AP
 
-| Divisão | Nº de outlets | Comprimento total aproximado (m) |
-|--------:|:-------------:|:--------------------------------:|
-|   A.1.1 |       4       | 4 * (23,94 + 2,5 + 1) = 109,76 m |
-|   A.1.2 |       4       | 4 * (18.06 + 2,5 + 1) = 86,24 m  |
-|   A.1.3 |       4       | 4 * (13.88 + 2,5 + 1) = 69,52 m  |
-|   A.1.4 |       0       |                0                 |
-|   A.1.5 |       4       |   4 * (8,56 + 2,5 + 1) = 48,24   |
-|   A.1.6 |       8       |  8 * (17,72 + 2,5 + 1) = 169,76  |
-|   A.1.7 |     5 + 1     | 5 * (36,25 + 2,5 + 1) = 198,75 m |
+| Divisão | Nº de outlets | Comprimento total aproximado (m)  |
+|--------:|:-------------:|:---------------------------------:|
+|   A.1.1 |       4       |  4 * (23,94 + 2,5 + 1) = 109,76   |
+|   A.1.2 |       4       |   4 * (18.06 + 2,5 + 1) = 86,24   |
+|   A.1.3 |       4       |   4 * (13.88 + 2,5 + 1) = 69,52   |
+|   A.1.4 |       0       |                 0                 |
+|   A.1.5 |       4       |   4 * (8,56 + 2,5 + 1) = 48,24    |
+|   A.1.6 |       8       |  8 * (17,72 + 2,5 + 1) = 169,76   |
+|   A.1.7 |     5 + 1     |  5 * (36,25 + 2,5 + 1) = 198,75   |
 
 1 Access Point:
 -> 35,00 m
@@ -261,7 +273,7 @@ Para calcular o comprimento de fio de cobre necessário para o access point, foi
 -> 4 * (11,50 + 2,50 + 1) = 48,00 m
 -> 4 * (32,50 + 2,50 + 1) = 144,00 m
 
-Total: 909,27 + 90.93 (margem de segurança de 5%) = 1000.20 m
+Total: 909,27 + 45,46 (margem de segurança de 5%) = 954,73 m
 
 * Fibra ótica de modo único
 
@@ -281,12 +293,19 @@ Serão necessários 34 patch cords para ligar os patch panels aos outlets.
 
 * Outros materiais úteis
 
+Podem ser necessários outros materiais úteis como, por exemplo, **estruturas de suporte** utilizadas para proteger os equipamentos de telecomunicações, manter
+a organização dos cabos e a segurança dos mesmos. São usadas para suportar e organizar equipamentos de tecnologia, como servidores, switches, routers e outros
+dispositivos similares. Eles são usados em DataCenters, salas de servidores e outros locais onde vários equipamentos de TI precisam ser armazenados e
+gerenciados num único espaço. Neste edifício seria recomendado o uso destas estruturas para manter os **Cross-Connects seguros** como também os **Consolidation
+Points**, os **patch panels** e, eventualmente, outro hardware que possa ser adquirido (como switches). As estruturas de suporte podem ser de vários tipos e
+tamanhos, atentendo sempre às necessidades do edifício.
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 5. Hardware total necessário (inventário) ###
 
 |            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords |
 |------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|
-| **Piso 0** |                        |                                   |   34    |       1       |      2       |     34      |
-| **Piso 1** |                        |                                   |   30    |       1       |      2       |     30      |
-| **Total**  |                        |                                   |   64    |       2       |      4       |     64      |   
+| **Piso 0** |         656,86         |               2,40                |   34    |       1       |      2       |     34      |
+| **Piso 1** |         954,73         |               12,25               |   30    |       1       |      2       |     30      |
+| **Total**  |        1611,59         |               14,65               |   64    |       2       |      4       |     64      |   
