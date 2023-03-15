@@ -228,7 +228,7 @@ Total: 625,58 + 31,28 (margem de segurança de 5%) = 656,86 m
 
 Total: 2,40 m
 
-* Patch pannels e patch cords
+* Patch panels e patch cords
 
 Dado que no piso 0 existem 34 outlets, serão necessários pelo menos 2 patch panels de 24 portas. No entanto, pode ser necessário considerar a escalabilidade 
 futura do sistema de rede e planear para mais portas do que o necessário atualmente.
@@ -284,7 +284,7 @@ Conexão com o piso 0: 2,5 + 2,5 (altura do teto) = 5,00 m
 
 Total: 12,25 m
 
-* Patch pannels e patch cords
+* Patch panels e patch cords
 
 Dado que no piso 1 existem 30 outlets, serão necessários pelo menos 2 patch panels de 24 portas. No entanto, pode ser necessário considerar a escalabilidade
 futura do sistema de rede e planear para mais portas do que o necessário atualmente.
