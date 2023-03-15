@@ -194,8 +194,9 @@ Seguem-se duas imagens, relativas aos dois pisos, com o cabeamento e dispositivo
 
                                                               Planta do piso 0:
 
-----------------------------------------------------------------------------------------------------------------------------
-
+<p align="center">
+  <img src="BuildingC_Floor0_outlets.png" alt="BuildingC_Floor0_outlets">
+</p>
                                                               Planta do piso 1:
 
 ----------------------------------------------------------------------------------------------------------------------------
