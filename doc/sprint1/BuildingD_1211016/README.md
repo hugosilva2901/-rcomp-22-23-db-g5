@@ -108,6 +108,7 @@ O edifício D é composto por dois pisos e ocupa um espaço de 30x30 metros.
 * Nas restantes aplica-se o número de outlets por divisão standard.
 * É necessária cobertura **WLAN (Wi-Fi)** em todo o piso.
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## 4. Medidas e dimensões das divisões ##
 
 * A tabela seguinte apresenta as medidas das divisões do edifício D, bem como o número de outlets necessários para cada divisão.
@@ -118,7 +119,7 @@ O edifício D é composto por dois pisos e ocupa um espaço de 30x30 metros.
 |--------:|:-----------:|:---------------:|:---------:|:-------------:|
 |   D.0.1 |     ---     |       ---       |    ---    |       6       |
 |   D.0.2 |     ---     |       ---       |    ---    |       6       |
-|   D.0.3 |     ---     |       ---       |    ---    |       8       |
+|   D.0.3 |     ---     |       ---       |    ---    |      10       |
 |   D.0.4 |     3.2     |       6.6       |   21.12   |       4       |
 |   D.0.5 |     3.2     |       6.6       |   21.12   |       4       |
 |   D.0.6 |     3.2     |       6.6       |   21.12   |       4       |
@@ -150,12 +151,13 @@ O edifício D é composto por dois pisos e ocupa um espaço de 30x30 metros.
 |  D.1.16 |    3.77     |      5.47       |   20.62   |       4       |
 |  D.1.17 |    3.77     |      5.47       |   20.62   |       4       |
 
-Nº de outlets no piso 0: 64 + 1 reservado para o Access Point
+Nº de outlets no piso 0: 66 + 1 reservado para o Access Point
 
 Nº de outlets no piso 1: 65 + 1 reservado para o Access Point
 
-Total: 131 outlets
+Total: 133 outlets
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## 5. Design da solução ##
 
 ### 5.1. Esquema do layout das outlets ###
@@ -174,3 +176,39 @@ Total: 131 outlets
 * Todos os outlets estão "embutidos" nas paredes, para não haverem cabos expostos.
 * Os outlets dedicados aos Access Points ocupam uma posição central em cada um dos pisos para a cobertura do seu alcance (30m de raio) fosse suficiente para todo o piso.
 * O número de outlets por sala segue as especificações do enunciado.
+
+### 5.2. Esquema do layout dos cross-connects e cabeamento ###
+
+
+                           piso 0 :
+
+![BuildingD_floor0_design](BuildingD_floor0_design.png)
+
+
+#### Considerações (design piso 0) : ####
+
+* A sala D.0.15 foi escolhida para acolher o IC (Intermetiate Cross-connect) e o HC deste piso.
+* O IC está conectado ao exterior através de um cabo de fibra ótica (até ao Main Cross-connect do piso A).
+* O patch pannel do IC apenas terá 12 portas, uma vez que só terá ligação ao Main Cross-connect e aos dois HC's, havendo a possíbilidade de 4 ligações redundantes a estes em configuração **LAG**.
+* Todas as conexões entre o os cross-connects são feitas através de cabos de fibra ótica.
+* As ligações entre Consolidation Points e outlets são feitas através de cabos de cobre.
+* O patch pannel do HC está dividido em 2 partes, uma para as ligações ao IC e outra para as ligações aos CP's. Por estar ligado a 4 dispositivos, este pode ter também apenas 12 portas, com a mesma configuração do IC.
+* Os CP's deverão ter patch pannels com 48 portas para acomodar a ligação às outlets (cabo de cobre) que servem e poderem ter ligações redundantes (LAG) aos HC's (cabo de fibra ótica).
+* **O access point** foi colocado num outlet da sala D.0.10, ocupando uma posição central de forma a cobrir todo o piso 0 (raio de 30m).
+* As ligações com cabos foram todas passadas pelas canaletas existentes no chão.
+
+
+                           piso 1 :
+
+![BuildingD_floor1_outlets](BuildingD_floor1_design.png)
+
+#### Considerações (design piso 1) : ####
+
+* A sala D.1.8 foi escolhida para acolher o HC deste piso.
+* Neste caso, não havendo canaletas no chão, os cabos foram passados pelo teto falso, o que permitiu ligações mais diretas, como se pode ver na figura.
+* O HC deste piso está conectado ao IC do piso 0 através de um cabo de fibra ótica.
+* Mais uma vez, o access point foi colocado numa posição central, pelas mesmas razões, no entanto com um ligeiro offset em relação ao AP do piso inferior e com um canal Wi-Fi distinto para evitar interferências.
+* Tal como no piso inferior, o patch pannel do HC está dividido em 2 partes, uma para as ligações ao IC e outra para as ligações aos CP's. Por estar ligado a 4 dispositivos, este pode ter também apenas 12 portas, com a mesma configuração do IC.
+* Os CP's deverão ter patch pannels com 48 portas para acomodar a ligação às outlets (cabo de cobre) que servem e poderem ter ligações redundantes (LAG) aos HC's (cabo de fibra ótica).
+* As ligações com cabos de fibra ótica foram todas passadas pelo teto falso, as restantes, por furos entre as paredes.
+* 
