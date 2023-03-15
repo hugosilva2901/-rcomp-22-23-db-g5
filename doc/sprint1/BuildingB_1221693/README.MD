@@ -67,7 +67,6 @@ __Piso 0__
 |   B.0.8 |      3.33   |       8.52      |   28.37   |       5       |
 |   B.0.9 |      3.33   |       8.52      |   28.37   |       5       |
 |   B.0.10|      3.33   |       4.63      |   15.42   |       3       |
-|   B.0.11|      3.33   |       3.33      |   11.09   |       2       |
 
 __Piso 1__
 
@@ -85,3 +84,80 @@ __Piso 1__
 |   B.1.13|    7.04     |       4.44      |   31.26   |       6       |
 |   B.1.14|    7.04     |       4.44      |   31.26   |       6       |
 |   B.1.15|    7.04     |       4.44      |   31.26   |       6       |
+
+Nº de outlets no piso 0: 47 + x reservado para o Access Point
+
+Nº de outlets no piso 1: 84 + x reservado para o Access Point
+
+### 4. Materiais necessários e inventário ###
+_4.1 Número de outlets (tomadas de rede)
+
+Nº de outlets no piso 0: 47 + x reservado para o Access Point
+
+Nº de outlets no piso 1: 84 + x reservado para o Access Point
+
+Total: 131 +  x reservado para o Access Point
+
+_4.2 Comprimemto dos cabos e outros materiais úteis
+
+__Piso 0__
+
+* Fio de cobre Cat6a
+
+Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
+
+    comprimento total = nº de outlets x comprimento médio + margem de segurança
+
+Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
+
+    comprimento total = altura + comprimento + margem de segurança
+
+    | Divisão | Nº de outlets | Comprimento total aproximado (m) |
+    |--------:|:-------------:|:--------------------------------:|
+    |   B.0.1 |       4       |                                  |
+    |   B.0.2 |       4       |                                  |
+    |   B.0.3 |       4       |                                  |
+    |   B.0.4 |       4       |                                  |
+    |   B.0.5 |       8       |                                  |
+    |   B.0.6 |       5       |                                  |
+    |   B.0.7 |       5       |                                  |
+    |   B.0.8 |       5       |                                  |
+    |   B.0.9 |       5       |                                  |
+    |   B.0.10|       3       |                                  |
+
+    Total:
+
+* Fibra ótica de modo único
+
+__Piso 1__
+
+* Fio de cobre Cat6a
+
+Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
+
+    comprimento total = nº de outlets x comprimento médio + margem de segurança
+
+Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
+
+    comprimento total = altura + comprimento + margem de segurança
+
+    | Divisão | Nº de outlets | Comprimento total aproximado (m) |
+    |--------:|:-------------:|:--------------------------------:|
+    |   B.1.1 |       6       |                                  |
+    |   B.1.2 |       6       |                                  |
+    |   B.1.3 |       6       |                                  |
+    |   B.1.4 |       6       |                                  |
+    |   B.1.5 |       6       |                                  |
+    |   B.1.6 |       6       |                                  |
+    |   B.1.7 |       6       |                                  |
+    |   B.1.8 |       6       |                                  |
+    |   B.1.9 |       6       |                                  |
+    |   B.1.10|       6       |                                  |
+    |   B.1.11|       6       |                                  |
+    |   B.1.13|       6       |                                  |
+    |   B.1.14|       6       |                                  |
+    |   B.1.15|       6       |                                  |
+
+    Total:
+
+* Fibra ótica de modo único
