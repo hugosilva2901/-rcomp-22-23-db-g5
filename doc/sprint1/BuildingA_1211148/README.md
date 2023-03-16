@@ -89,8 +89,12 @@ _1.5 Access Points_
 
 **Access points (APs)** são dispositivos de rede sem fio que **permitem que os dispositivos clientes se conectem a uma rede sem fio**. Os access points são usados
 em redes sem fio para **estender a cobertura da rede e fornecer conectividade sem fio em áreas onde o sinal do router ou do switch não alcança**. Eles são normalmente 
-conectados a um switch ou router de rede com fio para fornecer uma conexão de rede sem fio. Um access point tem uma cobertura de cerca de **15 metros de raio**.
+conectados a um switch ou router de rede com fio para fornecer uma conexão de rede sem fio. Um access point tem uma cobertura de cerca de **50 metros de diâmetro**.
 O número de APs necessários dependerá do número de acessos, pois cada AP apenas consegue suportar cerca de 30 acessos.
+
+A frequência de access points varia conforme o padrão de rede sem fio que está a ser utilizado. A escolha da frequência depende de vários fatores, como o tamanho da
+área a ser coberta, a densidade de utilizadores e interferências de outras redes sem fio ou dispositivos eletrónicos na área. Em geral, a frequência de 5 GHz é menos
+congestionada e oferece melhor desempenho em velocidade e confiabilidade, mas tem um **alcance menor** do que a **frequência de 2,4 GHz**. 
 
 _1.6 Patch Panels, Path Cords e Consolidation Points_
 
@@ -113,7 +117,7 @@ facilmente gerenciados e conectados, **reduzindo os custos de manutenção e aum
 Em geral, os **Consolidation Points (CPs)** são instalados em áreas centralizadas e acessíveis, e o seu objetivo é permitir que **novas conexões sejam adicionadas
 ou reorganizadas com facilidade, sem ter que alterar o cabo principal** (é conectado ao cabo de rede principal, que por sua vez é conectado a um switch ou router).
 Em suma, ao instalar estes dispositivos em cada piso do edifício, deve ter-se em conta a posição dos mesmos já que uma posição estratégica irá diminuir os custos
-totais da obra.
+totais da obra. Geralmente são necessários switches nos CPs para permitir a conexão de múltiplos cabos de rede.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -183,9 +187,9 @@ _4.1 Número de outlets (tomadas de rede)_
 |   A.1.7 |    4,75     |      5,75       |   27,31   |     5 + 1     |
 
 
-Nº de outlets no piso 0: 33 + 1 reservado para o Access Point
+Nº de outlets no piso 0: 33 + 1 reservado para o Access Point (canal 1)
 
-Nº de outlets no piso 1: 29 + 1 reservado para o Access Point
+Nº de outlets no piso 1: 29 + 1 reservado para o Access Point (canal 6)
 
 Total: 64
 
@@ -197,7 +201,7 @@ _4.2 Comprimemto dos cabos e outros materiais úteis_
 
 Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
 
-    comprimento total = nº de outlets x (comprimento médio + altura do HC/CP)
+    comprimento total = nº de outlets x (comprimento médio + altura do CP)
 
 Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
 
@@ -250,6 +254,7 @@ dispositivos similares. Eles são usados em DataCenters, salas de servidores e o
 gerenciados num único espaço. Neste edifício seria recomendado o uso destas estruturas para manter os **Cross-Connects seguros** como também os **Consolidation
 Points**, os **patch panels** e, eventualmente, outro hardware que possa ser adquirido (como switches). As estruturas de suporte podem ser de vários tipos e
 tamanhos, atentendo sempre às necessidades do edifício.
+Dado que existem 2 CPs neste piso, e cada CP ocupa 3U (1U para o switch + 1U para o patch panel), será necessário pelo menos 6U de espaço para cada CP.
 
                                                               Piso 1:
 
@@ -257,7 +262,7 @@ tamanhos, atentendo sempre às necessidades do edifício.
 
 Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
 
-    comprimento total = nº de outlets x (comprimento médio + altura do teto amovível + altura do HC/CP)
+    comprimento total = nº de outlets x (comprimento médio + altura do teto amovível + altura do CP)
 
 Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
 
@@ -311,14 +316,16 @@ a organização dos cabos e a segurança dos mesmos. São usadas para suportar e
 dispositivos similares. Eles são usados em DataCenters, salas de servidores e outros locais onde vários equipamentos de TI precisam ser armazenados e
 gerenciados num único espaço. Neste edifício seria recomendado o uso destas estruturas para manter os **Cross-Connects seguros** como também os **Consolidation
 Points**, os **patch panels** e, eventualmente, outro hardware que possa ser adquirido (como switches). As estruturas de suporte podem ser de vários tipos e
-tamanhos, atentendo sempre às necessidades do edifício.
+tamanhos, atentendo sempre às necessidades do edifício. Neste caso devem abranger o dobro do espaço necessário para os equipamentos.
+
+Dado que existem 2 CPs neste piso, e cada CP ocupa 3U (1U para o switch + 1U para o patch panel), será necessário pelo menos 6U de espaço para cada CP.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 5. Hardware total necessário (inventário) ###
 
-|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords | Switches |
-|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|:--------:|
-| **Piso 0** |         656,86         |               2,40                |   34    |       1       |    2 + 1     |     34      |  2 + 1   |
-| **Piso 1** |         954,73         |               12,25               |   30    |       1       |    2 + 3     |     30      |  5 + 2   |
-| **Total**  |        1611,59         |               14,65               |   64    |       2       |      8       |     64      |    10    |   
+|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords | Switches  |
+|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|:---------:|
+| **Piso 0** |         656,86         |               2,40                |   34    |       1       |    2 + 1     |     34      | 2 + 1 + 2 |
+| **Piso 1** |         954,73         |               12,25               |   30    |       1       |    2 + 3     |     30      | 5 + 2 + 2 |
+| **Total**  |        1611,59         |               14,65               |   64    |       2       |      8       |     64      |    14     |   
