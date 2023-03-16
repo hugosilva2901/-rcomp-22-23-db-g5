@@ -33,7 +33,7 @@ Este ficheiro tem o propósito de documentar o desenvolvimento de um projeto de 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## 2. Abordagem no design da estrutura de cabeamento do edifício ##
 
-Para estruturar o cabeamento deste edifício, será utilizada uma abordagem, bottom-up ,
+Para estruturar o cabeamento deste edifício, será utilizada uma abordagem, **bottom-up**,
 que consiste em começar por levantar informação mais detalhada sobre as necessidades de cada divisão
 e posteriormente, tomar decisões de design.
 
@@ -87,7 +87,7 @@ O edifício D é composto por dois pisos e ocupa um espaço de 30x30 metros.
 * A entrada de cabos no edifício é feita através de uma vala subterrânea com entrada na sala D.0.15, sala esta que tem condições para alojar um Cross Connect.
 * Neste piso há passagem de cabos subterrânea.
 * A altura das paredes é de 4m.
-* A sala D.0.15 não necessita de Outlets devido à sua função de alojamento de Cross Connects e de ser uma sala de armazenamento.
+* A sala D.0.15 **não** necessita de outlets devido à sua função de alojamento de Cross Connects e de ser uma sala de armazenamento.
 * O mesmo se aplica à sala D.0.0.16, halls de entrada, corredores e WC's.
 * As salas D.0.1, D.0.2 e D.0.3 têm propósitos específicos e só precisam de 2 outlets perto de cada passagem de cabos.
 * Nas restantes aplica-se o número de outlets por divisão standard.
@@ -110,6 +110,14 @@ O edifício D é composto por dois pisos e ocupa um espaço de 30x30 metros.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## 4. Medidas e dimensões das divisões ##
+
+                          Dimensões do piso 0 :
+
+![BuildingD_floor0_medidas](BuildingD_floor0_medidas.png)
+
+                          Dimensões do piso 1 :
+
+![BuildingD_floor1_medidas](BuildingD_floor1_medidas.png)
 
 * A tabela seguinte apresenta as medidas das divisões do edifício D, bem como o número de outlets necessários para cada divisão.
 * As medições das salas D.0.15, D.0.16 e D.1.8 não foram consideradas, uma vez que estas não necessitam de outlets.
@@ -192,7 +200,7 @@ Total: 133 outlets
 * O patch pannel do IC apenas terá 12 portas, uma vez que só terá ligação ao Main Cross-connect e aos dois HC's, havendo a possíbilidade de 4 ligações redundantes a estes em configuração **LAG**.
 * Todas as conexões entre o os cross-connects são feitas através de cabos de fibra ótica.
 * As ligações entre Consolidation Points e outlets são feitas através de cabos de cobre.
-* O patch pannel do HC está dividido em 2 partes, uma para as ligações ao IC e outra para as ligações aos CP's. Por estar ligado a 4 dispositivos, este pode ter também apenas 12 portas, com a mesma configuração do IC.
+* O patch pannel do HC está dividido em 2 partes, uma para as ligações ao IC e outra para as ligações aos CP's. Por estar ligado a 4 dispositivos, este pode ter também apenas 12 portas, com a mesma configuração do IC, mas com apenas 3 ligações redundantes (LAG).
 * Os CP's deverão ter patch pannels com 48 portas para acomodar a ligação às outlets (cabo de cobre) que servem e poderem ter ligações redundantes (LAG) aos HC's (cabo de fibra ótica).
 * **O access point** foi colocado num outlet da sala D.0.10, ocupando uma posição central de forma a cobrir todo o piso 0 (raio de 30m).
 * As ligações com cabos foram todas passadas pelas canaletas existentes no chão.
@@ -211,4 +219,131 @@ Total: 133 outlets
 * Tal como no piso inferior, o patch pannel do HC está dividido em 2 partes, uma para as ligações ao IC e outra para as ligações aos CP's. Por estar ligado a 4 dispositivos, este pode ter também apenas 12 portas, com a mesma configuração do IC.
 * Os CP's deverão ter patch pannels com 48 portas para acomodar a ligação às outlets (cabo de cobre) que servem e poderem ter ligações redundantes (LAG) aos HC's (cabo de fibra ótica).
 * As ligações com cabos de fibra ótica foram todas passadas pelo teto falso, as restantes, por furos entre as paredes.
-* 
+
+
+## 6. Inventário ##
+
+### 6.1. Comprimento de cabos ###
+
+
+                           piso 0 :
+**Fio de cobre Cat6a**
+
+Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
+
+    comprimento total = nº de outlets x (comprimento médio + altura do HC)
+
+Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
+
+    comprimento total = comprimento até ao AP
+
+| Divisão | Nº de outlets | Comprimento total aproximado (m) |
+|--------:|:-------------:|:--------------------------------:|
+|   D.0.1 |       6       |      6 * (11.3 + 1) = 73.8       |
+|   D.0.2 |       6       |       6 * (2.8 + 1) = 22.8       |
+|   D.0.3 |      10       |      10 * (14.2 + 1) = 152       |
+|   D.0.4 |       4       |      4 * (11.3 + 1) = 49.2       |
+|   D.0.5 |       4       |      4 * (7.54 + 1) = 34.16      |
+|   D.0.6 |       4       |      4 * (3.77 + 1) = 19.08      |
+|   D.0.7 |       4       |      4 * (7.54 + 1) = 34.16      |
+|   D.0.8 |       4       |      4 * (11.3 + 1) = 49.2       |
+|   D.0.9 |       4       |      4 * (15.1 + 1) = 64.4       |
+|  D.0.10 |     4 + 1     |      5 * (7.54 + 1) = 42.7       |
+|  D.0.11 |       4       |      4 * (3.77 + 1) = 19.08      |
+|  D.0.12 |       4       |      4 * (7.54 + 1) = 34.16      |
+|  D.0.13 |       4       |      4 * (11.3 + 1) = 49.2       |
+|  D.0.14 |       4       |      4 * (15.1 + 1) = 64.4       |
+
+1 Access Point:   
+-> 1.9 m
+
+Total: 710.24 + 35.51 (margem de segurança de 5%) = 745.75 m
+
+**Fibra ótica de modo único**
+
+Ligações entre o IC e os HC's (2):   
+-> 4 * 1 = 4 m   
+-> 4 * 5 = 20 m (para o piso superior)
+
+3 Consolidation Points:   
+-> 4 * (15.1 + 1) = 64,40 m   
+-> 4 * (27.35 + 1) = 113.43 m   
+-> 4 * (33.01 + 1) = 136.08 m   
+
+Total: 337.91 + 16.89 (margem de segurança de 5%) = 354.8 m
+
+
+**Patch panels e patch cords**
+
+Dado que no piso 0 existem 67 outlets, serão necessários pelo menos 3 patch panels de 24 portas. No entanto, é recomendável que os CP's que sirvam um número próximo de 24 outlets tenham patch panels de 48 portas.
+
+Serão necessários 67 patch cords para ligar os patch panels aos outlets.
+
+
+
+                           piso 1 :
+**Fio de cobre Cat6a**
+
+Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
+
+    comprimento total = nº de outlets x (comprimento médio + altura do teto amovível + altura do HC)
+
+Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
+
+    comprimento total = comprimento até ao AP
+
+| Divisão | Nº de outlets | Comprimento total aproximado (m) |
+|--------:|:-------------:|:--------------------------------:|
+|   D.1.1 |       5       |    5 * (15.1 + 2.5 + 1) = 93     |
+|   D.1.2 |       4       |   4 * (11.3 + 2.5 + 1) = 59.2    |
+|   D.1.3 |       4       |   4 * (11.3 + 2.5 + 1) = 59.2    |
+|   D.1.4 |       4       |   4 * (7.54 + 2.5 + 1) = 44.16   |
+|   D.1.5 |       4       |   4 * (7.54 + 2.5 + 1) = 44.16   |
+|   D.1.6 |     4 + 1     |   5 * (3.77 + 2.5 + 1) = 36.35   |
+|   D.1.7 |       4       |   4 * (3.77 + 2.5 + 1) = 29.08   |
+|   D.1.9 |       4       |   4 * (7.54 + 2.5 + 1) = 44.16   |
+|  D.1.10 |       4       |   4 * (7.54 + 2.5 + 1) = 44.16   |
+|  D.1.11 |       4       |   4 * (11.3 + 2.5 + 1) = 59.2    |
+|  D.1.12 |       4       |   4 * (11.3 + 2.5 + 1) = 59.2    |
+|  D.1.13 |       4       |   4 * (14.2 + 2.5 + 1) = 70.8    |
+|  D.1.14 |       4       |     4 * (8.5 + 2.5 + 1) = 48     |
+|  D.1.15 |       4       |    4 * (4.7 + 2.5 + 1) = 32.8    |
+|  D.1.16 |       4       |     4 * (8.5 + 2.5 + 1) = 48     |
+|  D.1.17 |       4       |   4 * (13.2 + 2.5 + 1) = 66.8    |
+
+1 Access Point:    
+-> 1.9 m   
+
+Total: 840.17 + 42.0 (margem de segurança de 5%) = 882.17 m
+
+**Fibra ótica de modo único**
+
+3 Consolidation Points:   
+-> 4 * (15.1 + 2.5 + 1) = 74.4 m   
+-> 4 * (17.0 + 2.5 + 1) = 82 m   
+-> 4 * (28.3 + 2.5 + 1) = 127.2 m   
+  
+Total: 283.4 + 14.17 (margem de segurança de 5%) = 297.57 m   
+
+
+**Patch panels e patch cords**
+
+Dado que no piso 1 existem 66 outlets, serão necessários pelo menos 3 patch panels de 24 portas. No entanto, é recomendável que os CP's que sirvam um número próximo de 24 outlets tenham patch panels de 48 portas.
+
+Serão necessários 66 patch cords para ligar os patch panels aos outlets.
+
+### 6.2 Inventário ###
+
+|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords |
+|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|
+| **Piso 0** |         745.75         |               354.8               |   67    |       1       |      5       |     67      |
+| **Piso 1** |         882.17         |              297.57               |   66    |       1       |      4       |     66      |
+| **Total**  |        1627.92         |              652.37               |   133   |       2       |      9       |     133     |   
+
+**No caso dos patch pannels...**
+* O IC e os HC's têm patch panels de 12 portas.
+* Os CP's têm patch panels de 48 portas.
+
+**No caso das estruturas de suporte (armários)**
+* 6 armários de 8U para todos os CP's + 1 armário de 8U para o (IC + HC) do piso 0
+* 1 armário de 4U para o HC do piso 1
