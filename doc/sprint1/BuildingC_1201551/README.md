@@ -195,12 +195,12 @@ Seguem-se duas imagens, relativas aos dois pisos, com o cabeamento e dispositivo
                                                               Planta do piso 0:
 
 <p align="center">
-  <img src="BuildingC_Floor0_outlets.png" alt="BuildingC_Floor0_outlets">
+  <img src="BuildingC_Floor0_design.png" alt="BuildingC_Floor0_design">
 </p>
                                                               Planta do piso 1:
 
 <p align="center">
-  <img src="BuildingC_Floor1_outlets.png" alt="BuildingC_Floor1_outlets">
+  <img src="BuildingC_Floor1_design.png" alt="BuildingC_Floor1_design">
 </p>
 
 ### 4. Materiais necessários e inventário ###
