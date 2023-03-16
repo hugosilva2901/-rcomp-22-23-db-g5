@@ -200,7 +200,7 @@ Total: 133 outlets
 * O patch pannel do IC apenas terá 12 portas, uma vez que só terá ligação ao Main Cross-connect e aos dois HC's, havendo a possíbilidade de 4 ligações redundantes a estes em configuração **LAG**.
 * Todas as conexões entre o os cross-connects são feitas através de cabos de fibra ótica.
 * As ligações entre Consolidation Points e outlets são feitas através de cabos de cobre.
-* O patch pannel do HC está dividido em 2 partes, uma para as ligações ao IC e outra para as ligações aos CP's. Por estar ligado a 4 dispositivos, este pode ter também apenas 12 portas, com a mesma configuração do IC, mas com apenas 3 ligações redundantes (LAG).
+* O patch pannel do HC está dividido em 2 partes, uma para as ligações ao IC e outra para as ligações aos CP's. Por estar ligado a 4 dispositivos, este terá que ter 24 portas, para manter a mesma configuração do IC.
 * Os CP's deverão ter patch pannels com 48 portas para acomodar a ligação às outlets (cabo de cobre) que servem e poderem ter ligações redundantes (LAG) aos HC's (cabo de fibra ótica).
 * **O access point** foi colocado num outlet da sala D.0.10, ocupando uma posição central de forma a cobrir todo o piso 0 (raio de 30m).
 * As ligações com cabos foram todas passadas pelas canaletas existentes no chão.
@@ -216,7 +216,7 @@ Total: 133 outlets
 * Neste caso, não havendo canaletas no chão, os cabos foram passados pelo teto falso, o que permitiu ligações mais diretas, como se pode ver na figura.
 * O HC deste piso está conectado ao IC do piso 0 através de um cabo de fibra ótica.
 * Mais uma vez, o access point foi colocado numa posição central, pelas mesmas razões, no entanto com um ligeiro offset em relação ao AP do piso inferior e com um canal Wi-Fi distinto para evitar interferências.
-* Tal como no piso inferior, o patch pannel do HC está dividido em 2 partes, uma para as ligações ao IC e outra para as ligações aos CP's. Por estar ligado a 4 dispositivos, este pode ter também apenas 12 portas, com a mesma configuração do IC.
+* Tal como no piso inferior, o patch pannel do HC está dividido em 2 partes, uma para as ligações ao IC e outra para as ligações aos CP's. Por estar ligado a 4 dispositivos, este terá que ter 24 portas, para manter a mesma configuração do IC.
 * Os CP's deverão ter patch pannels com 48 portas para acomodar a ligação às outlets (cabo de cobre) que servem e poderem ter ligações redundantes (LAG) aos HC's (cabo de fibra ótica).
 * As ligações com cabos de fibra ótica foram todas passadas pelo teto falso, as restantes, por furos entre as paredes.
 
@@ -341,7 +341,8 @@ Serão necessários 66 patch cords para ligar os patch panels aos outlets.
 | **Total**  |        1627.92         |              652.37               |   133   |       2       |      9       |     133     |   
 
 **No caso dos patch pannels...**
-* O IC e os HC's têm patch panels de 12 portas.
+* O IC tem patch panel de 12 portas.
+* Os HC's têm patch panels de 24 portas.
 * Os CP's têm patch panels de 48 portas.
 
 **No caso das estruturas de suporte (armários)**
