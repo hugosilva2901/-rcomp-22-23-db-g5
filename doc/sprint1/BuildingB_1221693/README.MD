@@ -52,6 +52,22 @@ _1.3 Cross-conection
 _1.4 Número de outlests 
     *Por cada 10 m2 de área devem existir duas tomadas de rede (ISO/IEC 11801). No entanto este número pode alterar dependendo das informações do enunciado.
 
+_1.5 Consolidation Points
+
+    Os Consolidation Points são usados de modo a que novas conexões sejam adicionadas ou reorganizadas com facilidade, sem ter que alterar o cabo  principal (é conectado ao cabo de rede principal, que por sua vez é conectado a um switch ou router).
+_1.6 Access points
+
+    Access points (APs) são dispositivos de rede sem fio que permitem que os dispositivos clientes se conectem a uma rede sem fio
+    access points não podem ter overlap em dentro do mesmo canal e para podermos ter overlap mos acesse points eles têm de estar ligados a canais diferentes (no predio B vamos ter dois access points o do piso ser no canal 1 e do piso 1 no canal 2). 
+
+_1.7 Link Aggregation
+    O LACP é definido pelo 802.3ad, no entanto, estará sujeito a revisões adicionais. Esse é, no entanto, o padrão mais aceito globalmente para links automatizados agregação.
+    Cada agregação de link LACP pode ter até oito portas, balanceamento de carga e falha de cabo são suportados. Cada porta LACP deve ser configurada de duas maneiras:
+    ATIVO – quando o link é ativado, a porta é usada para enviar LACPDUs para a contraparte, convidando-a a utilizar o LACP e fazer parte da agregação.
+    PASSIVO – ativa o LACP somente se um convite for recebido, nenhum convite enviado.
+    Para habilitar o LACP por meio de um cabo, uma porta ativa deve ser conectada a um porta passiva ou ativa. Após a negociação inicial, o LACP cria uma agregação de link usando até 8 portas habilitadas para LACP conectadas diretamente entre os dois dispositivos.
+_1.8 channels
+
 ## 2. Medidas e dimensões das divisões ##
 
 __Piso 0__
@@ -85,18 +101,18 @@ __Piso 1__
 |   B.1.14|    7.04     |       4.44      |   31.26   |       6       |
 |   B.1.15|    7.04     |       4.44      |   31.26   |       6       |
 
-Nº de outlets no piso 0: 47 + x reservado para o Access Point
+Nº de outlets no piso 0: 47 + 1 reservado para o Access Point
 
-Nº de outlets no piso 1: 84 + x reservado para o Access Point
+Nº de outlets no piso 1: 84 + 1 reservado para o Access Point
 
 ### 4. Materiais necessários e inventário ###
 _4.1 Número de outlets (tomadas de rede)
 
-Nº de outlets no piso 0: 47 + x reservado para o Access Point
+Nº de outlets no piso 0: 47 + 1 reservado para o Access Point
 
-Nº de outlets no piso 1: 84 + x reservado para o Access Point
+Nº de outlets no piso 1: 84 + 1 reservado para o Access Point
 
-Total: 131 +  x reservado para o Access Point
+Total: 131 +  2 reservado para o Access Point
 
 _4.2 Comprimemto dos cabos e outros materiais úteis
 
@@ -121,14 +137,17 @@ Para calcular o comprimento de fio de cobre necessário para o access point, foi
     |   B.0.5 |       8       |                                  |
     |   B.0.6 |       5       |                                  |
     |   B.0.7 |       5       |                                  |
-    |   B.0.8 |       5       |                                  |
+    |   B.0.8 |       5 + 1   |                                  |
     |   B.0.9 |       5       |                                  |
     |   B.0.10|       3       |                                  |
 
     Total:
 
-* Fibra ótica de modo único
-
+    1 Access Point:   
+    -> 
+    2 Consolidation Points:   
+    -> 4 *    (uso de 4 cabos para link Aggregation)
+    -> 4 *        
 __Piso 1__
 
 * Fio de cobre Cat6a
@@ -148,7 +167,7 @@ Para calcular o comprimento de fio de cobre necessário para o access point, foi
     |   B.1.3 |       6       |                                  |
     |   B.1.4 |       6       |                                  |
     |   B.1.5 |       6       |                                  |
-    |   B.1.6 |       6       |                                  |
+    |   B.1.6 |       6 + 1   |                                  |
     |   B.1.7 |       6       |                                  |
     |   B.1.8 |       6       |                                  |
     |   B.1.9 |       6       |                                  |
@@ -160,4 +179,31 @@ Para calcular o comprimento de fio de cobre necessário para o access point, foi
 
     Total:
 
+     1 Access Point:   
+    -> 
+    2 Consolidation Points:   
+    -> 4 *    (uso de 4 cabos para link Aggregation)
+    -> 4 * 
 * Fibra ótica de modo único
+
+Ligações entre o IC e os HC's (2):   
+-> 4 * 1 = 4 m   
+-> 4 * 5 = 20 m (para o piso superior)
+
+
+
+    4.3 Inventário 
+|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels |
+|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|
+| **Piso 0** |         745.75         |               354.8               |   67    |       1       |      8       |
+| **Piso 1** |         882.17         |              297.57               |   66    |       1       |      6       |
+| **Total**  |        1627.92         |              652.37               |   133   |       2       |      14      |  
+
+**No caso dos patch pannels...**
+* O IC tem patch panel de 48 portas.
+* Os HC's têm patch panels de 48 portas.
+* Os CP's têm patch panels de 48 portas.
+
+**No caso das estruturas de suporte (armários)**
+* 6 armários de 8U para todos os CP's + 1 armário de 8U para o IC e + 1  HC armário de 8U do piso 0
+* 1 armário de 8U para o HC do piso 1.

@@ -244,6 +244,7 @@ Serão necessários 34 patch cords de fio Cat6a para ligar os patch panels aos o
 * Switches
 
 Por cada patch panel de cobre será necessário um switch de cobre também.
+O Horizontal Cross-Connect necessita de um switch.
 
 * Outros materiais úteis
 
@@ -253,7 +254,9 @@ dispositivos similares. Eles são usados em DataCenters, salas de servidores e o
 gerenciados num único espaço. Neste edifício seria recomendado o uso destas estruturas para manter os **Cross-Connects seguros** como também os **Consolidation
 Points**, os **patch panels** e, eventualmente, outro hardware que possa ser adquirido (como switches). As estruturas de suporte podem ser de vários tipos e
 tamanhos, atentendo sempre às necessidades do edifício.
-Dado que existem 2 CPs neste piso, e cada CP ocupa 3U (1U para o switch + 1U para o patch panel), será necessário pelo menos 6U de espaço para cada CP.
+
+Dado que existem 2 CPs neste piso, e cada CP ocupa 3U (2U para equipamento ativo + 1U para o patch panel), será necessário pelo menos 6U de espaço para cada CP.
+Precisamos também de espaço para o Horizontal Cross-Connect: 1U para o patch panel e 6U para equipamento ativo (switch), logo será um total de 14U.
 
                                                               Piso 1:
 
@@ -305,6 +308,7 @@ Serão necessários 34 patch cords de fio Cat6a para ligar os patch panels aos o
 * Switches
 
 Por cada patch panel de cobre será necessário um switch de cobre também.
+O Horizontal Cross-Connect, o Main Cross-Coneect e o Intermediate Cross-Connect necessitam de um switch cada um.
 
 * Outros materiais úteis
 
@@ -315,14 +319,17 @@ gerenciados num único espaço. Neste edifício seria recomendado o uso destas e
 Points**, os **patch panels** e, eventualmente, outro hardware que possa ser adquirido (como switches). As estruturas de suporte podem ser de vários tipos e
 tamanhos, atentendo sempre às necessidades do edifício. Neste caso devem abranger o dobro do espaço necessário para os equipamentos.
 
-Dado que existem 2 CPs neste piso, e cada CP ocupa 3U (1U para o switch + 1U para o patch panel), será necessário pelo menos 6U de espaço para cada CP.
+Dado que existem 2 CPs neste piso, e cada CP ocupa 3U (1U para o switch e 1U para o patch panel), será necessário pelo menos 6U de espaço para cada CP.
+Precisamos também de espaço para o Horizontal Cross-Connect: 1U para o patch panel e 8U para equipamento ativo (switch), e Intermidiate Cross-Connect: 
+1U para o patch panel (total de 20U). Também deverá ser considerado o espaço necessário para o Main Cross-Connect: 1U para o patch panel e 2U para equipamento
+ativo (switch), logo será um total de 6U.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 5. Hardware total necessário (inventário) ###
 
-|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords | Switches |  U  |
-|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|:--------:|:---:|
-| **Piso 0** |                        |                                   |   34    |       1       |    2 + 1     |     34      |          |     |
-| **Piso 1** |                        |                                   |   30    |       1       |    2 + 3     |     30      |          |     |
-| **Total**  |                        |                                   |   64    |       2       |      8       |     64      |          |     |   
+|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords | Switches | U   |
+|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|:--------:|-----|
+| **Piso 0** |         656,86         |               2,40                |   34    |       1       |    2 + 1     |     34      |    3     | 26  |
+| **Piso 1** |         954,73         |               12,25               |   30    |       1       |    2 + 3     |     30      |    5     | 26  |
+| **Total**  |        1611,59         |               14,65               |   64    |       2       |      8       |     64      |    8     | 52  |   
