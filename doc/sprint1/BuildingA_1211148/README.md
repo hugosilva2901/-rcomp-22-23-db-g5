@@ -75,7 +75,8 @@ deste edifício.
 Como fios de fibra vão ser utilizados **cabos de fibra ótica de modo único**, também conhecidos como monomodo. São projetados para **transmitir sinais de luz num
 único caminho**. Eles são feitos com um **núcleo menor e mais denso** do que os cabos de modo múltiplo, permitindo que os **sinais de luz sejam transmitidos em
 distâncias maiores com menos atenuação de sinal**. As únicas desvantagens destes cabos são **o custo**, sendo mais elevado do que os cabos de modo múltiplo, e a
-**menor resistência a danos físicos**.
+**menor resistência a danos físicos**. Isto foi escolhido de modo a não ser preciso o uso de Link Aggregation pois os **cabos de fibra ótica de modo único** são 
+mais eficientes.
 
 _1.4 Cross-conection_
 
@@ -220,7 +221,7 @@ Para calcular o comprimento de fio de cobre necessário para o access point, foi
 -> 2,4 m
 
 2 Consolidation Points:
--> 4 * (16,80 + 1) = 71,20 m
+-> 4 * (16,80 + 1) = 71,20 m (Link Aggregation de 4 portas para aumentar a otimização da rede)
 -> 4 * (17,00 + 1) = 72,00 m
 
 Total: 625,58 + 31,28 (margem de segurança de 5%) = 656,86 m
@@ -236,7 +237,6 @@ Total: 2,40 m
 * Patch panels e patch cords
 
 Dado que no piso 0 existem 34 outlets, serão necessários pelo menos 2 patch panels de 24 portas de fio Cat6a. 
-Será necessário 1 patch panel de fio de fibra para para fazer a ligação entre cobre e fibra no Horizontal Cross-Connect.
 No entanto, pode ser necessário considerar a escalabilidade futura do sistema de rede e planear para mais portas do que o necessário atualmente.
 
 Serão necessários 34 patch cords de fio Cat6a para ligar os patch panels aos outlets.
@@ -244,7 +244,6 @@ Serão necessários 34 patch cords de fio Cat6a para ligar os patch panels aos o
 * Switches
 
 Por cada patch panel de cobre será necessário um switch de cobre também.
-Por cada patch panel de fibra será necessário um switch de fibra também. No entanto, o Horizontal Cross-Connect não necessita de switch de fibra.
 
 * Outros materiais úteis
 
@@ -299,15 +298,13 @@ Total: 12,25 m
 * Patch panels e patch cords
 
 Dado que no piso 1 existem 30 outlets, serão necessários pelo menos 2 patch panels de fio Cat6a de 24 portas. 
-Serão necessários 3 patch panels de fio de fibra para fazer a ligação entre cobre e fibra nos Cross-Connects.
 No entanto, pode ser necessário considerar a escalabilidade futura do sistema de rede e planear para mais portas do que o necessário atualmente.
 
 Serão necessários 34 patch cords de fio Cat6a para ligar os patch panels aos outlets.
 
 * Switches
 
-Por cada patch panel de cobre será necessário um switch de cobre também. 
-Por cada patch panel de fibra será necessário um switch de fibra também. No entanto, o Horizontal Cross-Connect não necessita de switch de fibra.
+Por cada patch panel de cobre será necessário um switch de cobre também.
 
 * Outros materiais úteis
 
@@ -324,8 +321,8 @@ Dado que existem 2 CPs neste piso, e cada CP ocupa 3U (1U para o switch + 1U par
 
 ### 5. Hardware total necessário (inventário) ###
 
-|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords | Switches  |
-|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|:---------:|
-| **Piso 0** |         656,86         |               2,40                |   34    |       1       |    2 + 1     |     34      | 2 + 1 + 2 |
-| **Piso 1** |         954,73         |               12,25               |   30    |       1       |    2 + 3     |     30      | 5 + 2 + 2 |
-| **Total**  |        1611,59         |               14,65               |   64    |       2       |      8       |     64      |    14     |   
+|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords | Switches |  U  |
+|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|:--------:|:---:|
+| **Piso 0** |                        |                                   |   34    |       1       |    2 + 1     |     34      |          |     |
+| **Piso 1** |                        |                                   |   30    |       1       |    2 + 3     |     30      |          |     |
+| **Total**  |                        |                                   |   64    |       2       |      8       |     64      |          |     |   
