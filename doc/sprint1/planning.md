@@ -10,7 +10,7 @@ RCOMP 2022-2023 Project - Sprint 1 planning
 * T1.4 - Development of a structured cabling project for building D.
 
 # 2. Technical decisions and coordination #
-# TO BE DISCUSSED AND UPDATED !!! #
+
 The following were the design decisions made for the project, and are to be followed by all members of the project:
 
 * Copper cable type: CAT6a

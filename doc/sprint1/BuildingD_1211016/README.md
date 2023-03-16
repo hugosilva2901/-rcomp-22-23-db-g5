@@ -100,7 +100,7 @@ O edifício D é composto por dois pisos e ocupa um espaço de 30x30 metros.
 
 #### Considerações (piso 1) : ####
 
-* A entrada de cabos no edifício é feita por uma coluna com entrada na sala D.1.8, sala esta que tem condições para alojar Cross Connects.
+* A entrada de cabos no piso é feita por uma coluna com entrada na sala D.1.8, sala esta que tem condições para alojar Cross Connects.
 * Neste piso **não** há passagem de cabos subterrânea.
 * A altura das paredes é de 3m, no entanto, existe um teto falso com altura de 2,5m. O espaço entre os dois pode ser usado para roteamento de cabos e colocação de access points.
 * A sala D.1.8 não necessita de Outlets devido à sua função de alojamento de Cross Connects e de ser uma sala de armazenamento.
@@ -195,7 +195,7 @@ Total: 133 outlets
 
 #### Considerações (design piso 0) : ####
 
-* A sala D.0.15 foi escolhida para acolher o IC (Intermetiate Cross-connect) e o HC deste piso.
+* A sala D.0.15 foi escolhida para acolher o IC (Intermediate Cross-connect) e o HC deste piso.
 * O IC está conectado ao exterior através de um cabo de fibra ótica (até ao Main Cross-connect do piso A).
 * O patch pannel do IC apenas terá 12 portas, uma vez que só terá ligação ao Main Cross-connect e aos dois HC's, havendo a possíbilidade de 4 ligações redundantes a estes em configuração **LAG**.
 * Todas as conexões entre o os cross-connects são feitas através de cabos de fibra ótica.
