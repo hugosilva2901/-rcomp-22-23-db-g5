@@ -202,20 +202,22 @@ _4.2 Comprimemto dos cabos e outros materiais úteis_
 
 Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
 
-    comprimento total = nº de outlets x (comprimento médio + altura do CP)
+    comprimento total = nº de outlets x (comprimento médio + altura do CP/HCC)
+
+altura do CP/HCC = 1 m
 
 Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
 
-    comprimento total = comprimento até ao AP
+    comprimento total = comprimento até ao AP + margem de segurança de 5%
 
 | Divisão | Nº de outlets | Comprimento total aproximado (m) |
 |--------:|:-------------:|:--------------------------------:|
-|   A.0.1 |       5       |     5 * (22,24 + 1) = 116,20     |
-|   A.0.2 |       3       |     3 * (16,67 + 1) = 53,01      |
-|   A.0.3 |       4       |     4 * (11,65 + 1) = 50,60      |
-|   A.0.4 |     7 + 1     |      7 * (7,83 + 1) = 61,81      |
-|   A.0.5 |       5       |      5 * (7,10 + 1) = 40,50      |
-|   A.0.6 |       9       |     9 * (16,54 + 1) = 157,86     |
+|   A.0.1 |       5       |              116,20              |
+|   A.0.2 |       3       |              53,01               |
+|   A.0.3 |       4       |              50,60               |
+|   A.0.4 |     7 + 1     |              61,81               |
+|   A.0.5 |       5       |              40,50               |
+|   A.0.6 |       9       |              157,86              |
 
 1 Access Point:
 -> 2,4 m
@@ -224,7 +226,10 @@ Para calcular o comprimento de fio de cobre necessário para o access point, foi
 -> 4 * (16,80 + 1) = 71,20 m (Link Aggregation de 4 portas para aumentar a otimização da rede)
 -> 4 * (17,00 + 1) = 72,00 m
 
-Total: 625,58 + 31,28 (margem de segurança de 5%) = 656,86 m
+O primeiro CP é responsável pela sala A.0.1, A.0.2 e A.0.3.
+O segundo CP é responsável pela sala A.0.5 e A.0.6.
+
+Total: 625,58 m
 
 * Fibra ótica de modo único
 
@@ -233,6 +238,8 @@ Total: 625,58 + 31,28 (margem de segurança de 5%) = 656,86 m
 |   A.0.4 |               2,40               |
 
 Total: 2,40 m
+
+Em todas as medições foi considerada uma margem de segurança de 10%.
 
 * Patch panels e patch cords
 
@@ -264,30 +271,36 @@ Precisamos também de espaço para o Horizontal Cross-Connect: 1U para o patch p
 
 Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
 
-    comprimento total = nº de outlets x (comprimento médio + altura do teto amovível + altura do CP)
+    comprimento total = nº de outlets x (comprimento médio + altura do teto amovível + altura do CP/HCC)
+
+altura do CP/HCC = 1 m
+altura do teto amovível = 2,5 m
 
 Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
 
     comprimento total = altura do teto amovível + comprimento até ao AP
 
-| Divisão | Nº de outlets | Comprimento total aproximado (m)  |
-|--------:|:-------------:|:---------------------------------:|
-|   A.1.1 |       4       |  4 * (23,94 + 2,5 + 1) = 109,76   |
-|   A.1.2 |       4       |   4 * (18.06 + 2,5 + 1) = 86,24   |
-|   A.1.3 |       4       |   4 * (13.88 + 2,5 + 1) = 69,52   |
-|   A.1.4 |       0       |                 0                 |
-|   A.1.5 |       4       |   4 * (8,56 + 2,5 + 1) = 48,24    |
-|   A.1.6 |       8       |  8 * (17,72 + 2,5 + 1) = 169,76   |
-|   A.1.7 |     5 + 1     |  5 * (36,25 + 2,5 + 1) = 198,75   |
+| Divisão | Nº de outlets | Comprimento total aproximado (m) |
+|--------:|:-------------:|:--------------------------------:|
+|   A.1.1 |       4       |              109,76              |
+|   A.1.2 |       4       |              86,24               |
+|   A.1.3 |       4       |              69,52               |
+|   A.1.4 |       0       |                0                 |
+|   A.1.5 |       4       |              48,24               |
+|   A.1.6 |       8       |              169,76              |
+|   A.1.7 |     5 + 1     |              198,75              |
 
 1 Access Point:
 -> 35,00 m
 
 2 Consolidation Points:
--> 4 * (11,50 + 2,50 + 1) = 48,00 m
--> 4 * (32,50 + 2,50 + 1) = 144,00 m
+-> 48,00 m
+-> 144,00 m
 
-Total: 909,27 + 45,46 (margem de segurança de 5%) = 954,73 m
+O primeiro CP é responsável pela sala A.1.1, A.1.2, A.1.3 e A.1.7.
+O segundo CP é responsável pela sala A.1.5 e A.1.6.
+
+Total: 909,27 m
 
 * Fibra ótica de modo único
 
@@ -297,6 +310,8 @@ Main Cross-Connect até ao exterior: 5,00 m
 Conexão com o piso 0: 2,5 + 2,5 (altura do teto) = 5,00 m
 
 Total: 12,25 m
+
+Em todas as medições foi considerada uma margem de segurança de 10%.
 
 * Patch panels e patch cords
 
@@ -330,6 +345,6 @@ ativo (switch), logo será um total de 6U.
 
 |            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords | Switches | U   |
 |------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|:--------:|-----|
-| **Piso 0** |         656,86         |               2,40                |   34    |       1       |    2 + 1     |     34      |    3     | 26  |
-| **Piso 1** |         954,73         |               12,25               |   30    |       1       |    2 + 3     |     30      |    5     | 26  |
-| **Total**  |        1611,59         |               14,65               |   64    |       2       |      8       |     64      |    8     | 52  |   
+| **Piso 0** |         625,88         |               2,40                |   34    |       1       |    2 + 1     |     34      |    3     | 26  |
+| **Piso 1** |         909,27         |               12,25               |   30    |       1       |    2 + 3     |     30      |    5     | 26  |
+| **Total**  |        1535,15         |               14,65               |   64    |       2       |      8       |     64      |    8     | 52  |   
