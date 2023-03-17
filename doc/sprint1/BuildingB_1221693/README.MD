@@ -85,7 +85,8 @@ __Piso 0__
 |   B.0.10|      3.33   |       4.63      |   15.42   |       3       |
 
 __Piso 1__
-
+| Divisão | Largura (m) | Comprimento (m) | Área (m2) | Nº de outlets |
+|--------:|:-----------:|:---------------:|:---------:|:-------------:|
 |   B.1.1 |    3.89     |       8.89      |   34.58   |       6       |
 |   B.1.2 |    3.70     |       8.89      |   32.89   |       6       |
 |   B.1.3 |    3.70     |       8.89      |   32.89   |       6       |
@@ -124,6 +125,7 @@ __Piso 0__
     
     Os outlets localizados nas salas B.10 B.08 (restantes 2) B.09 estão ligadas ao HC o que significa que estão a ser usados 10 portas de entrada no patch panel localizado nesse
     HC. Mais 1 porta para o access point e mais 8 entradas para as 2 link aggreagation dos cps desse piso. o que dá um total de 21.  
+
 * Fio de cobre Cat6a
 
 Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
