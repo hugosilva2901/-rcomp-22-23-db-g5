@@ -337,11 +337,11 @@ Dado que no piso 1 existem 66 outlets, serão necessários pelo menos 3 patch pa
 
 ### 6.2 Inventário ###
 
-|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels |
-|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|
-| **Piso 0** |        1075.35         |               25.2                |   67    |       1       |      8       |
-| **Piso 1** |        1179.97         |                 0                 |   66    |       1       |      7       |
-| **Total**  |        2255.32         |               25.2                |   133   |       2       |      15      |   
+|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Switches |
+|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:--------:|
+| **Piso 0** |        1075.35         |               25.2                |   67    |       1       |      8       |    5     |
+| **Piso 1** |        1179.97         |                 0                 |   66    |       1       |      7       |    4     |
+| **Total**  |        2255.32         |               25.2                |   133   |       2       |      15      |    9     |  
 
 **No caso dos patch pannels...**
 * O IC tem patch panel de 24 portas.

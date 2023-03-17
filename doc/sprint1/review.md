@@ -10,7 +10,7 @@ RCOMP 2022-2023 Project - Sprint 1 review
 * T1.4 - Development of a structured cabling project for building D.
 
 # 2. Subtasks assessment #
-One by one, each team member presents his/her outcomes to the team, the team assesses 		the accomplishment of the subtask backlog.
+One by one, each team member presents his/her outcomes to the team, the team assesses the accomplishment of the subtask backlog.
 The subtask backlog accomplishment can be assessed as one of:
 
 * Totally implemented with no issues
@@ -19,13 +19,13 @@ The subtask backlog accomplishment can be assessed as one of:
 * Partially implemented with issues
 
 ## 2.1. 1211148 - Structured cable design for building A, including the campus backbone ##
-
+### Totally implemented with no issues ### 
 
 ## 2.2 1221693 - Structured cable design for building B ##
-
+### Totally implemented with no issues ### 
 
 ## 2.3 1201551 - Structured cable design for building C ##
-
+### Totally implemented with no issues ### 
 
 ## 2.4 1211016 - Structured cable design for building D ##
 ### Totally implemented with no issues ### 
