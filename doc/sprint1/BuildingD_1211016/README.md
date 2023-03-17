@@ -204,7 +204,9 @@ Total: 133 outlets
 * Os CP's deverão ter patch pannels com 48 portas para acomodar a ligação às outlets (cabo de cobre) que servem e poderem ter ligações redundantes (LAG) ao HC (cabo de cobre).
 * **O access point** foi colocado num outlet da sala D.0.10, ocupando uma posição central de forma a cobrir todo o piso 0 (raio de 30m).
 * As ligações com cabos foram todas passadas pelas canaletas existentes no chão.
-
+* O CP #1 cobre as outlets das salas D.0.1, D.0.2 e D.0.3.
+* O CP #2 cobre as outlets das salas D.0.4 a D.0.9.
+* O CP #3 cobre as outlets das salas D.0.10 a D.0.14.
 
                            piso 1 :
 
@@ -219,6 +221,9 @@ Total: 133 outlets
 * Tal como no piso inferior, o patch pannel do HC está dividido em 2 partes, uma para as ligações ao IC e outra para as ligações aos CP's. Por estar ligado a 4 dispositivos, este terá que ter 24 portas, para manter a mesma configuração do IC (4 ligações redundantes em LAG).
 * Os CP's deverão ter patch pannels com 48 portas para acomodar a ligação às outlets (cabo de cobre) que servem e poderem ter ligações redundantes (LAG) ao HC (cabo de cobre).
 * As ligações com cabos de fibra ótica foram todas passadas pelo teto falso, as restantes, por entre as paredes.
+* O CP #1 cobre as outlets das salas D.1.2, D.1.4, D.1.6, D.1.9 e D.1.11.
+* O CP #2 cobre as outlets das salas D.1.1, D.1.3, D.1.5, D.1.7, D.1.10 e D.1.12.
+* O CP #3 cobre as outlets das salas D.1.13 a D.1.17.
 
 
 ## 6. Inventário ##
