@@ -65,7 +65,7 @@ Assim, a abordagem segue os seguintes passos:
 
 ### 2.5 Definir tipos de cabos ###
 
-* Em contexto horizontal, serão utilizados cabos de cobre CAT6 ou superior, entre os cross connects, serão preferidos cabos de fibra ótica, por causa dos seus benefícios em bandwidth e compatibilidade.
+* Em contexto horizontal, serão utilizados cabos de cobre CAT6 ou superior, entre os cross connects, com algumas exceções, serão preferidos cabos de fibra ótica, por causa dos seus benefícios em bandwidth e compatibilidade.
 
 ### 2.6 Manter um inventário ###
 
@@ -197,11 +197,11 @@ Total: 133 outlets
 
 * A sala D.0.15 foi escolhida para acolher o IC (Intermediate Cross-connect) e o HC deste piso.
 * O IC está conectado ao exterior através de um cabo de fibra ótica (até ao Main Cross-connect do piso A).
-* O patch pannel do IC apenas terá 12 portas, uma vez que só terá ligação ao Main Cross-connect e aos dois HC's, havendo a possíbilidade de 4 ligações redundantes a estes em configuração **LAG**.
-* Todas as conexões entre o os cross-connects são feitas através de cabos de fibra ótica.
-* As ligações entre Consolidation Points e outlets são feitas através de cabos de cobre.
-* O patch pannel do HC está dividido em 2 partes, uma para as ligações ao IC e outra para as ligações aos CP's. Por estar ligado a 4 dispositivos, este terá que ter 24 portas, para manter a mesma configuração do IC.
-* Os CP's deverão ter patch pannels com 48 portas para acomodar a ligação às outlets (cabo de cobre) que servem e poderem ter ligações redundantes (LAG) aos HC's (cabo de fibra ótica).
+* O patch pannel do IC terá 24 portas, uma vez que terá ligação ao Main Cross-connect e aos dois HC's, havendo a possíbilidade de 4 ligações redundantes a estes em configuração **LAG** (cabo de fibra ótica).
+* Todas as conexões entre o os IC e HC são feitas através de cabos de fibra ótica.
+* As ligações restantes são feitas através de cabos de cobre (outlets e CP's).
+* O patch pannel do HC está dividido em 2 partes, uma para as ligações ao IC e outra para as ligações aos CP's. Por estar ligado a 4 dispositivos, este terá que ter 24 portas, para manter a mesma configuração do IC (4 ligações redundantes em LAG).
+* Os CP's deverão ter patch pannels com 48 portas para acomodar a ligação às outlets (cabo de cobre) que servem e poderem ter ligações redundantes (LAG) ao HC (cabo de cobre).
 * **O access point** foi colocado num outlet da sala D.0.10, ocupando uma posição central de forma a cobrir todo o piso 0 (raio de 30m).
 * As ligações com cabos foram todas passadas pelas canaletas existentes no chão.
 
@@ -214,11 +214,11 @@ Total: 133 outlets
 
 * A sala D.1.8 foi escolhida para acolher o HC deste piso.
 * Neste caso, não havendo canaletas no chão, os cabos foram passados pelo teto falso, o que permitiu ligações mais diretas, como se pode ver na figura.
-* O HC deste piso está conectado ao IC do piso 0 através de um cabo de fibra ótica.
+* O HC deste piso está conectado ao IC do piso 0 através de 4 cabo de fibra ótica em configuração LAG.
 * Mais uma vez, o access point foi colocado numa posição central, pelas mesmas razões, no entanto com um ligeiro offset em relação ao AP do piso inferior e com um canal Wi-Fi distinto para evitar interferências.
-* Tal como no piso inferior, o patch pannel do HC está dividido em 2 partes, uma para as ligações ao IC e outra para as ligações aos CP's. Por estar ligado a 4 dispositivos, este terá que ter 24 portas, para manter a mesma configuração do IC.
-* Os CP's deverão ter patch pannels com 48 portas para acomodar a ligação às outlets (cabo de cobre) que servem e poderem ter ligações redundantes (LAG) aos HC's (cabo de fibra ótica).
-* As ligações com cabos de fibra ótica foram todas passadas pelo teto falso, as restantes, por furos entre as paredes.
+* Tal como no piso inferior, o patch pannel do HC está dividido em 2 partes, uma para as ligações ao IC e outra para as ligações aos CP's. Por estar ligado a 4 dispositivos, este terá que ter 24 portas, para manter a mesma configuração do IC (4 ligações redundantes em LAG).
+* Os CP's deverão ter patch pannels com 48 portas para acomodar a ligação às outlets (cabo de cobre) que servem e poderem ter ligações redundantes (LAG) ao HC (cabo de cobre).
+* As ligações com cabos de fibra ótica foram todas passadas pelo teto falso, as restantes, por entre as paredes.
 
 
 ## 6. Inventário ##
@@ -257,7 +257,12 @@ Para calcular o comprimento de fio de cobre necessário para o access point, foi
 1 Access Point:   
 -> 1.9 m
 
-Total: 710.24 + 35.51 (margem de segurança de 5%) = 745.75 m
+3 Consolidation Points:   
+-> 4 * (15.1 + 1) = 64,40 m   
+-> 4 * (27.35 + 1) = 113.43 m   
+-> 4 * (33.01 + 1) = 136.08 m
+
+Total: 1024.15 + 51.2 (margem de segurança de 5%) = 1075.35 m
 
 **Fibra ótica de modo único**
 
@@ -265,19 +270,13 @@ Ligações entre o IC e os HC's (2):
 -> 4 * 1 = 4 m   
 -> 4 * 5 = 20 m (para o piso superior)
 
-3 Consolidation Points:   
--> 4 * (15.1 + 1) = 64,40 m   
--> 4 * (27.35 + 1) = 113.43 m   
--> 4 * (33.01 + 1) = 136.08 m   
 
-Total: 337.91 + 16.89 (margem de segurança de 5%) = 354.8 m
+Total: 24 + 1.2 (margem de segurança de 5%) = 25.2 m
 
 
 **Patch panels e patch cords**
 
 Dado que no piso 0 existem 67 outlets, serão necessários pelo menos 3 patch panels de 24 portas. No entanto, é recomendável que os CP's que sirvam um número próximo de 24 outlets tenham patch panels de 48 portas.
-
-Serão necessários 67 patch cords para ligar os patch panels aos outlets.
 
 
 
@@ -314,34 +313,33 @@ Para calcular o comprimento de fio de cobre necessário para o access point, foi
 1 Access Point:    
 -> 1.9 m   
 
-Total: 840.17 + 42.0 (margem de segurança de 5%) = 882.17 m
-
-**Fibra ótica de modo único**
-
 3 Consolidation Points:   
 -> 4 * (15.1 + 2.5 + 1) = 74.4 m   
 -> 4 * (17.0 + 2.5 + 1) = 82 m   
--> 4 * (28.3 + 2.5 + 1) = 127.2 m   
-  
-Total: 283.4 + 14.17 (margem de segurança de 5%) = 297.57 m   
+-> 4 * (28.3 + 2.5 + 1) = 127.2 m  
+
+Total: 1123.77 + 56.2 (margem de segurança de 5%) = 1179.97 m
+
+**Fibra ótica de modo único**
+
+Neste piso não é considerada a fibra ótica, uma vez que já foi considerada no piso 0.
 
 
-**Patch panels e patch cords**
+**Patch panels**
 
-Dado que no piso 1 existem 66 outlets, serão necessários pelo menos 3 patch panels de 24 portas. No entanto, é recomendável que os CP's que sirvam um número próximo de 24 outlets tenham patch panels de 48 portas.
+Dado que no piso 1 existem 66 outlets, serão necessários pelo menos 3 patch panels de 24 portas. No entanto, é recomendável que os CP's que sirvam um número próximo de 24 outlets tenham 48 portas (6 patch pannels).
 
-Serão necessários 66 patch cords para ligar os patch panels aos outlets.
 
 ### 6.2 Inventário ###
 
-|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords |
-|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|
-| **Piso 0** |         745.75         |               354.8               |   67    |       1       |      5       |     67      |
-| **Piso 1** |         882.17         |              297.57               |   66    |       1       |      4       |     66      |
-| **Total**  |        1627.92         |              652.37               |   133   |       2       |      9       |     133     |   
+|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels |
+|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|
+| **Piso 0** |        1075.35         |               25.2                |   67    |       1       |      8       |
+| **Piso 1** |        1179.97         |                 0                 |   66    |       1       |      7       |
+| **Total**  |        2255.32         |               25.2                |   133   |       2       |      15      |   
 
 **No caso dos patch pannels...**
-* O IC tem patch panel de 12 portas.
+* O IC tem patch panel de 24 portas.
 * Os HC's têm patch panels de 24 portas.
 * Os CP's têm patch panels de 48 portas.
 
