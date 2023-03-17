@@ -14,6 +14,7 @@ RCOMP 2022-2023 Project - Sprint 1 planning
 The following were the design decisions made for the project, and are to be followed by all members of the project:
 
 * Copper cable type: CAT6a
+* Copper cable wiring: T568A
 * Fiber cable type: Mono-mode
 
 # 3. Subtasks assignment #
