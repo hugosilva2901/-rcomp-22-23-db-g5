@@ -231,16 +231,13 @@ Total: 482,38 + 24,12 (margem de segurança de 5%) = 506,50 m
 
 Total: 2,40 m
 
-* Patch panels e patch cords
+* Patch panels
 
 Dado que no piso 0 existem 34 outlets, serão necessários pelo menos 2 patch panels de 24 portas de fio Cat6a.
 No entanto, pode ser necessário considerar a escalabilidade futura do sistema de rede e planear para mais portas do que o necessário atualmente.
 
-Serão necessários 34 patch cords de fio Cat6a para ligar os patch panels aos outlets.
-
 * Switches
 
-Por cada patch panel de cobre será necessário um switch de cobre também.
 O Horizontal Cross-Connect necessita de um switch.
 
 * Outros materiais úteis
@@ -252,7 +249,9 @@ gerenciados num único espaço. Neste edifício seria recomendado o uso destas e
 eventualmente, outro hardware que possa ser adquirido (como switches). As estruturas de suporte podem ser de vários tipos e tamanhos, atentendo sempre às
 necessidades do edifício.
 
-Precisamos também de espaço para o Horizontal Cross-Connect: 1U para o patch panel e 6U para equipamento ativo (switch), logo será um total de 14U.
+**Horizontal Cross-Connect:** 2U (patch panels) + 1U (switch)
+
+Total: 6U
 
                                                               Piso 1:
 
@@ -290,16 +289,13 @@ Conexão com o piso 0: 2,5 + 2,5 (altura do teto) = 5,00 m
 
 Total: 12,25 m
 
-* Patch panels e patch cords
+* Patch panels
 
 Dado que no piso 1 existem 30 outlets, serão necessários pelo menos 2 patch panels de fio Cat6a de 24 portas.
 No entanto, pode ser necessário considerar a escalabilidade futura do sistema de rede e planear para mais portas do que o necessário atualmente.
 
-Serão necessários 34 patch cords de fio Cat6a para ligar os patch panels aos outlets.
-
 * Switches
 
-Por cada patch panel de cobre será necessário um switch de cobre também.
 O Horizontal Cross-Connect, o Main Cross-Coneect e o Intermediate Cross-Connect necessitam de um switch cada um.
 
 * Outros materiais úteis
@@ -311,16 +307,18 @@ gerenciados num único espaço. Neste edifício seria recomendado o uso destas e
 Points**, os **patch panels** e, eventualmente, outro hardware que possa ser adquirido (como switches). As estruturas de suporte podem ser de vários tipos e
 tamanhos, atentendo sempre às necessidades do edifício. Neste caso devem abranger o dobro do espaço necessário para os equipamentos.
 
-Precisamos também de espaço para o Horizontal Cross-Connect: 1U para o patch panel e 8U para equipamento ativo (switch), e Intermidiate Cross-Connect:
-1U para o patch panel (total de 20U). Também deverá ser considerado o espaço necessário para o Main Cross-Connect: 1U para o patch panel e 2U para equipamento
-ativo (switch), logo será um total de 6U.
+**Main Cross-Connect:** 1U (patch panels) + 1U (switch)
+**Intermediate Cross-Connect:** 1U (patch panels) + 1U (switch)
+**Horizontal Cross-Connect:** 2U (patch panels) + 1U (switch)
+
+Total: 16U
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 5. Hardware total necessário (inventário) ###
 
-|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords | Switches | U   |
-|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|:--------:|-----|
-| **Piso 0** |         506,50         |               2,40                |   34    |       1       |    2 + 1     |     34      |    1     | 14  |
-| **Piso 1** |         753,13         |               12,25               |   30    |       1       |    2 + 3     |     30      |    3     | 6   |
-| **Total**  |        1259,63         |               14,65               |   64    |       2       |      8       |     64      |    4     | 20  | 
+|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords | Switches |
+|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|:--------:|
+| **Piso 0** |         506,50         |               2,40                |   34    |       1       |      2       |     34      |    1     |
+| **Piso 1** |         753,13         |               12,25               |   30    |       1       |    2 + 2     |     30      |    3     |
+| **Total**  |        1259,63         |               14,65               |   64    |       2       |      6       |     64      |    4     |
