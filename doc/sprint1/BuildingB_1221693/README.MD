@@ -118,6 +118,12 @@ _4.2 Comprimemto dos cabos e outros materiais úteis
 
 __Piso 0__
 
+    Os outlets localizados nas salas B.01 B.02 B.03 B.04 e 3 outlets da sala B.05 stão ligados ao cp localizado na dala B.03 o que significa que estão a ser usados 19 portas de entrada no patch panel localizado nesse cp mais 4 cabos para ligar do cp ao hc de moda a fazer uma link aggregation o que dá um total de 23 cabos de modo a dar espeço para caso escalonamento decidi  deixar 50% livre e por isso precisamos de um patch panel de 48.
+
+    Os outlets localizados nas salas B.05 (restantes 5) B.06 B.07 e 3 outltes localizados na sala B.08 estão ligados ao cp localizado na dala B.06 o que significa que estão a ser usados 18 portas de entrada no patch panel localizado nesse cp mais 4 cabos para ligar do cp ao hc de moda a fazer uma link aggregation o que dá um total de 22 cabos de modo a dar espeço para caso escalonamento decidi  deixar 50% livre e por isso precisamos de um patch panel de 48.
+    
+    Os outlets localizados nas salas B.10 B.08 (restantes 2) B.09 estão ligadas ao HC o que significa que estão a ser usados 10 portas de entrada no patch panel localizado nesse
+    HC. Mais 1 porta para o access point e mais 8 entradas para as 2 link aggreagation dos cps desse piso. o que dá um total de 21.  
 * Fio de cobre Cat6a
 
 Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:

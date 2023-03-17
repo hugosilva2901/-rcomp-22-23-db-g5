@@ -276,61 +276,29 @@ _4.2 Comprimemto dos cabos e outros materiais úteis_
 
 * Fio de cobre Cat6a
 
-Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
+Para o piso 0, serão necessários 166,1 m de fio de cobre Cat6a.
+Este piso tem 68 outlets e 1 outlet extra reservado para o Access Point(canal 1).
+Possui também um horizontal cross-connect e um intermediate cross-connect.
+Para além disso possui 2 consolidation points.
 
-    comprimento total = nº de outlets x (comprimento médio + altura do CP)
-
-Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
-
-    comprimento total = comprimento até ao AP
-
-| Divisão | Nº de outlets | Comprimento total aproximado (m) |
-|--------:|:-------------:|:--------------------------------:|
-|   C.0.1 |       6       |      6 * (--- + 1) = 116,20      |
-|   C.0.2 |       6       |      6 * (--- + 1) = 53,01       |
-|   C.0.3 |      10       |      10 * (--- + 1) = 50,60      |
-|   C.0.4 |     8 + 1     |      8 * (--- + 1) = 61,81       |
-|   C.0.5 |       4       |      4 * (--- + 1) = 40,50       |
-|   C.0.6 |       4       |      4 * (--- + 1) = 157,86      |
-|   C.0.7 |       4       |      4 * (--- + 1) = 157,86      |
-|   C.0.8 |       4       |      4 * (--- + 1) = 157,86      |
-|   C.0.9 |       4       |      4 * (--- + 1) = 157,86      |
-|  C.0.10 |       4       |      4 * (--- + 1) = 157,86      |
-|  C.0.11 |       4       |      4 * (--- + 1) = 157,86      |
-|  C.0.12 |       4       |      4 * (--- + 1) = 157,86      |
-|  C.0.13 |       4       |      4 * (--- + 1) = 157,86      |
-|  C.0.14 |      ---      |                                  |
-|  C.0.15 |       2       |      2 * (--- + 1) = 157,86      |
-
-
-1 Access Point:
--> 2,4 m
-
-2 Consolidation Points:
--> 4 * (16,80 + 1) = 71,20 m (Link Aggregation de 4 portas para aumentar a otimização da rede)
--> 4 * (17,00 + 1) = 72,00 m
-
-Total: 625,58 + 31,28 (margem de segurança de 5%) = 656,86 m
 
 * Fibra ótica de modo único
 
 | Divisão | Comprimento total aproximado (m) |
 |--------:|:--------------------------------:|
-|   A.0.4 |               2,40               |
+|  C.0.14 |                2                 |
 
-Total: 2,40 m
 
 * Patch panels e patch cords
 
-Dado que no piso 0 existem 34 outlets, serão necessários pelo menos 2 patch panels de 24 portas de fio Cat6a.
+Uma vez que o piso 0 contém 68 outlets, serão necessários pelo menos 3 patch panels de 24 portas de fio Cat6a.
 No entanto, pode ser necessário considerar a escalabilidade futura do sistema de rede e planear para mais portas do que o necessário atualmente.
-
-Serão necessários 34 patch cords de fio Cat6a para ligar os patch panels aos outlets.
+Serão necessários 68 patch cords de fio Cat6a para ligar os patch panels aos outlets.
 
 * Switches
 
 Por cada patch panel de cobre será necessário um switch de cobre também.
-O Horizontal Cross-Connect necessita de um switch.
+O Horizontal Cross-Connect e o intermediate Cross-Conect necessitam de 1 switch cada um.
 
 * Outros materiais úteis
 
@@ -344,71 +312,32 @@ tamanhos, atentendo sempre às necessidades do edifício.
 Dado que existem 2 CPs neste piso, e cada CP ocupa 3U (2U para equipamento ativo + 1U para o patch panel), será necessário pelo menos 6U de espaço para cada CP.
 Precisamos também de espaço para o Horizontal Cross-Connect: 1U para o patch panel e 6U para equipamento ativo (switch), logo será um total de 14U.
 
+Calculo dos U's:
+
                                                               Piso 1:
 
 * Fio de cobre Cat6a
 
-Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
+Para o piso 1, serão necessários 215,5 m de fio de cobre Cat6a.
+Este piso é contem 62 outlets de entrada e um outlet extra reservado para o Access Point (canal 6).
+Possui também um horizontal cross-connect.
+Para além disso possui 2 consolidation points.
 
-    comprimento total = nº de outlets x (comprimento médio + altura do teto amovível + altura do CP)
-
-Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
-
-    comprimento total = altura do teto amovível + comprimento até ao AP
-
-| Divisão | Nº de outlets | Comprimento total aproximado (m) |
-|--------:|:-------------:|:--------------------------------:|
-|   C.1.1 |       8       |  8 * (23,94 + 2,5 + 1) = 109,76  |
-|   C.1.2 |       3       |  3 * (18.06 + 2,5 + 1) = 86,24   |
-|   C.1.3 |       3       |  3 * (13.88 + 2,5 + 1) = 69,52   |
-|   C.1.4 |       3       |                                  |
-|   C.1.5 |       3       |   3 * (8,56 + 2,5 + 1) = 48,24   |
-|   C.1.6 |       3       |  3 * (17,72 + 2,5 + 1) = 169,76  |
-|   C.1.7 |       3       |  3 * (36,25 + 2,5 + 1) = 198,75  |
-|   C.1.8 |      ---      |  4 * (35,00 + 2,5 + 1) = 180,00  |
-|   C.1.9 |       3       |  3 * (11,50 + 2,5 + 1) = 48,00   |
-|  C.1.10 |       3       |  3 * (32,50 + 2,5 + 1) = 144,00  |
-|  C.1.11 |       3       |  3 * (35,00 + 2,5 + 1) = 180,00  |
-|  C.1.12 |       3       |  3 * (11,50 + 2,5 + 1) = 48,00   |
-|  C.1.13 |       3       |  3 * (32,50 + 2,5 + 1) = 144,00  |
-|  C.1.14 |       3       |                                  |
-|  C.1.15 |       3       |                                  |
-|  C.1.16 |       3       |                                  |
-|  C.1.17 |       3       |                                  |
-|  C.1.18 |       3       |                                  |
-|  C.1.19 |      3+1      |                                  |
-|  C.1.20 |       3       |                                  |
-
-
-1 Access Point:
--> 35,00 m
-
-2 Consolidation Points:
--> 4 * (11,50 + 2,50 + 1) = 48,00 m
--> 4 * (32,50 + 2,50 + 1) = 144,00 m
-
-Total: 909,27 + 45,46 (margem de segurança de 5%) = 954,73 m
 
 * Fibra ótica de modo único
 
-Main Cross-Connect até ao Intermediate Cross-Connect/Horizontal Cross-Connect: 1,25 m
-Intermediary Cross-Connect até ao Horizontal Cross-Connect: patch cord (cerca de 1 m)
-Main Cross-Connect até ao exterior: 5,00 m
-Conexão com o piso 0: 2,5 + 2,5 (altura do teto) = 5,00 m
-
-Total: 12,25 m
+Conexão com o piso 0: 4 + 2,5 (altura do teto) = 6,5 m
 
 * Patch panels e patch cords
 
-Dado que no piso 1 existem 30 outlets, serão necessários pelo menos 2 patch panels de fio Cat6a de 24 portas.
+Uma vez que o piso 1 contém 62 outlets, serão necessários pelo menos 3 patch panels de 24 portas de fio Cat6a.
 No entanto, pode ser necessário considerar a escalabilidade futura do sistema de rede e planear para mais portas do que o necessário atualmente.
-
-Serão necessários 34 patch cords de fio Cat6a para ligar os patch panels aos outlets.
+Serão necessários 62 patch cords de fio Cat6a para ligar os patch panels aos outlets.
 
 * Switches
 
 Por cada patch panel de cobre será necessário um switch de cobre também.
-O Horizontal Cross-Connect, o Main Cross-Coneect e o Intermediate Cross-Connect necessitam de um switch cada um.
+O Horizontal Cross-Connect necessita de um switch.
 
 * Outros materiais úteis
 
@@ -419,10 +348,7 @@ gerenciados num único espaço. Neste edifício seria recomendado o uso destas e
 Points**, os **patch panels** e, eventualmente, outro hardware que possa ser adquirido (como switches). As estruturas de suporte podem ser de vários tipos e
 tamanhos, atentendo sempre às necessidades do edifício. Neste caso devem abranger o dobro do espaço necessário para os equipamentos.
 
-Dado que existem 2 CPs neste piso, e cada CP ocupa 3U (1U para o switch e 1U para o patch panel), será necessário pelo menos 6U de espaço para cada CP.
-Precisamos também de espaço para o Horizontal Cross-Connect: 1U para o patch panel e 8U para equipamento ativo (switch), e Intermidiate Cross-Connect:
-1U para o patch panel (total de 20U). Também deverá ser considerado o espaço necessário para o Main Cross-Connect: 1U para o patch panel e 2U para equipamento
-ativo (switch), logo será um total de 6U.
+Calculo dos U's:
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -430,6 +356,6 @@ ativo (switch), logo será um total de 6U.
 
 |            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords | Switches | U   |
 |------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|:--------:|-----|
-| **Piso 0** |         656,86         |               2,40                |   34    |       1       |    2 + 1     |     34      |    3     | 26  |
-| **Piso 1** |         954,73         |               12,25               |   30    |       1       |    2 + 3     |     30      |    5     | 26  |
-| **Total**  |        1611,59         |               14,65               |   64    |       2       |      8       |     64      |    8     | 52  |   
+| **Piso 0** |         166,1          |               2,00                |   68    |       1       |      3       |     68      |    5     | --  |
+| **Piso 1** |         215,5          |                6,5                |   62    |       1       |      3       |     62      |    4     | --  |
+| **Total**  |           xx           |                xx                 |   xx    |       2       |      6       |     130     |    9     | xx  |   
