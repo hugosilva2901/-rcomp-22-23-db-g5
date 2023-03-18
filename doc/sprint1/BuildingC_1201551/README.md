@@ -37,10 +37,6 @@ As seguintes especificacões do edifício C foram fornecidas pelo enunciado:
   __Piso 1:__
   * O primeiro piso tem uma altura de teto de 3 metros, no entanto existe um teto rebaixado amovível, colocado a 2,5 metros do chão, cobrindo todo o andar. 
   * Este andar não possui canaletas de cabos subterrâneos.
-  * Common areas and restrooms are not required to have network outlets, other rooms should be provided
-    with the standard number of network outlets. Room C.1.8 is a storage area, no network outlets are
-    required there as well, and it may be used to house a cross-connect and other network infrastructure
-    hardware.
   * Áreas comuns e casas de banho não necessitam de tomadas de rede, outras salas devem ser fornecidas com o número padrão de tomadas de rede.
   * O espaço C.1.8 de armazenamento e como tal não requer tomadas de rede, no entanto pode conter um cross-connect e outros dispositivos de infraestrutura de rede.
 
@@ -421,7 +417,6 @@ gerenciados num único espaço. Neste edifício seria recomendado o uso destas e
 Points**, os **patch panels** e, eventualmente, outro hardware que possa ser adquirido (como switches). As estruturas de suporte podem ser de vários tipos e
 tamanhos, atentendo sempre às necessidades do edifício. Neste caso devem abranger o dobro do espaço necessário para os equipamentos.
 
-**Main Cross-Connect:** 1U (patch panels) + 1U (switch)
 **Intermediate Cross-Connect:** 1U (patch panels) + 1U (switch)
 **Horizontal Cross-Connect:** 2U (patch panels) + 1U (switch)
 <!---
