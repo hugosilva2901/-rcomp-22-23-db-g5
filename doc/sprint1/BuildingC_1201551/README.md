@@ -341,12 +341,13 @@ gerenciados num único espaço. Neste edifício seria recomendado o uso destas e
 eventualmente, outro hardware que possa ser adquirido (como switches). As estruturas de suporte podem ser de vários tipos e tamanhos, atentendo sempre às
 necessidades do edifício.
 
-**Horizontal Cross-Connect:** 2U (patch panels) + 1U (switch)  
-<!---
-TODO: Calcular os U's
--->
+**Horizontal Cross-Connect:** 8U
+**Intermediate Cross-Connect:** 6U
+**Consolidation Point:** 8U
+**Consolidation Point:** 8U
 
-Total: 6U
+
+Total: 30U
 
                                                               Piso 1:
 Este piso possui 2 consolidation points, um presente no espaço C.1.9 e outro no espaço C.1.3.
@@ -417,12 +418,10 @@ gerenciados num único espaço. Neste edifício seria recomendado o uso destas e
 Points**, os **patch panels** e, eventualmente, outro hardware que possa ser adquirido (como switches). As estruturas de suporte podem ser de vários tipos e
 tamanhos, atentendo sempre às necessidades do edifício. Neste caso devem abranger o dobro do espaço necessário para os equipamentos.
 
-**Intermediate Cross-Connect:** 1U (patch panels) + 1U (switch)
-**Horizontal Cross-Connect:** 2U (patch panels) + 1U (switch)
-<!---
-TODO: Calcular os U's
--->
-Total: 16U
+**Horizontal Cross-Connect:** 6U
+**Consolidation Point:** 6U
+**Consolidation Point:** 8U
+
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
