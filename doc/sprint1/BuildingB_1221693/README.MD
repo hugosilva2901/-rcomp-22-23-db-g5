@@ -119,12 +119,11 @@ _4.2 Comprimemto dos cabos e outros materiais úteis
 
 __Piso 0__
 
-    Os outlets localizados nas salas B.01 B.02 B.03 B.04 e 4 outlets da sala B.05 stão ligados ao cp localizado na dala B.03 o que significa que estão a ser usados 20 portas de entrada no patch panel localizado nesse cp mais 4 cabos para ligar do cp ao hc de moda a fazer uma link aggregation o que dá um total de 24 cabos de modo a dar espeço para caso escalonamento decidi  deixar 50% livre e por isso precisamos de um patch panel de 48.
+    Os outlets localizados nas salas B.0.1 B.0.2 B.0.3 B.0.4 e 4 outlets da sala B.0.5 stão ligados ao cp localizado na dala B.0.3 o que significa que estão a ser usados 20 portas de entrada no patch panel localizado nesse cp mais 4 cabos para ligar do cp ao hc de moda a fazer uma link aggregation o que dá um total de 24 cabos de modo a dar espeço para caso escalonamento decidi  deixar 50% livre e por isso precisamos de um patch panel de 48.
 
-    Os outlets localizados nas salas B.05 (restantes 4) B.06 B.07 e 3 outltes localizados na sala B.08 estão ligados ao cp localizado na dala B.06 o que significa que estão a ser usados 18 portas de entrada no patch panel localizado nesse cp mais 4 cabos para ligar do cp ao hc de moda a fazer uma link aggregation o que dá um total de 21 cabos de modo a dar espeço para caso escalonamento decidi  deixar 50% livre e por isso precisamos de um patch panel de 48.
+    Os outlets localizados nas salas B.0.5 (restantes 4) B.0.6 B.0.7 e 3 outltes localizados na sala B.08 estão ligados ao cp localizado na dala B.0.6 o que significa que estão a ser usados 17 portas de entrada no patch panel localizado nesse cp mais 4 cabos para ligar do cp ao hc de moda a fazer uma link aggregation o que dá um total de 21 cabos de modo a dar espeço para caso escalonamento decidi  deixar 50% livre e por isso precisamos de um patch panel de 48.
     
-    Os outlets localizados nas salas B.10 B.08 (restantes 2) B.09 estão ligadas ao HC o que significa que estão a ser usados 10 portas de entrada no patch panel localizado nesse
-    HC. Mais 1 porta para o access point e mais 8 entradas para as 2 link aggreagation dos cps desse piso. o que dá um total de 21.  
+    Os outlets localizados nas salas B.0.10 B.0.8 (restantes 2) B.0.9 estão ligadas ao HC o que significa que estão a ser usados 10 portas de entrada no patch panel localizado nesse HC. Mais 1 porta para o access point e mais 8 entradas para as 2 link aggreagation dos cps desse piso mais uma a entrada de firba do IC localizado no piso 0. o que dá um total de 22.  
 
 * Fio de cobre Cat6a
 
@@ -159,6 +158,12 @@ Para calcular o comprimento de fio de cobre necessário para o access point, foi
     -> 4 * 66.85 = 267.4 m    
 __Piso 1__
 
+    Os outlets localizados nas salas B.1.15 B.1.14 B.1.13 B.1.1 B.1.2 B.1.3 o que significa que estão a ser usados 36 portas de entrada no patch panel localizado nesse cp ,que esta na sala sala B1.1, mais 4 cabos para ligar do cp ao hc de moda a fazer uma link aggregation o que dá um total de 40 cabos e por isso precisamos de um patch panel de 48.
+
+    Os outlets localizados nas salas B.1.4 B.1.5 B.1.6 B.1.7 B.1.8 B.1.9 o que significa que estão a ser usados 36 portas de entrada no patch panel localizado nesse cp ,que esta na sala sala B1.5, mais 4 cabos para ligar do cp ao hc de moda a fazer uma link aggregation o que dá um total de 40 cabos e por isso precisamos de um patch panel de 48.
+    
+    Os outlets localizados nas salas B.1.10 B.1.1  estão ligadas ao HC o que significa que estão a ser usados 12 portas de entrada no patch panel localizado nesse HC. Mais 1 porta para o access point e mais 8 entradas para as 2 link aggreagation dos cps desse piso, mais uma a entrada de firba do IC localizado no piso 0 . o que dá um total de 24. 
+
 * Fio de cobre Cat6a
 
 Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
@@ -171,43 +176,43 @@ Para calcular o comprimento de fio de cobre necessário para o access point, foi
 
     | Divisão | Nº de outlets | Comprimento total aproximado (m) |
     |--------:|:-------------:|:--------------------------------:|
-    |   B.1.1 |       6       |                                  |
-    |   B.1.2 |       6       |                                  |
-    |   B.1.3 |       6       |                                  |
-    |   B.1.4 |       6       |                                  |
-    |   B.1.5 |       6       |                                  |
-    |   B.1.6 |       6 + 1   |                                  |
-    |   B.1.7 |       6       |                                  |
-    |   B.1.8 |       6       |                                  |
-    |   B.1.9 |       6       |                                  |
-    |   B.1.10|       6       |                                  |
-    |   B.1.11|       6       |                                  |
-    |   B.1.13|       6       |                                  |
-    |   B.1.14|       6       |                                  |
-    |   B.1.15|       6       |                                  |
+    |   B.1.1 |       6       |    6 * 6.02  * 1.05 = 37.93      |
+    |   B.1.2 |       6       |    6 * 9.91  * 1.05 = 62.43      |
+    |   B.1.3 |       6       |    6 * 13.80 * 1.05 = 86.94      |
+    |   B.1.4 |       6       |    6 * 9.91  * 1.05 = 62.43      |
+    |   B.1.5 |       6       |    6 * 6.02  * 1.05 = 37.93      |
+    |   B.1.6 |       6 + 1   |    6 * 8.20  * 1.05 = 51.66      |
+    |   B.1.7 |       6       |    6 * 12.64 * 1.05 = 79.63      |
+    |   B.1.8 |       6       |    6 * 17.08 * 1.05 = 107.60     |
+    |   B.1.9 |       6       |    6 * 21.52 * 1.05 = 136.58     |
+    |   B.1.10|       6       |    6 * 9.42  * 1.05 = 59.35      |
+    |   B.1.11|       6       |    6 * 4.98  * 1.05 = 31.37      |
+    |   B.1.13|       6       |    6 * 8.20  * 1.05 = 51.66      |
+    |   B.1.14|       6       |    6 * 12.64 * 1.05 = 79.63      |
+    |   B.1.15|       6       |    6 * 17.08 * 1.05 = 107.60     |
 
-    Total:
+    Total: 992.74
 
      1 Access Point:   
     -> 35 m
 
     2 Consolidation Points:   
-    -> 4 *    (uso de 4 cabos para link Aggregation)
-    -> 4 * 
+    -> 4 * 67.04 = 281.57 (uso de 4 cabos para link Aggregation)
+    -> 4 * 34.81 = 146.20
 * Fibra ótica de modo único
 
 Ligações entre o IC e os HC's (2):   
--> 4 * 1 = 4 m   
--> 4 * 5 = 20 m (para o piso superior)
+-> 1    
+-> 6  (para o piso superior)
 
 
 
     4.3 Inventário 
-|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels |
-|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|
-| **Piso 0** |         796.13         |               x               |   48    |       1       |      8       |
-| **Piso 1** |         882.17         |              297.57               |   66    |       1       |      6       |
-| **Total**  |        1627.92         |              652.37               |   133   |       2       |      14      |  
+|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Switches     |
+|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:------------:|
+| **Piso 0** |         796.13         |               1                   |   48    |       1       |      8       |      4       |
+| **Piso 1** |         1455.51        |               6                   |   85    |       1       |      6       |      3       |
+| **Total**  |         2251.64        |              7.35                 |   133   |       2       |      14      |      7       |   
 
 **No caso dos patch pannels...**
 * O IC tem patch panel de 48 portas.
