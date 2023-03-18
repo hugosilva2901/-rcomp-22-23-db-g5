@@ -273,71 +273,144 @@ Total: 130 + 2 reservados para o Access Point
 _4.2 Comprimemto dos cabos e outros materiais úteis_
 
                                                               Piso 0:
+Este piso possui 2 consolidation points que se encontram ligados ao horizontal cross-conect, ocupando assim 8 entradas (4 por cada CP).
+Como no Horizontal Cross Conect, temos um patch panel de 48 portas, ficam a restar 40 entradas para os outlets.
+O HC é responsável pelos outlets dos espaços C.0.15 (2 outlets), C.0.13(4 outlets), C.0.12(4 outlets), C.0.11(4 outlets), C.0.10(4 outlets), C.0.9(4 outlets), totalizando 22 outlets.
+O patch panel do HC fica então com 18 entradas livres para eventuais ligações futuras.
+
+Relativamente ao Consolidation Point no espaço C.0.6, este é responsável pelos outlets dos espaços C.0.8(4 outlets), C.0.7(4 outlets),C.0.6(4 outlets), C.0.5(4 outlets), C.0.4(8 + 1 outlets), totalizando 25 outlets.
+De forma a manter uma margem de manobra para eventuais ligações futuras, utilizaremos um patch panel de 48 portas.
+
+Relativamente ao Consolidation Point no espaço C.0.2, este é responsável pelos outlets dos espaços C.0.3(10 outlets), C.0.2(6 outlets), C.0.1(6 outlets), totalizando 22 outlets.
+Devido às dimensões destes espaços é possível esperar novas ligações futuras, pelo que utilizaremos um patch panel de 48 portas, que garante 26 entradas livres. 
+
+                                                              Piso 1:
 
 * Fio de cobre Cat6a
 
-Para o piso 0, serão necessários 166,1 m de fio de cobre Cat6a.
-Este piso tem 68 outlets e 1 outlet extra reservado para o Access Point(canal 1).
-Possui também um horizontal cross-connect e um intermediate cross-connect.
-Para além disso possui 2 consolidation points.
+Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
 
+    comprimento total = nº de outlets x (comprimento médio + altura do HCC)
+
+Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
+
+    comprimento total = comprimento até ao AP
+
+| Divisão | Nº de outlets | Comprimento total aproximado (m) |
+|--------:|:-------------:|:--------------------------------:|
+|   C.0.1 |       6       |       6 * (21,50 + 1) = 35       | 
+|   C.0.2 |       6       |        6 * (10 + 1) =  66        |
+|   C.0.3 |      10       |      10 * (18,30 + 1) = 193      |
+|   C.0.4 |     8 + 1     |       8 * (10 + 1) = x  88       |
+|   C.0.5 |       4       |      4 * (8,88 + 1) = 39,52      |
+|   C.0.6 |       4       |      4 * (3,13 + 1) = 16,52      |
+|   C.0.7 |       4       |       4 * (13,50 + 1) = 58       |
+|   C.0.8 |       4       |      4 * (8,06 + 1) = 36,24      |
+|   C.0.9 |       4       |     4 * (27,38 + 1) = 113,52     |
+|  C.0.10 |       4       |     4 * (24,13 + 1) = 100,52     |
+|  C.0.11 |       4       |       4 * (20,75 + 1) = 87       |
+|  C.0.12 |       4       |     4 * (18,31 + 1) = 77,24      |
+|  C.0.13 |       4       |      4 * (24,25 + 1) = 101       |
+|  C.0.15 |       2       |      2 * (3,13 + 1) = 8,26       |
+
+1 Access Point:
+-> 12,50 m
+
+Total: 1032,32 + 51,62 (margem de segurança de 5%) = 1083,94 m
 
 * Fibra ótica de modo único
 
 | Divisão | Comprimento total aproximado (m) |
 |--------:|:--------------------------------:|
-|  C.0.14 |                2                 |
+|  C.0.14 |              80,75               | //Desde a entrada até ao HC
 
+Total: 2,40 m
 
-* Patch panels e patch cords
+* Patch panels
 
-Uma vez que o piso 0 contém 68 outlets, serão necessários pelo menos 3 patch panels de 24 portas de fio Cat6a.
+Serão utilizados 2 patch panels de 48 portas, um para cada CP.
 No entanto, pode ser necessário considerar a escalabilidade futura do sistema de rede e planear para mais portas do que o necessário atualmente.
-Serão necessários 68 patch cords de fio Cat6a para ligar os patch panels aos outlets.
 
 * Switches
 
-Por cada patch panel de cobre será necessário um switch de cobre também.
-O Horizontal Cross-Connect e o intermediate Cross-Conect necessitam de 1 switch cada um.
+O Horizontal Cross-Connect necessita de um switch.
 
 * Outros materiais úteis
 
 Podem ser necessários outros materiais úteis como, por exemplo, **estruturas de suporte** utilizadas para proteger os equipamentos de telecomunicações, manter
 a organização dos cabos e a segurança dos mesmos. São usadas para suportar e organizar equipamentos de tecnologia, como servidores, switches, routers e outros
 dispositivos similares. Eles são usados em DataCenters, salas de servidores e outros locais onde vários equipamentos de TI precisam ser armazenados e
-gerenciados num único espaço. Neste edifício seria recomendado o uso destas estruturas para manter os **Cross-Connects seguros** como também os **Consolidation
-Points**, os **patch panels** e, eventualmente, outro hardware que possa ser adquirido (como switches). As estruturas de suporte podem ser de vários tipos e
-tamanhos, atentendo sempre às necessidades do edifício.
+gerenciados num único espaço. Neste edifício seria recomendado o uso destas estruturas para manter os **Cross-Connects seguros**, os **patch panels** e,
+eventualmente, outro hardware que possa ser adquirido (como switches). As estruturas de suporte podem ser de vários tipos e tamanhos, atentendo sempre às
+necessidades do edifício.
 
-Dado que existem 2 CPs neste piso, e cada CP ocupa 3U (2U para equipamento ativo + 1U para o patch panel), será necessário pelo menos 6U de espaço para cada CP.
-Precisamos também de espaço para o Horizontal Cross-Connect: 1U para o patch panel e 6U para equipamento ativo (switch), logo será um total de 14U.
+**Horizontal Cross-Connect:** 2U (patch panels) + 1U (switch)
 
-Calculo dos U's:
+Total: 6U
 
                                                               Piso 1:
+Este piso possui 2 consolidation points, um presente no espaço C.1.9 e outro no espaço C.1.3.
+Os dois CP's estão ligados ao HC, ocupando 4 entradas cada um, totalizando 8 entradas ocupadas.
+Relativamente ao CP no espaço  C.1.9, este é responsável pelos outlets nos espaços C.1.9 (3 outlets), C.1.10(3 outlets), C.1.11(3 outlets), C.1.12(3 outlets), C.1.13(3 outlets), C.1.14(3 outlets), totalizando 18 outlets.
+O HC por sua vez, é responsável pelos outlets nos espaços C.1.19(3 outlets), C.1.20(3 outlets), C.1.17(3 outlets), C.1.18(3 outlets), C.1.15(3 outlets), C.1.16(3 outlets), totalizando 18 outlets.
+Relativamente ao CP no espaço C.1.3, este é responsável pelos outlets nos espaços C.1.1(8 outlets), C.1.2(3 outlets), C.1.3(3 outlets), C.1.4(3 outlets), C.1.5(3 outlets), C.1.6(3 outlets), C.1.7(3 outlets), totalizando assim 26 outlets.
+Como tal, utilizaremos 2 patch panels de 24 portas, para o HC e para o CP no espaço C.1.9, e 1 patch panel de 48 portas para o CP no espaço C.1.3, de forma a garantir que, se necessário, possa ser feita a expansão do sistema de rede.
 
+                                                              Piso 2:
 * Fio de cobre Cat6a
 
-Para o piso 1, serão necessários 215,5 m de fio de cobre Cat6a.
-Este piso é contem 62 outlets de entrada e um outlet extra reservado para o Access Point (canal 6).
-Possui também um horizontal cross-connect.
-Para além disso possui 2 consolidation points.
+Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
 
+    comprimento total = nº de outlets x (comprimento médio + altura do teto amovível + altura do HCC)
+
+Para calcular o comprimento de fio de cobre necessário para o access point, foi utilizada a seguinte fórmula:
+
+    comprimento total = altura do teto amovível + comprimento até ao AP
+
+| Divisão | Nº de outlets | Comprimento total aproximado (m) |
+|--------:|:-------------:|:--------------------------------:|
+|   C.1.1 |       8       | 8 * (16,09 + 2,5 + 1) =  156,72  |
+|   C.1.2 |       3       |   3 * (8,92 + 2,5 + 1) = 37,26   |
+|   C.1.3 |       3       |   3 * (5,72 + 2,5 + 1) = 27,66   |
+|   C.1.4 |       3       |    3*(6,04 + 2,5 + 1)=  28,62    |
+|   C.1.5 |       3       |   3 * (8,87 + 2,5 + 1) = 37,11   |
+|   C.1.6 |       3       |  3 * (14,72 + 2,5 + 1) = 54,66   |
+|   C.1.7 |       3       |  3 * (17,36 + 2,5 + 1) = 62,58   |
+|   C.1.9 |       3       |   3 * (6,60 + 2,5 + 1) = 30,3    |
+|  C.1.10 |       3       |   3 * (9,25 + 2,5 + 1) = 38,25   |
+|  C.1.11 |       3       |  3 * (12,08 + 2,5 + 1) = 46,74   |
+|  C.1.12 |       3       |  3 * (11,32 + 2,5 + 1) = 44,46   |
+|  C.1.13 |       3       |  3 * (16,04 + 2,5 + 1) = 58,62   |
+|  C.1.14 |       3       |  3 * (16,04 + 2,5 + 1) = 58,62   |
+|  C.1.15 |       3       |  3 * (31,13 + 2,5 + 1) = 103,89  |
+|  C.1.16 |       3       |  3 * (31,13 + 2,5 + 1) = 103,89  |
+|  C.1.17 |       3       |  3 * (27,92 + 2,5 + 1) = 94,26   |
+|  C.1.18 |       3       |  3 * (28,11 + 2,5 + 1) = 94,83   |
+|  C.1.19 |     3 + 1     |  3 * (21,89 + 2,5 + 1) = 76,17   |
+|  C.1.20 |       3       |  3 * (24,34 + 2,5 + 1) = 83,52   |
+
+1 Access Point:
+-> 16,04 m
+
+Total: 1254,2 + 62,71 (margem de segurança de 5%) = 1316,91 m
 
 * Fibra ótica de modo único
 
-Conexão com o piso 0: 4 + 2,5 (altura do teto) = 6,5 m
+Main Cross-Connect até ao Intermediate Cross-Connect/Horizontal Cross-Connect: 1,25 m
+Intermediary Cross-Connect até ao Horizontal Cross-Connect: patch cord (cerca de 1 m)
+Main Cross-Connect até ao exterior: 5,00 m
+Conexão com o piso 0: 2,5 + 2,5 (altura do teto) = 5,00 m
 
-* Patch panels e patch cords
+Total: 12,25 m
 
-Uma vez que o piso 1 contém 62 outlets, serão necessários pelo menos 3 patch panels de 24 portas de fio Cat6a.
+* Patch panels
+
+Dado que no piso 1 existem 30 outlets, serão necessários pelo menos 2 patch panels de fio Cat6a de 24 portas.
 No entanto, pode ser necessário considerar a escalabilidade futura do sistema de rede e planear para mais portas do que o necessário atualmente.
-Serão necessários 62 patch cords de fio Cat6a para ligar os patch panels aos outlets.
 
 * Switches
 
-Por cada patch panel de cobre será necessário um switch de cobre também.
-O Horizontal Cross-Connect necessita de um switch.
+O Horizontal Cross-Connect, o Main Cross-Coneect e o Intermediate Cross-Connect necessitam de um switch cada um.
 
 * Outros materiais úteis
 
@@ -348,14 +421,18 @@ gerenciados num único espaço. Neste edifício seria recomendado o uso destas e
 Points**, os **patch panels** e, eventualmente, outro hardware que possa ser adquirido (como switches). As estruturas de suporte podem ser de vários tipos e
 tamanhos, atentendo sempre às necessidades do edifício. Neste caso devem abranger o dobro do espaço necessário para os equipamentos.
 
-Calculo dos U's:
+**Main Cross-Connect:** 1U (patch panels) + 1U (switch)
+**Intermediate Cross-Connect:** 1U (patch panels) + 1U (switch)
+**Horizontal Cross-Connect:** 2U (patch panels) + 1U (switch)
+
+Total: 16U
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 5. Hardware total necessário (inventário) ###
 
-|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords | Switches | U   |
-|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|:--------:|-----|
-| **Piso 0** |         166,1          |               2,00                |   68    |       1       |      3       |     68      |    5     | --  |
-| **Piso 1** |         215,5          |                6,5                |   62    |       1       |      3       |     62      |    4     | --  |
-| **Total**  |           xx           |                xx                 |   xx    |       2       |      6       |     130     |    9     | xx  |   
+|            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords | Switches |
+|------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|:--------:|
+| **Piso 0** |         506,50         |               2,40                |   34    |       1       |      2       |     34      |    1     |
+| **Piso 1** |         753,13         |               12,25               |   30    |       1       |    2 + 2     |     30      |    3     |
+| **Total**  |        1259,63         |               14,65               |   64    |       2       |      6       |     64      |    4     |
