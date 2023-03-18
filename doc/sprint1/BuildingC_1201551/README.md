@@ -284,7 +284,6 @@ De forma a manter uma margem de manobra para eventuais ligações futuras, utili
 Relativamente ao Consolidation Point no espaço C.0.2, este é responsável pelos outlets dos espaços C.0.3(10 outlets), C.0.2(6 outlets), C.0.1(6 outlets), totalizando 22 outlets.
 Devido às dimensões destes espaços é possível esperar novas ligações futuras, pelo que utilizaremos um patch panel de 48 portas, que garante 26 entradas livres. 
 
-                                                              Piso 1:
 
 * Fio de cobre Cat6a
 
@@ -324,16 +323,16 @@ Total: 1032,32 + 51,62 (margem de segurança de 5%) = 1083,94 m
 |--------:|:--------------------------------:|
 |  C.0.14 |              80,75               | //Desde a entrada até ao HC
 
-Total: 2,40 m
+Total:80,75 m
 
 * Patch panels
 
-Serão utilizados 2 patch panels de 48 portas, um para cada CP.
-No entanto, pode ser necessário considerar a escalabilidade futura do sistema de rede e planear para mais portas do que o necessário atualmente.
+Uma vez que neste piso existem 69 outlets, serão utilizados 2 patch panels de 48 portas, um para cada CP, garantindo assim a adaptabilidade do sistema de rede.
 
 * Switches
 
 O Horizontal Cross-Connect necessita de um switch.
+O Intermediate Cross-Connect necessita de um switch.
 
 * Outros materiais úteis
 
@@ -344,7 +343,10 @@ gerenciados num único espaço. Neste edifício seria recomendado o uso destas e
 eventualmente, outro hardware que possa ser adquirido (como switches). As estruturas de suporte podem ser de vários tipos e tamanhos, atentendo sempre às
 necessidades do edifício.
 
-**Horizontal Cross-Connect:** 2U (patch panels) + 1U (switch)
+**Horizontal Cross-Connect:** 2U (patch panels) + 1U (switch)  
+<!---
+TODO: Calcular os U's
+-->
 
 Total: 6U
 
@@ -356,7 +358,6 @@ O HC por sua vez, é responsável pelos outlets nos espaços C.1.19(3 outlets), 
 Relativamente ao CP no espaço C.1.3, este é responsável pelos outlets nos espaços C.1.1(8 outlets), C.1.2(3 outlets), C.1.3(3 outlets), C.1.4(3 outlets), C.1.5(3 outlets), C.1.6(3 outlets), C.1.7(3 outlets), totalizando assim 26 outlets.
 Como tal, utilizaremos 2 patch panels de 24 portas, para o HC e para o CP no espaço C.1.9, e 1 patch panel de 48 portas para o CP no espaço C.1.3, de forma a garantir que, se necessário, possa ser feita a expansão do sistema de rede.
 
-                                                              Piso 2:
 * Fio de cobre Cat6a
 
 Para calcular o comprimento de fio de cobre necessário para os outlets, foi utilizada a seguinte fórmula:
@@ -396,21 +397,23 @@ Total: 1254,2 + 62,71 (margem de segurança de 5%) = 1316,91 m
 
 * Fibra ótica de modo único
 
-Main Cross-Connect até ao Intermediate Cross-Connect/Horizontal Cross-Connect: 1,25 m
 Intermediary Cross-Connect até ao Horizontal Cross-Connect: patch cord (cerca de 1 m)
-Main Cross-Connect até ao exterior: 5,00 m
 Conexão com o piso 0: 2,5 + 2,5 (altura do teto) = 5,00 m
+<!---
+TODO: CHECK IF THIS IS CORRECT
+-->
 
 Total: 12,25 m
 
 * Patch panels
-
-Dado que no piso 1 existem 30 outlets, serão necessários pelo menos 2 patch panels de fio Cat6a de 24 portas.
-No entanto, pode ser necessário considerar a escalabilidade futura do sistema de rede e planear para mais portas do que o necessário atualmente.
+Existem 63 outlets no piso 1.
+Vão ser utilizados 2 patch panels de 24 portas no espaço C.1.9 e no HC.
+No CP no espaço C.1.3, vai ser utilizado 1 patch panel de 48 portas.
+Desta forma, garantimos que, se necessário, possa ser feita a expansão do sistema de rede.
 
 * Switches
 
-O Horizontal Cross-Connect, o Main Cross-Coneect e o Intermediate Cross-Connect necessitam de um switch cada um.
+O Horizontal Cross-Connect necessita de um switch.
 
 * Outros materiais úteis
 
@@ -424,7 +427,9 @@ tamanhos, atentendo sempre às necessidades do edifício. Neste caso devem abran
 **Main Cross-Connect:** 1U (patch panels) + 1U (switch)
 **Intermediate Cross-Connect:** 1U (patch panels) + 1U (switch)
 **Horizontal Cross-Connect:** 2U (patch panels) + 1U (switch)
-
+<!---
+TODO: Calcular os U's
+-->
 Total: 16U
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -433,6 +438,6 @@ Total: 16U
 
 |            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords | Switches |
 |------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|:--------:|
-| **Piso 0** |         506,50         |               2,40                |   34    |       1       |      2       |     34      |    1     |
-| **Piso 1** |         753,13         |               12,25               |   30    |       1       |    2 + 2     |     30      |    3     |
-| **Total**  |        1259,63         |               14,65               |   64    |       2       |      6       |     64      |    4     |
+| **Piso 0** |        1083,94         |               80,75               |   69    |       1       |      3       |     69      |    2     |
+| **Piso 1** |        1316,91         |                 x                 |   63    |       1       |      3       |     63      |    1     |
+| **Total**  |        2400,85         |               14,65               |   132   |       2       |      6       |     132     |    3     |
