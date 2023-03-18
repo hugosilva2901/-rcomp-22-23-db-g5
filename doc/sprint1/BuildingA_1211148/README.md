@@ -82,9 +82,9 @@ _1.4 Cross-conection_
 
 Os cross-connects são normalmente instalados em **DataCenters**, centrais telefónicas e outras instalações de telecomunicações. Eles fornecem uma maneira eficiente
 de gerenciar e organizar as conexões entre vários componentes de rede, como switches, routers e servidores. Nesta planta existem um **MC (Main Cross-Connect)**, um
-**IC (Intermediate Cross-Connect)** e dois **HC's (Horizontal Cross-Connect)**. Podemos estimar que **a área total abrangida pelo HC não deve exceder os 1000 m2** e
-que **a distância máxima entre uma tomada de rede e um HC** deve ser de, aproximadamente, **80 metros**. Relativamente às **distâncias entre os cross-connects**, cada
-uma não deve exceder os **500 metros**.
+**IC (Intermediate Cross-Connect)** e dois **HC's (Horizontal Cross-Connect)** (para minimizar o comprimento dos cabos). Podemos estimar que **a área total abrangida
+pelo HC não deve exceder os 1000 m2** e que **a distância máxima entre uma tomada de rede e um HC** deve ser de, aproximadamente, **80 metros**. Relativamente às 
+**distâncias entre os cross-connects**, cada uma não deve exceder os **500 metros**. No piso 1 os três cross-connects estão localizados no mesmo bastidor.
 
 _1.5 Access Points_
 
@@ -233,12 +233,13 @@ Total: 2,40 m
 
 * Patch panels
 
-Dado que no piso 0 existem 34 outlets, serão necessários pelo menos 2 patch panels de 24 portas de fio Cat6a.
+Dado que no piso 0 existem 34 outlets, serão necessários pelo menos 2 patch panels de 24 portas de fio Cat6a, mais um patch panel de fibra
+adicional para o HCC.
 No entanto, pode ser necessário considerar a escalabilidade futura do sistema de rede e planear para mais portas do que o necessário atualmente.
 
 * Switches
 
-O Horizontal Cross-Connect necessita de um switch.
+O Horizontal Cross-Connect necessita de dois switches.
 
 * Outros materiais úteis
 
@@ -249,9 +250,10 @@ gerenciados num único espaço. Neste edifício seria recomendado o uso destas e
 eventualmente, outro hardware que possa ser adquirido (como switches). As estruturas de suporte podem ser de vários tipos e tamanhos, atentendo sempre às
 necessidades do edifício.
 
-**Horizontal Cross-Connect:** 2U (patch panels) + 1U (switch)
+**Horizontal Cross-Connect:** (1U + 2U) * 3 (Patch Panels ) = 9U
+                              2U (Switches)
 
-Total: 6U
+Total: (9U + 2U) * 2 = 22U
 
                                                               Piso 1:
 
@@ -291,12 +293,15 @@ Total: 12,25 m
 
 * Patch panels
 
-Dado que no piso 1 existem 30 outlets, serão necessários pelo menos 2 patch panels de fio Cat6a de 24 portas.
+Neste piso vão existir 2 patch panels de fibra, um para o Main Cross-Connect e outro para o Intermediate Cross-Connect. No Horizontal Cross-Connect vão existir
+2 patch panels de cobre e um patch panel de fibra.
 No entanto, pode ser necessário considerar a escalabilidade futura do sistema de rede e planear para mais portas do que o necessário atualmente.
 
 * Switches
 
-O Horizontal Cross-Connect, o Main Cross-Coneect e o Intermediate Cross-Connect necessitam de um switch cada um.
+O Hrizontal Cross-Connect necessita de dois switches.
+O Intermediate Cross-Connect necessita de um switch.
+O Main Cross-Connect não necessita de switches.
 
 * Outros materiais úteis
 
@@ -307,11 +312,11 @@ gerenciados num único espaço. Neste edifício seria recomendado o uso destas e
 Points**, os **patch panels** e, eventualmente, outro hardware que possa ser adquirido (como switches). As estruturas de suporte podem ser de vários tipos e
 tamanhos, atentendo sempre às necessidades do edifício. Neste caso devem abranger o dobro do espaço necessário para os equipamentos.
 
-**Main Cross-Connect:** 1U (patch panels) + 1U (switch)
-**Intermediate Cross-Connect:** 1U (patch panels) + 1U (switch)
-**Horizontal Cross-Connect:** 2U (patch panels) + 1U (switch)
+**Main Cross-Connect:** 1U + 2U = 3U (patch panels)
+**Intermediate Cross-Connect:** 1U + 2U (patch panels) + 1U (switch) = 4U
+**Horizontal Cross-Connect:** (1U + 2U) * 3 (patch panels ) + 2U (switches) = 11U
 
-Total: 16U
+Total: (3U + 4U + 11U) * 2 = 36U
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -319,6 +324,6 @@ Total: 16U
 
 |            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords | Switches |
 |------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|:--------:|
-| **Piso 0** |         506,50         |               2,40                |   34    |       1       |      2       |     34      |    1     |
-| **Piso 1** |         753,13         |               12,25               |   30    |       1       |    2 + 2     |     30      |    3     |
-| **Total**  |        1259,63         |               14,65               |   64    |       2       |      6       |     64      |    4     |
+| **Piso 0** |         506,50         |               2,40                |   34    |       1       |      3       |     34      |    2     |
+| **Piso 1** |         753,13         |               12,25               |   30    |       1       |      5       |     30      |    3     |
+| **Total**  |        1259,63         |               14,65               |   64    |       2       |      8       |     64      |    5     |
