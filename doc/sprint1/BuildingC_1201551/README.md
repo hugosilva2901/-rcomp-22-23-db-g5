@@ -321,9 +321,11 @@ Total: 1032,32 + 51,62 (margem de segurança de 5%) = 1083,94 m
 
 | Divisão | Comprimento total aproximado (m) |
 |--------:|:--------------------------------:|
-|  C.0.14 |              80,75               | //Desde a entrada até ao HC
+|  C.0.14 |              61,00               | 
 
-Total:80,75 m
+Intermediary Cross-Connect até ao Horizontal Cross-Connect: patch cord (1,25m)
+
+Total: 62,25 m
 
 * Patch panels
 
@@ -396,14 +398,9 @@ Para calcular o comprimento de fio de cobre necessário para o access point, foi
 Total: 1254,2 + 62,71 (margem de segurança de 5%) = 1316,91 m
 
 * Fibra ótica de modo único
-
-Intermediary Cross-Connect até ao Horizontal Cross-Connect: patch cord (cerca de 1 m)
 Conexão com o piso 0: 2,5 + 2,5 (altura do teto) = 5,00 m
-<!---
-TODO: CHECK IF THIS IS CORRECT
--->
 
-Total: 12,25 m
+Total: 5 m
 
 * Patch panels
 Existem 63 outlets no piso 1.
@@ -438,6 +435,6 @@ Total: 16U
 
 |            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels | Patch Cords | Switches |
 |------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|:-----------:|:--------:|
-| **Piso 0** |        1083,94         |               80,75               |   69    |       1       |      3       |     69      |    2     |
-| **Piso 1** |        1316,91         |                 x                 |   63    |       1       |      3       |     63      |    1     |
-| **Total**  |        2400,85         |               14,65               |   132   |       2       |      6       |     132     |    3     |
+| **Piso 0** |        1083,94         |               62,25               |   69    |       1       |      3       |     69      |    2     |
+| **Piso 1** |        1316,91         |                 5                 |   63    |       1       |      3       |     63      |    1     |
+| **Total**  |        2400,85         |               67,25               |   132   |       2       |      6       |     132     |    3     |
