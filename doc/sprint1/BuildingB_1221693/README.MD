@@ -205,7 +205,7 @@ Ligações entre o IC e os HC's (2):
     4.3 Inventário 
 |            | Fio de cobre Cat6a (m) | Fio de fibra ótica modo único (m) | Outlets | Access Points | Patch Panels |
 |------------|:----------------------:|:---------------------------------:|:-------:|:-------------:|:------------:|
-| **Piso 0** |         781.13         |               x               |   48    |       1       |      8       |
+| **Piso 0** |         796.13         |               x               |   48    |       1       |      8       |
 | **Piso 1** |         882.17         |              297.57               |   66    |       1       |      6       |
 | **Total**  |        1627.92         |              652.37               |   133   |       2       |      14      |  
 
