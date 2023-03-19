@@ -299,7 +299,7 @@ No entanto, pode ser necessário considerar a escalabilidade futura do sistema d
 
 * Switches
 
-O Hrizontal Cross-Connect necessita de dois switches.
+O Horizontal Cross-Connect necessita de dois switches.
 O Intermediate Cross-Connect necessita de um switch.
 O Main Cross-Connect não necessita de switches.
 
@@ -314,7 +314,7 @@ tamanhos, atentendo sempre às necessidades do edifício. Neste caso devem abran
 
 **Main Cross-Connect:** 1U + 2U = 3U (patch panels)
 **Intermediate Cross-Connect:** 1U + 2U (patch panels) + 1U (switch) = 4U
-**Horizontal Cross-Connect:** (1U + 2U) * 3 (patch panels ) + 2U (switches) = 11U
+**Horizontal Cross-Connect:** (1U + 2U) * 3 (patch panels) + 2U (switches) = 11U
 
 Total: (3U + 4U + 11U) * 2 = 36U
 
