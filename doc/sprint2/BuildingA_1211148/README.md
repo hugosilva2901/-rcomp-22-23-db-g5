@@ -58,6 +58,8 @@ conjunto com um endereço IP para dividir uma rede em sub-redes menores. A másc
 quantos bits são reservados para a parte de host num endereço IP. A máscara de rede é geralmente fornecida pelo administrador de rede ou pode ser especificada 
 em configurações ou dispositivos de rede, como routers ou switches. 
 
+A máscara de rede foi obtida utilizando o seguinte site: https://www.todoespacoonline.com/w/tuts/2014/11/calc_ipv4/
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 4. Cálculo do Broadcast/Endereço IP ###
