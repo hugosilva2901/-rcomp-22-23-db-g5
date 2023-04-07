@@ -74,4 +74,26 @@ Endereço de broadcast = Endereço de rede OR (NOT Máscara de sub-rede)
 Para aplicar aquelas operaçôes binárias com os endereços, é necessário converter os endereços IP para binário. O endereço broadcast será o resultado, 
 em decimal, da operação feita com os endereços em binário.
 
+Segue-se um exemplo:
+
+Endereço IP: 10.80.112.0
+Máscara de sub-rede: 255.255.255.128
+
+Passo 1: Converter para binário
+
+Endereço IP: 00001010.01010000.01110000.00000000
+Máscara de sub-rede: 11111111.11111111.11111111.10000000
+
+Passo 2: Aplicar a operação de "OU" bit a bit
+
+00001010.01010000.01110000.00000000 (Endereço IP)
+11111111.11111111.11111111.10000000 (Negação da Máscara de Sub-rede)
+00001010.01010000.01110000.10000000 (Resultado)
+
+Passo 3: Converter de volta para notação decimal com pontos
+
+O resultado obtido em binário é 00001010.01010000.01110000.10000000. Convertendo esse resultado de volta para notação decimal com pontos, temos:
+
+Endereço de Broadcast: 10.80.112.127
+
 ===========================================================================
