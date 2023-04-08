@@ -1,6 +1,6 @@
 RCOMP 2022-2023 Project - Sprint 2 review
 =========================================
-### Sprint master: xxx ###
+### Sprint master: 1211148 ###
 
 # 1. Sprint's backlog #
 
