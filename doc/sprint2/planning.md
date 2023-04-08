@@ -25,14 +25,25 @@ RCOMP 2022-2023 Project - Sprint 2 planning
 
 The following were the design decisions made for the project, and are to be followed by all members of the project:
 
-* Packet Tracer version : 8.2.1
-* VTP Domain name : rc23dbg5
-* VLANID Range : 385 - 415
-* IPV4 Address Block : 10.80.112.0/21
-* ISP router IPv4 node address : 121.60.202.50/30
+* Packet Tracer version : **8.2.1**
+* VTP Domain name : **rc23dbg5**
+* VLANID Range : **385 - 415**
+* IPV4 Address Block : **10.80.112.0/21**
+* ISP router IPv4 node address : **121.60.202.50/30**
 
-* Devices nomenclature : <building\>\_<floor\>\_<device-type\>
+* Devices nomenclature : **<building\>\_<floor\>\_<device-type\>**
 
+### Block of addresses per building ###
+
+| Building | Total Nodes | Assigned IPv4 block |
+|:--------:|:-----------:|:-------------------:|
+|    A     |     435     |   10.80.112.0/22    |
+|    B     |     218     |   10.80.116.0/24    |
+|    C     |     190     |   10.80.117.0/24    |
+|    D     |     188     |   10.80.118.0/24    |
+
+
+### VLAN database + SubNet associated ###
 
 | VLANID | Nome da VLAN | IPv4 Address Block |
 |:------:|:------------:|:------------------:|
@@ -43,20 +54,20 @@ The following were the design decisions made for the project, and are to be foll
 |  389   |   piso0_A    |   10.80.114.0/26   |
 |  390   |    voIP_A    |  10.80.114.64/26   |
 |  391   |    wifi_B    |                    |
-|  392   |    dmz_B     |                    |
-|  393   |   piso1_B    |                    |
-|  394   |   piso0_B    |                    |
-|  395   |    voIP_B    |                    |
+|  392   |   piso1_B    |                    |
+|  393   |   piso0_B    |                    |
+|  394   |    voIP_B    |                    |
+|  395   |    dmz_B     |                    |
 |  396   |    wifi_C    |                    |
-|  397   |    dmz_C     |                    |
-|  398   |   piso1_C    |                    |
-|  399   |   piso0_C    |                    |
-|  400   |    voIP_C    |                    |
-|  401   |    wifi_D    |                    |
-|  402   |    dmz_D     |                    |
-|  403   |   piso1_D    |                    |
-|  404   |   piso0_D    |                    |
-|  405   |    voIP_D    |                    |
+|  397   |   piso1_C    |                    |
+|  398   |   piso0_C    |                    |
+|  399   |    voIP_C    |                    |
+|  400   |    dmz_C     |                    |
+|  401   |    wifi_D    |   10.80.118.0/25   |
+|  402   |   piso1_D    |  10.80.118.128/26  |
+|  403   |   piso0_D    |  10.80.118.192/27  |
+|  404   |    voIP_D    |  10.80.118.224/28  |
+|  405   |    dmz_D     |  10.80.118.240/28  |
 
 
 
