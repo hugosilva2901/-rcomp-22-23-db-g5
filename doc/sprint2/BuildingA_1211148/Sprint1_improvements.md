@@ -17,7 +17,7 @@ recebido pelo professor.
     * 21 m2 = 6 outlets (possívelmente 5 em casos específicos)
 
 * A localização dos Access Points devia ser mais centralizada, para que a cobertura fosse mais uniforme e para que os
-Access Points não estivessem instalados nas divisões, mas sim nas paredes de fora, por exemplo.
+* Access Points não estivessem instalados nas divisões, mas sim nas paredes de fora dos corredores, por exemplo.
 
 * Não há necessidade de haver um outlet dedicado para o access point, apenas uma ligação direta.
 
