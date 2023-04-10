@@ -63,7 +63,8 @@ Este ficheiro documenta a simulaçôes do edifício C.
 
 ### 2. Cálculo do prefixo de rede ###
 
-O prefixo de rede determina a quantidade de bits que são usados para identificar a rede e a quantidade de bits que são usados para identificar os hosts dentro da rede. Para calcular o prefixo de rede, é necessário determinar quantas sub-redes são necessárias e quantos hosts serão alocados em cada sub-rede.
+O prefixo de rede determina a quantidade de bits usados para identificar a rede e a quantidade de bits usados para identificar os hosts na rede. 
+Para calcular o prefixo de rede, é necessário determinar quantas sub-redes são necessárias e quantos hosts serão alocados em cada sub-rede.
 
 No caso do edifício C, temos as seguintes sub-redes:
 
@@ -72,14 +73,15 @@ No caso do edifício C, temos as seguintes sub-redes:
     Outlets (Piso 0): 40 nodes
     VoIP: 25 nodes
     DMZ: 20 nodes
-O número total de nós é de 190. 
-É possível alocar estes nós usando um prefixo de rede /24 (255.255.255.0). No entanto, isso seria desperdício de endereços IP, uma vez que o prefixo de rede /24 permite 254 hosts por rede.
-Portanto, vamos utilizar um prefixo de rede menor.
 
-Para alocar o número de nós em cada sub-rede, utilizamos a seguinte fórmula:
+Temos um total de 190 nodes. 
+Conseguimos alocar estes nós com um prefixo de rede /24 (255.255.255.0).
+No entanto,iriamos desperdicar muitos enderecos IP, dado que um prefixo /24 permite 254 hosts.
+
+Vamos utilizar a seguinte fórmula, de modo a saber quantos bits são necessários para alocar o número de nodes presente em cada sub-rede:
     
     Número de nós por sub-rede = 2^(número de bits alocados para hosts) - 2
-    O valor "2" é subtraído da fórmula para excluir o endereço de rede e o endereço de broadcast, que não podem ser usados como endereços de host, pois são reservados para uso interno da rede.
+    O valor "2" é subtraído da fórmula de forma a excluir o endereço de rede e o endereço de broadcast, que não podem ser usados como endereços de host.
 
 Usando esta fórmula, podemos determinar o número de bits necessários para alocar o número de nós em cada sub-rede:
 
@@ -88,7 +90,7 @@ Usando esta fórmula, podemos determinar o número de bits necessários para alo
     Outlets (Piso 0): 40 nós -> 6 bits (2^6 - 2 = 62)
     VoIP: 25 nós -> 5 bits (2^5 - 2 = 30)
     DMZ: 20 nós -> 5 bits (2^5 - 2 = 30)
-    Portanto, podemos utilizar um prefixo de rede /26 (255.255.255.192) para alocar a sub-rede de Rede e Wi-Fi e Outlets (Piso 1) e um prefixo de rede /27 (255.255.255.224) para alocar as sub-redes de VoIP e DMZ.
+    Portanto, podemos utilizar um prefixo de rede /26 (255.255.255.192) para alocar a sub-rede Wi-Fi, Floor(0/1) e um prefixo de rede /27 (255.255.255.224) para alocar as sub-redes de VoIP e DMZ.
 
 
 | VLAN ID |   Nome   | Nodes | IPv4 Address Block | Usable IP Addresses | 
@@ -103,9 +105,11 @@ Usando esta fórmula, podemos determinar o número de bits necessários para alo
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### 3. Cálculo das máscaras de rede ###
 
-As máscaras de rede são calculadas a partir do prefixo de rede definido para cada VLAN. Neste caso, todos os prefixos de rede têm um comprimento de 26 bits, exceto as VLANs de VoIP e DMZ, que têm um comprimento de 27 bits.
-
-A máscara de rede é uma sequência de bits que define o tamanho da sub-rede. Ela é usada para separar o endereço IP em duas partes: a parte da rede e a parte do host. A parte da rede é formada pelos primeiros bits do endereço IP, enquanto a parte do host é formada pelos últimos bits.
+As máscaras de rede são calculadas a partir do prefixo de rede definido para cada VLAN. 
+Neste caso, todos os prefixos de rede têm um comprimento de 26 bits, exceto as VLANs de VoIP e DMZ, que têm um comprimento de 27 bits.
+A máscara de rede é uma sequência de bits que define o tamanho da sub-rede. 
+Esta é usada para separar o endereço IP em duas partes: a parte da rede e a parte do host. 
+A parte da rede é formada pelos primeiros bits do endereço IP, enquanto a parte do host é formada pelos últimos bits.
 
 Para calcular a máscara de rede, é necessário converter o comprimento do prefixo de rede em binário e preencher com zeros os bits restantes até 32 bits. Em seguida, basta converter essa sequência de bits em decimal e obter a máscara de rede correspondente.
 
@@ -121,14 +125,18 @@ Para calcular a máscara de rede, é necessário converter o comprimento do pref
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### 4. Cálculo do Broadcast/Endereço IP ###
 
-O Broadcast é um endereço especial que permite que um pacote seja enviado para todos os dispositivos em uma rede. Para calcular o endereço de Broadcast de cada rede, podemos usar duas fórmulas diferentes, dependendo das informações disponíveis:
+O Broadcast é um endereço especial que permite que um pacote seja enviado para todos os dispositivos numa rede. 
+Para calcular o endereço de Broadcast em cada sub-rede, podemos usar duas fórmulas diferentes.
 
-A primeira fórmula é a seguinte: Broadcast = Endereço IP + (2^n - 1), onde n é o número de bits da rede determinado pela máscara de sub-rede. Essa fórmula é útil quando conhecemos o número de bits da rede.
+A primeira fórmula é a seguinte: 
+    Broadcast = Endereço IP + (2^n - 1), 
+    onde n é o número de bits da rede determinado pela máscara de sub-rede.
 
-A segunda fórmula usa operações lógicas com o endereço IP e a máscara de sub-rede: Broadcast = (Endereço IP) OR (NOT Máscara de Sub-Rede). Essa fórmula é útil quando a máscara de sub-rede está na forma CIDR e não conhecemos o número de bits da rede.
+A segunda fórmula usa operações lógicas com o endereço IP e a máscara de sub-rede: 
+    Broadcast = (Endereço IP) OR (NOT Máscara de Sub-Rede). 
 
 
-|  VlanID  |  Endereço IP  |     Máscara     | Número de bits |   Broadcast   |                  Calculo                   | 
+|  VlanID  |  Endereço IP  |     Máscara     | Número de bits |   Broadcast   |            Calculo (1a formula)            | 
 |:--------:|:-------------:|:---------------:|:--------------:|:-------------:|:------------------------------------------:|
 |  wifi_C  |  10.80.117.0  | 255.255.255.192 |       26       | 10.80.117.63  |  10.80.117.0 + (2^26 - 1) = 10.80.117.63   |
 | floor1_C | 10.80.117.64  | 255.255.255.192 |       26       | 10.80.117.127 | 10.80.117.64 + (2^26 - 1) = 10.80.117.127  |
