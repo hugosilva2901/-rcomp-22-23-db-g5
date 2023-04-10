@@ -53,11 +53,11 @@ The following were the design decisions made for the project, and are to be foll
 |  388   |   piso1_A    |  10.80.113.128/25  |
 |  389   |   piso0_A    |   10.80.114.0/26   |
 |  390   |    voIP_A    |  10.80.114.64/26   |
-|  391   |    wifi_B    |                    |
-|  392   |   piso1_B    |                    |
-|  393   |   piso0_B    |                    |
-|  394   |    voIP_B    |                    |
-|  395   |    dmz_B     |                    |
+|  391   |    wifi_B    |  10.80.114.0/25    |
+|  392   |   piso1_B    |  10.80.114.129/26  |
+|  393   |   piso0_B    |  10.80.114.193\27  |
+|  394   |    voIP_B    |  10.80.114.224/28  |
+|  395   |    dmz_B     |  10.80.115.0/28    |
 |  396   |    wifi_C    |                    |
 |  397   |   piso1_C    |                    |
 |  398   |   piso0_C    |                    |
