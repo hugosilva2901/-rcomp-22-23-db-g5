@@ -63,11 +63,33 @@ Este ficheiro documenta a simulaçôes do edifício C.
 
 ### 2. Cálculo do prefixo de rede ###
 
-Para saber quantos usable IP addresses temos, é preciso olhar para o valor do prefixo de rede (também conhecido como máscara de sub-rede). O prefixo de rede é um valor que determina quantos bits da parte do endereço IP são usados para identificar a rede e quantos bits são usados para identificar os hosts dentro da rede.
+O prefixo de rede determina a quantidade de bits que são usados para identificar a rede e a quantidade de bits que são usados para identificar os hosts dentro da rede. Para calcular o prefixo de rede, é necessário determinar quantas sub-redes são necessárias e quantos hosts serão alocados em cada sub-rede.
 
-Por exemplo, um prefixo de rede /26 (ou seja, uma máscara de sub-rede de 255.255.255.192) significa que os primeiros 26 bits do endereço IP são usados para identificar a rede e os 6 bits restantes são usados para identificar os hosts dentro da rede. Isso resulta em um total de 64 endereços IP, dos quais 2 são reservados para a rede e broadcast, deixando 62 endereços IP utilizáveis para hosts.
+No caso do edifício C, temos as seguintes sub-redes:
 
-Dessa forma, podemos calcular o número de usable IP addresses para cada bloco de endereço IP dado o seu prefixo de rede.
+    Rede e Wi-Fi: 55 nodes
+    Outlets (Piso 1): 50 nodes
+    Outlets (Piso 0): 40 nodes
+    VoIP: 25 nodes
+    DMZ: 20 nodes
+O número total de nós é de 190. 
+É possível alocar estes nós usando um prefixo de rede /24 (255.255.255.0). No entanto, isso seria desperdício de endereços IP, uma vez que o prefixo de rede /24 permite 254 hosts por rede.
+Portanto, vamos utilizar um prefixo de rede menor.
+
+Para alocar o número de nós em cada sub-rede, utilizamos a seguinte fórmula:
+    
+    Número de nós por sub-rede = 2^(número de bits alocados para hosts) - 2
+    O valor "2" é subtraído da fórmula para excluir o endereço de rede e o endereço de broadcast, que não podem ser usados como endereços de host, pois são reservados para uso interno da rede.
+
+Usando esta fórmula, podemos determinar o número de bits necessários para alocar o número de nós em cada sub-rede:
+
+    Rede e Wi-Fi: 55 nós -> 6 bits (2^6 - 2 = 62)
+    Outlets (Piso 1): 50 nós -> 6 bits (2^6 - 2 = 62)
+    Outlets (Piso 0): 40 nós -> 6 bits (2^6 - 2 = 62)
+    VoIP: 25 nós -> 5 bits (2^5 - 2 = 30)
+    DMZ: 20 nós -> 5 bits (2^5 - 2 = 30)
+    Portanto, podemos utilizar um prefixo de rede /26 (255.255.255.192) para alocar a sub-rede de Rede e Wi-Fi e Outlets (Piso 1) e um prefixo de rede /27 (255.255.255.224) para alocar as sub-redes de VoIP e DMZ.
+
 
 | VLAN ID |   Nome   | Nodes | IPv4 Address Block | Usable IP Addresses | 
 |:-------:|:--------:|:-----:|:------------------:|:-------------------:|
