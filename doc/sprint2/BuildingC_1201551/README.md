@@ -17,66 +17,102 @@ Este ficheiro documenta a simulaçôes do edifício C.
 
 ### 1. Informação inicial do Edifício C###
 
-      - End user outlets on the ground floor: 40 nodes
-      - End user outlets on floor one: 50 nodes
-      - Wi-Fi network: 55 nodes
-      - DMZ (Servers, administration workstations, and network infrastructure devices): 20 nodes
-      - VoIP (IP-phones): 25 nodes
-        -Total Nodes: 190 
+       End user outlets on the ground floor: 40 nodes
+       End user outlets on floor one: 50 nodes
+       Wi-Fi network: 55 nodes
+       DMZ (Servers, administration workstations, and network infrastructure devices): 20 nodes
+       VoIP (IP-phones): 25 nodes
+        Total Nodes: 190 
 
-      - Do enunciado
-        -Equipa 5:  
+       Do enunciado
+        Equipa 5:  
             VTP domain name to be used: rc23dbg5
             VLANIDs range to be used: 385 - 415
             IPv4 address space to be used (Block of IPv4 addresses): 10.80.112.0/21
             ISP router IPv4 node address: 121.60.202.50/30
 
-      - Do planning:
-        - Edificio C:
+      Do planning:
+        Edificio C:
             Assigned IPv4 block: 10.80.117.0/24
 
-    -| VLANID | Nome da VLAN | IPv4 Address Block |
-    -|:------:|:------------:|:------------------:|
-    -|  396   |    wifi_C    |   10.80.117.0/26   |
-    -|  397   |   floor1_C    |  10.80.117.64/26   |
-    -|  398   |   floor0_C    |  10.80.117.128/26  |
-    -|  399   |    voIP_C    |  10.80.117.224/27  |
-    -|  400   |    dmz_C     |   10.80.117.192/27   |
+    | VLANID | Nome da VLAN | IPv4 Address Block |
+    |:------:|:------------:|:------------------:|
+    |  396   |    wifi_C    |   10.80.117.0/26   |
+    |  397   |   floor1_C    |  10.80.117.64/26   |
+    |  398   |   floor0_C    |  10.80.117.128/26  |
+    |  399   |    voIP_C    |  10.80.117.224/27  |
+    |  400   |    dmz_C     |   10.80.117.192/27   |
 
 
-- VTP Domain Name: rc23dbg5
-- Intervalo de VLANID: 385 - 415
-- Espaço de endereço IPv4 a ser usado (Bloco de endereços IPv4): 10.80.117.0/24
-- Endereço IPv4 do node do ISP router: 121.60.202.50/30
-- Endereço IPv4 do node do ISP router(building C): 121.60.202.50/30   10.80.117.0/24 10.80.117.0/24
+    VTP Domain Name: rc23dbg5
+    Intervalo de VLANID: 385 - 415
+    Espaço de endereço IPv4 a ser usado (Bloco de endereços IPv4): 10.80.117.0/24
+    Endereço IPv4 do node do ISP router: 121.60.202.50/30
+    Endereço IPv4 do node do ISP router(building C): 121.60.202.50/30   10.80.117.0/24 10.80.117.0/24
 
 
-| Nodes | Prefixo de rede |   Dispositivos   | VLANID | Nome da VLAN |       IP       | Primeiro IP |  Último IP   | Máscara de rede |  Broadcast   |
-|:-----:|:---------------:|:----------------:|:------:|--------------|:--------------:|:-----------:|:------------:|-----------------|:------------:|
-|  55   |       /26       |   Rede e Wi-Fi   |  396   | wifi_C       | 10.80.117.1/26 | 10.80.117.1 | 10.80.117.62 | 255.255.255.192 | 10.80.117.63 |
-|  50   |       /26       | Outlets (Piso 1) |  397   | floor1_C     |                |             |              |                 |              |
-|  40   |       /26       | Outlets (Piso 0) |  398   | floor0_C     |                |             |              |                 |              |
-|  25   |       /27       |       VoIP       |  399   | voIP_C       |                |             |              |                 |              |
-|  20   |       /27       |       DMZ        |  400   | dmz_C        |                |             |              |                 |              |
+| Nodes | Prefixo de rede |   Dispositivos   | VLANID | Nome da VLAN |        IP        |  Primeiro IP  |   Último IP   | Máscara de rede |   Broadcast   |
+|:-----:|:---------------:|:----------------:|:------:|--------------|:----------------:|:-------------:|:-------------:|-----------------|:-------------:|
+|  55   |       /26       |   Rede e Wi-Fi   |  396   | wifi_C       |  10.80.117.0/26  |  10.80.117.1  | 10.80.117.62  | 255.255.255.192 | 10.80.117.63  |
+|  50   |       /26       | Outlets (Piso 1) |  397   | floor1_C     | 10.80.117.64/26  | 10.80.117.65  | 10.80.117.126 | 255.255.255.192 | 10.80.117.127 |
+|  40   |       /26       | Outlets (Piso 0) |  398   | floor0_C     | 10.80.117.128/26 | 10.80.117.129 | 10.80.117.190 | 255.255.255.192 | 10.80.117.191 |
+|  25   |       /27       |       VoIP       |  399   | voIP_C       | 10.80.117.224/27 | 10.80.117.225 | 10.80.117.254 | 255.255.255.224 | 10.80.117.255 |
+|  20   |       /27       |       DMZ        |  400   | dmz_C        | 10.80.117.192/27 | 10.80.117.193 | 10.80.117.222 | 255.255.255.224 | 10.80.117.223 |
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 2. Cálculo do prefixo de rede ###
 
-- End user outlets on the ground floor: 40 nodes
-    - VLAN ID: 398 (floor0_C)
-    - IPv4 Address Block: 10.80.117.128/26 (64 usable IP addresses)
-- End user outlets on floor one: 50 nodes
-    - VLAN ID: 397 (floor1_C)
-    - IPv4 Address Block: 10.80.117.64/26 (64 usable IP addresses)
-- Wi-Fi network: 55 nodes
-    - VLAN ID: 396 (wifi_C)
-    - IPv4 Address Block: 10.80.117.0/26 (62 usable IP addresses)
-- DMZ (Servers, administration workstations, and network infrastructure devices): 20 nodes
-    - VLAN ID: 400 (dmz_C)
-    - IPv4 Address Block: 10.80.117.192/27 (30 usable IP addresses)
-- VoIP (IP-phones): 25 nodes
-    - VLAN ID: 399 (voIP_C)
-    - IPv4 Address Block: 10.80.117.224/27 (30 usable IP addresses)
+Para saber quantos usable IP addresses temos, é preciso olhar para o valor do prefixo de rede (também conhecido como máscara de sub-rede). O prefixo de rede é um valor que determina quantos bits da parte do endereço IP são usados para identificar a rede e quantos bits são usados para identificar os hosts dentro da rede.
+
+Por exemplo, um prefixo de rede /26 (ou seja, uma máscara de sub-rede de 255.255.255.192) significa que os primeiros 26 bits do endereço IP são usados para identificar a rede e os 6 bits restantes são usados para identificar os hosts dentro da rede. Isso resulta em um total de 64 endereços IP, dos quais 2 são reservados para a rede e broadcast, deixando 62 endereços IP utilizáveis para hosts.
+
+Dessa forma, podemos calcular o número de usable IP addresses para cada bloco de endereço IP dado o seu prefixo de rede.
+
+| VLAN ID |   Nome   | Nodes | IPv4 Address Block | Usable IP Addresses | 
+|:-------:|:--------:|:-----:|:------------------:|:-------------------:|
+|   396   |  wifi_C  |  55   |   10.80.117.0/26   |         62          | 
+|   397   | floor1_C |  50   |  10.80.117.64/26   |         64          | 
+|   398   | floor0_C |  40   |  10.80.117.128/26  |         64          | 
+|   399   |  voIP_C  |  25   |  10.80.117.224/27  |         30          | 
+|   400   |  dmz_C   |  20   |  10.80.117.192/27  |         30          | 
+
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
+### 3. Cálculo das máscaras de rede ###
+
+As máscaras de rede são calculadas a partir do prefixo de rede definido para cada VLAN. Neste caso, todos os prefixos de rede têm um comprimento de 26 bits, exceto as VLANs de VoIP e DMZ, que têm um comprimento de 27 bits.
+
+A máscara de rede é uma sequência de bits que define o tamanho da sub-rede. Ela é usada para separar o endereço IP em duas partes: a parte da rede e a parte do host. A parte da rede é formada pelos primeiros bits do endereço IP, enquanto a parte do host é formada pelos últimos bits.
+
+Para calcular a máscara de rede, é necessário converter o comprimento do prefixo de rede em binário e preencher com zeros os bits restantes até 32 bits. Em seguida, basta converter essa sequência de bits em decimal e obter a máscara de rede correspondente.
+
+| VLAN ID |   Nome   | IPv4 Address Block |           Prefixo de Rede           | Comprimento do Prefixo | Máscara de Rede | 
+|:-------:|:--------:|:------------------:|:-----------------------------------:|:----------------------:|:---------------:|
+|   396   |  wifi_C  |   10.80.117.0/26   | 11111111.11111111.11111111.11000000 |           26           | 255.255.255.192 |
+|   397   | floor1_C |  10.80.117.64/26   | 11111111.11111111.11111111.11000000 |           26           | 255.255.255.192 |
+|   398   | floor0_C |  10.80.117.128/26  | 11111111.11111111.11111111.11000000 |           26           | 255.255.255.192 |
+|   399   |  voIP_C  |  10.80.117.224/27  | 11111111.11111111.11111111.11100000 |           27           | 255.255.255.224 |
+|   400   |  dmz_C   |  10.80.117.192/27  | 11111111.11111111.11111111.11100000 |           27           | 255.255.255.224 |
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+### 4. Cálculo do Broadcast/Endereço IP ###
+
+O Broadcast é um endereço especial que permite que um pacote seja enviado para todos os dispositivos em uma rede. Para calcular o endereço de Broadcast de cada rede, podemos usar duas fórmulas diferentes, dependendo das informações disponíveis:
+
+A primeira fórmula é a seguinte: Broadcast = Endereço IP + (2^n - 1), onde n é o número de bits da rede determinado pela máscara de sub-rede. Essa fórmula é útil quando conhecemos o número de bits da rede.
+
+A segunda fórmula usa operações lógicas com o endereço IP e a máscara de sub-rede: Broadcast = (Endereço IP) OR (NOT Máscara de Sub-Rede). Essa fórmula é útil quando a máscara de sub-rede está na forma CIDR e não conhecemos o número de bits da rede.
+
+
+|  VlanID  |  Endereço IP  |     Máscara     | Número de bits |   Broadcast   |                  Calculo                   | 
+|:--------:|:-------------:|:---------------:|:--------------:|:-------------:|:------------------------------------------:|
+|  wifi_C  |  10.80.117.0  | 255.255.255.192 |       26       | 10.80.117.63  |  10.80.117.0 + (2^26 - 1) = 10.80.117.63   |
+| floor1_C | 10.80.117.64  | 255.255.255.192 |       26       | 10.80.117.127 | 10.80.117.64 + (2^26 - 1) = 10.80.117.127  |
+| floor0_C | 10.80.117.128 | 255.255.255.192 |       26       | 10.80.117.191 | 10.80.117.128 + (2^26 - 1) = 10.80.117.191 |
+|  voIP_C  | 10.80.117.224 | 255.255.255.224 |       27       | 10.80.117.255 | 10.80.117.224 + (2^27 - 1) = 10.80.117.255 |
+|  dmz_C   | 10.80.117.192 | 255.255.255.224 |       27       | 10.80.117.223 | 10.80.117.192 + (2^27 - 1) = 10.80.117.223 |
+
+
+Os dados acima referidos podem ser obtidos/confirmados com recurso a : https://www.todoespacoonline.com/w/tuts/2014/11/calc_ipv4/
