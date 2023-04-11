@@ -59,8 +59,8 @@ The following were the design decisions made for the project, and are to be foll
 |  394   |    voIP_B    |  10.80.116.224/28  |
 |  395   |    dmz_B     |  10.80.116.240/28  |
 |  396   |    wifi_C    |   10.80.117.0/26   |
-|  397   |   floor1_C   |  10.80.117.64/26   |
-|  398   |   floor0_C   |  10.80.117.128/26  |
+|  397   |   piso1_C    |  10.80.117.64/26   |
+|  398   |   piso0_C    |  10.80.117.128/26  |
 |  399   |    voIP_C    |  10.80.117.192/27  |
 |  400   |    dmz_C     |  10.80.117.224/27  |
 |  401   |    wifi_D    |   10.80.118.0/25   |
