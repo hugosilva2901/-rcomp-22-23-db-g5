@@ -28,7 +28,7 @@ Este ficheiro documenta a simulaçôes do edifício B.
 - Espaço de endereço IPv4 a ser usado (Bloco de endereços IPv4):
 - Endereço IPv4 do node do ISP router:
 
-
+# !!!!!ALTERAR OS IPS DE ACORDO COM O planning.md!!!!! #
 | Nodes | Prefixo de rede |   Dispositivos   | VLANID | Nome da VLAN |      IP       |  Primeiro IP  |   Último IP   | Máscara de rede |   Broadcast   |
 |:-----:|:---------------:|:----------------:|:------:|--------------|:-------------:|:-------------:|:-------------:|-----------------|:-------------:|
 |  110  |       /25       |    Red e Wi-Fi   |  391   | wife_B       |  10.80.114.0  |  10.80.114.1  | 10.80.114.128 | 255.255.255.128 | 10.80.114.127 |
