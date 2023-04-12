@@ -32,6 +32,7 @@ interface GigabitEthernet7/1
 interface GigabitEthernet8/1
 !
 interface GigabitEthernet9/1
+ switchport mode trunk
 !
 interface Vlan1
  no ip address
