@@ -147,3 +147,23 @@ A segunda fórmula usa operações lógicas com o endereço IP e a máscara de s
 
 
 Os dados acima referidos podem ser obtidos/confirmados com recurso a : https://www.todoespacoonline.com/w/tuts/2014/11/calc_ipv4/
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+### 5. Tabelas de roteamento ###
+
+Uma tabela de roteamento é uma lista de destinos de rede e os próximos saltos associados a cada destino. Cada entrada na tabela de roteamento contém
+informações sobre a rede de destino (geralmente representada como um prefixo de rede ou um endereço de rede), a interface de saída (ou interface de rede) e,
+em alguns casos, a métrica ou custo associado a essa rota.
+
+* Tabela de roteamento do router C_F0_HCC:
+
+| Network       | Máscara de rede | Next-Hop |
+|---------------|-----------------|----------|
+| 10.80.117.0   | 255.255.255.192 | xxxx     |
+| 10.80.117.64  | 255.255.255.192 | xxxx     |
+| 10.80.117.128 | 255.255.255.192 | xxxx     |
+| 10.80.117.192 | 255.255.255.224 | xxxx     |
+| 10.80.117.224 | 255.255.255.224 | xxxx     |
+
+
+===========================================================================
