@@ -10,8 +10,9 @@ Este ficheiro documenta a simulação em Cisco Packet Tracer do edifício D
 ### Índice: ###
 
 1. **Informação inicial do Edifício D**
-2. **Tabela de roteamento para o router associado a este edifício** 
-3. **Decisões de design**
+2. **Cálculo de IP's e máscaras de rede**
+4. **Cálculo do Broadcast/Endereço IP**
+5. **Decisões de design**
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -38,17 +39,41 @@ Este ficheiro documenta a simulação em Cisco Packet Tracer do edifício D
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### 2. Tabela de roteamento para o router associado a este edifício ###
+### 2. Cálculo de IP's e máscaras de rede ###
 
-|   Rede   |   Máscara   |   Next Hop   | Interface |
-|:--------:|:-----------:|:------------:|:---------:|
+As VLAN's no edifício D funcionam como networks diferentes, cada uma com um endereço IP diferente.
+A partir do endereço base deste edifício (10.80.118.0/24), foi possível calcular os endereços IP de cada VLAN, utilizando a máscara de rede adequada ao número de nodes que 
+cada VLAN tem.
 
+Assim, a primeira VLAN fica com um bloco de 128 IPs, a segunda com 64 IPs, a terceira com 32 IPs, a quarta com 16 IPs e a quinta com 16 IPs.
+
+Isto traduz-se em:
+*  10.80.118.0/25 - Rede Wi-Fi
+*  10.80.118.128/26 - Outlets (Piso 1)
+*  10.80.118.192/27 - Outlets (Piso 0)
+*  10.80.118.224/28 - VoIP
+*  10.80.118.240/28 - DMZ
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### 3. Decisões de design ###
+### 4. Cálculo do Broadcast/Endereço IP ###
 
- #### 3.1. VTP ####
+* Endereço IP: O endereço IP é o primeiro IP de cada rede, ou seja, o primeiro IP de cada bloco de IPs que foi atribuído a cada VLAN. Este IP identifica a rede.
+
+
+     * Primeiro IP utilizável = Endereço IP + 1
+
+
+* Broadcast IP: O endereço IP de broadcast é o último IP de cada rede, ou seja, o último IP de cada bloco de IPs que foi atribuído a cada VLAN.
+* Broadcast IP = Endereço IP + 2^(32 - Número de bits da máscara de rede) - 1
+
+
+    * Último IP utilizável: Broadcast IP - 1
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### 5. Decisões de design ###
+
+ #### 5.1. VTP ####
 
 * Infelizmente, ao usar VTP na simulação, a base de dados de VLANS não se propagou entre os switches, de qualquer forma, a configuração de VTP foi mantida:
     * VTP Domain Name: rc23dbg5
@@ -56,6 +81,6 @@ Este ficheiro documenta a simulação em Cisco Packet Tracer do edifício D
     * VTP Mode: Client nos switches restantes do edifício D
     * Ligações entre switches: Trunk
 
- #### 3.2. Default Gateways ####
+ #### 5.2. Default Gateways ####
 
-* A default gateway do edifício D é o router do ICC, com o IP: xxx.xxx.xxx.xxx
+* A default gateway do edifício D é o router do ICC, com o IP: 10.80.118.241
