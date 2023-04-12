@@ -22,3 +22,5 @@ que posteriormente seriam ramificados para os devidos locais.
 * Não há necessidade de haver um outlet dedicado para o access point, apenas uma ligação direta.
 
 * O cálculo de espaço dedicado para o "housing" dos equipamentos de rede (U's) deveria ser melhor explicado e documentado.
+
+* Dentro do edifício deveria ser usada fibra multimodo, uma vez que é mais indicada para distâncias curtas.

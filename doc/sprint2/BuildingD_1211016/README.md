@@ -10,6 +10,8 @@ Este ficheiro documenta a simulação em Cisco Packet Tracer do edifício D
 ### Índice: ###
 
 1. **Informação inicial do Edifício D**
+2. **Tabela de roteamento para o router associado a este edifício** 
+3. **Decisões de design**
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -34,3 +36,26 @@ Este ficheiro documenta a simulação em Cisco Packet Tracer do edifício D
 |  13   |       /28       |       VoIP       |  404   |    voIP_D    | 10.80.118.224 | 10.80.118.225 | 10.80.118.238 | 255.255.255.240 | 10.80.118.239 |
 |  10   |       /28       |       DMZ        |  405   |    dmz_D     | 10.80.118.240 | 10.80.118.241 | 10.80.118.254 | 255.255.255.240 | 10.80.118.255 |
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### 2. Tabela de roteamento para o router associado a este edifício ###
+
+|   Rede   |   Máscara   |   Next Hop   | Interface |
+|:--------:|:-----------:|:------------:|:---------:|
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### 3. Decisões de design ###
+
+ #### 3.1. VTP ####
+
+* Infelizmente, ao usar VTP na simulação, a base de dados de VLANS não se propagou entre os switches, de qualquer forma, a configuração de VTP foi mantida:
+    * VTP Domain Name: rc23dbg5
+    * VTP Mode: Server no switch do ICC do edifício D
+    * VTP Mode: Client nos switches restantes do edifício D
+    * Ligações entre switches: Trunk
+
+ #### 3.2. Default Gateways ####
+
+* A default gateway do edifício D é o router do ICC, com o IP: xxx.xxx.xxx.xxx
