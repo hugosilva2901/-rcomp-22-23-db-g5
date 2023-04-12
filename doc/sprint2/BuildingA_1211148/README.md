@@ -46,6 +46,7 @@ junção de todas as simulações no Packet Tracer.
 IP: 121.60.202.48
 Primeiro IP: 121.60.202.49
 Endereço Broadcast (último endereço): 121.60.202.51
+Máscara de rede: 255.255.255.252
 
 (/30 corresponde a 2 endereços IP disponíveis)
 
