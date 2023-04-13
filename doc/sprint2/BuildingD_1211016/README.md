@@ -11,7 +11,8 @@ Este ficheiro documenta a simulação em Cisco Packet Tracer do edifício D
 
 1. **Informação inicial do Edifício D**
 2. **Cálculo de IP's e máscaras de rede**
-4. **Cálculo do Broadcast/Endereço IP**
+3. **Cálculo do Broadcast/Endereço IP**
+4. **Static Routing Table**
 5. **Decisões de design**
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -56,7 +57,7 @@ Isto traduz-se em:
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### 4. Cálculo do Broadcast/Endereço IP ###
+### 3. Cálculo do Broadcast/Endereço IP ###
 
 * Endereço IP: O endereço IP é o primeiro IP de cada rede, ou seja, o primeiro IP de cada bloco de IPs que foi atribuído a cada VLAN. Este IP identifica a rede.
 
@@ -69,7 +70,24 @@ Isto traduz-se em:
 
 
     * Último IP utilizável: Broadcast IP - 1
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### 4. Static Routing Table ###
+
+* Esta é a tabela utilizada no router do edifício D.
+* Através desta tabela, o router consegue enviar tráfego para os outros edifícios no campus.
+
+|   Destino   |    Máscara    |  Next Hop   |
+|:-----------:|:-------------:|:-----------:|
+| 10.80.112.0 | 255.255.252.0 | 10.80.112.1 |
+| 10.80.116.0 | 255.255.255.0 | 10.80.112.2 |
+| 10.80.117.0 | 255.255.255.0 | 10.80.112.3 |
+
+* O router do edifício D contém na interface FastEthernet0/0 o endereço IP de todas as VLANS através de encapsulamento de sub-interfaces, podendo assim enviar tráfego para todas as VLANS dentro do edifício D.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ### 5. Decisões de design ###
 
@@ -80,7 +98,3 @@ Isto traduz-se em:
     * VTP Mode: Server no switch do ICC do edifício D
     * VTP Mode: Client nos switches restantes do edifício D
     * Ligações entre switches: Trunk
-
- #### 5.2. Default Gateways ####
-
-* A default gateway do edifício D é o router do ICC, com o IP: 10.80.118.241
