@@ -106,35 +106,4 @@ O resultado obtido em binário é 00001010.01010000.01110000.10000000. Converten
 
 Endereço de Broadcast: 10.80.112.127
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-### 5. Tabelas de roteamento ###
-
-Uma tabela de roteamento é uma lista de destinos de rede e os próximos saltos associados a cada destino. Cada entrada na tabela de roteamento contém 
-informações sobre a rede de destino (geralmente representada como um prefixo de rede ou um endereço de rede), a interface de saída (ou interface de rede) e, 
-em alguns casos, a métrica ou custo associado a essa rota.
-
-* Tabela de roteamento do router A_F1_MCC
-
-| Network       | Máscara de rede | Next-Hop    |
-|---------------|-----------------|-------------|
-| 10.80.114.0   | 255.255.255.192 | 10.80.112.1 |
-| 10.80.113.128 | 255.255.255.128 | 10.80.112.1 |
-| 10.80.112.128 | 255.255.255.128 | 10.80.112.1 |
-| 10.80.113.0   | 255.255.255.128 | 10.80.112.1 |
-| 10.80.114.64  | 255.255.255.192 | 10.80.112.1 |
-
-* Tabela de roteamento do router A_F1_ICC
-
-| Network | Máscara de rede | Next-Hop    |
-|---------|:---------------:|-------------|
-| 0.0.0.0 |     0.0.0.0     | 10.80.112.5 |
-
-
-* Tabela de roteamento do router BACKBONE_ISP
-
-| Network     | Máscara de rede | Next-Hop    |
-|-------------|-----------------|-------------|
-| 10.80.112.0 | 255.255.255.128 | 10.80.112.5 |
-
 ===========================================================================
