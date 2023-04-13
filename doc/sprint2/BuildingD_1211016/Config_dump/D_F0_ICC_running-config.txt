@@ -14,6 +14,18 @@ hostname rc23dbg5
 spanning-tree mode pvst
 spanning-tree extend system-id
 !
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet1/1
+!
+interface GigabitEthernet2/1
+!
+interface GigabitEthernet3/1
+!
+interface GigabitEthernet4/1
+!
+interface GigabitEthernet5/1
+!
 interface FastEthernet6/1
  switchport mode trunk
 !
