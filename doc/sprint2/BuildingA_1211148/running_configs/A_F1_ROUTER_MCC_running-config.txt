@@ -79,6 +79,9 @@ interface Vlan1
 router rip
 !
 ip classless
+ip route 10.80.116.0 255.255.255.0 10.80.112.2 
+ip route 10.80.117.0 255.255.255.0 10.80.112.3 
+ip route 10.80.118.0 255.255.255.0 10.80.112.4 
 !
 ip flow-export version 9
 !
