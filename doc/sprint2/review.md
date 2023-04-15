@@ -33,13 +33,15 @@ The subtask backlog accomplishment can be assessed as one of:
 * Partially implemented with issues
 
 ## 2.1. 1211148 - Structured cable design for building A, including the campus backbone ##
-### xxx ### 
+### Totally implemented with issues ### 
+
+* The internet connection is not working properly.
 
 ## 2.2 1221693 - Structured cable design for building B ##
-### xxx ### 
+### Totally implemented with no issues ### 
 
 ## 2.3 1201551 - Structured cable design for building C ##
-### xxx ### 
+### Totally implemented with no issues ### 
 
 ## 2.4 1211016 - Structured cable design for building D ##
-### xxx ### 
+### Totally implemented with no issues ### 
