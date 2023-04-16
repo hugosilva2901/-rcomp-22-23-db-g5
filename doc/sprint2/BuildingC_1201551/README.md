@@ -138,11 +138,8 @@ Os dados acima referidos podem ser obtidos/confirmados com recurso a : https://w
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### 5. Tabelas de roteamento ###
 
-Uma tabela de roteamento é uma lista de destinos de rede e os próximos saltos associados a cada destino. Cada entrada na tabela de roteamento contém
-informações sobre a rede de destino (geralmente representada como um prefixo de rede ou um endereço de rede), a interface de saída (ou interface de rede) e,
-em alguns casos, a métrica ou custo associado a essa rota.
-
-* Tabela de roteamento do router C_F0_HCC:
+* Esta é a tabela utilizada no router do edifício C.
+* Através desta tabela, o router consegue enviar tráfego para os outros edifícios no campus.
 
 | Network       | Máscara de rede | Next-Hop      |
 |---------------|-----------------|---------------|
@@ -151,7 +148,6 @@ em alguns casos, a métrica ou custo associado a essa rota.
 | 10.80.118.0   | 255.255.255.0   | 10.80.112.1   |
 | 0.0.0.0       | 0.0.0.0         | 121.60.202.50 |
 
-* O router do edifício C contém na ‘interface’ Fa0/0 o endereço IP de todas as VLANS através de encapsulamento de subinterfaces, podendo assim enviar tráfego para todas as VLANS dentro do edifício C.
 
 
 
