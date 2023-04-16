@@ -47,10 +47,7 @@ Do planning:
 
 
    * VTP Domain Name: rc23dbg5
-   * Intervalo de VLANID: 385 - 415
    * Espaço de endereço IPv4 a ser usado (Bloco de endereços IPv4): 10.80.117.0/24
-   * Endereço IPv4 do node do ISP router: 121.60.202.50/30
-   * Endereço IPv4 do node do ISP router(building C): 121.60.202.50/30   10.80.117.0/24 10.80.117.0/24
 
 
 | Nodes | Prefixo de rede |   Dispositivos   | VLANID | Nome da VLAN |        IP        |  Primeiro IP  |   Último IP   | Máscara de rede |   Broadcast   |
