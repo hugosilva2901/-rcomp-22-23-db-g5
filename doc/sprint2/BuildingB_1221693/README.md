@@ -13,6 +13,7 @@ Este ficheiro documenta a simulaçôes do edifício B.
 2. **Cálculo do prefixo de rede**
 3. **Cálculo das máscaras de rede**
 4. **Cálculo dos Broadcast/endereço IP**
+5. **Static Routing Table**
 
 
 ### 1. Informação inicial do Edifício B###
@@ -57,3 +58,20 @@ Para fazer o cálculo, siga estes passos:
 2-Calcule o número de hosts disponíveis na rede, subtraindo 2 do total de endereços possíveis. Isso ocorre porque o primeiro endereço é reservado para a rede e o último endereço é reservado para o endereço de broadcast. Por exemplo, se houver 24 bits na máscara de sub-rede, há 2^8 (256) endereços possíveis para cada octeto, menos 2 endereços reservados, o que significa que há 254 hosts disponíveis.
 3-Encontre o endereço de broadcast somando a negação da máscara de sub-rede ao endereço IP da rede. 
 4-Encontre o endereço IP final subtraindo 1 do endereço de broadcast.
+
+
+### 5. Static Routing Table ###
+
+* Esta é a tabela utilizada no router do edifício B.
+* Através desta tabela, o router consegue enviar tráfego para os outros edifícios no campus.
+
+|   Destino   |    Máscara    |   Next Hop    |
+|:-----------:|:-------------:|:-------------:|
+| 10.80.112.0 | 255.255.252.0 |  10.80.112.1  |
+| 10.80.117.0 | 255.255.255.0 |  10.80.112.3  |
+| 10.80.118.0 | 255.255.255.0 |  10.80.112.4  |
+|   0.0.0.0   |    0.0.0.0    | 121.60.202.50 |
+
+* O router do edifício B contém na interface FastEthernet0/0 o endereço IP de todas as VLANS através de encapsulamento de sub-interfaces, podendo assim enviar tráfego para todas as VLANS dentro do edifício B.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
