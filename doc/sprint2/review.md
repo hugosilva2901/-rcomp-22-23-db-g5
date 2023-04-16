@@ -35,7 +35,9 @@ The subtask backlog accomplishment can be assessed as one of:
 ## 2.1. 1211148 - Structured cable design for building A, including the campus backbone ##
 ### Totally implemented with issues ### 
 
-* The internet connection is not working properly.
+* The internet connection is not working properly: in building A, Pc's and Laptops can send data to the ISP router, however
+* the ISP router cannot send data to the Pc's and Laptops. Pc's and Laptops from other buildings cannot send or receice data
+* from the ISP router at all.
 
 ## 2.2 1221693 - Structured cable design for building B ##
 ### Totally implemented with no issues ### 
