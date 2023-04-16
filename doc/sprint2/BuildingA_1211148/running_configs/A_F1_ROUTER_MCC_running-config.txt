@@ -19,7 +19,7 @@ no ipv6 cef
 !
 !
 !
-license udi pid CISCO2811/K9 sn FTX1017CRX3-
+license udi pid CISCO2811/K9 sn FTX1017469T-
 !
 !
 !
@@ -39,7 +39,7 @@ spanning-tree mode pvst
 !
 !
 interface FastEthernet0/0
- no ip address
+ ip address 121.60.202.50 255.255.255.252
  duplex auto
  speed auto
 !

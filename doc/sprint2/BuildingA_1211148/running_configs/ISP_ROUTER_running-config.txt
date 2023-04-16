@@ -19,7 +19,7 @@ no ipv6 cef
 !
 !
 !
-license udi pid CISCO2811/K9 sn FTX1017XCY9-
+license udi pid CISCO2811/K9 sn FTX1017E2L2-
 !
 !
 !
@@ -87,6 +87,7 @@ interface Vlan1
 router rip
 !
 ip classless
+ip route 0.0.0.0 0.0.0.0 121.60.202.49 
 !
 ip flow-export version 9
 !
