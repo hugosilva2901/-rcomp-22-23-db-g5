@@ -27,6 +27,12 @@ interface FastEthernet4/1
 !
 interface GigabitEthernet5/1
 !
+interface GigabitEthernet6/1
+!
+interface GigabitEthernet7/1
+!
+interface GigabitEthernet8/1
+!
 interface Vlan1
  no ip address
  shutdown
