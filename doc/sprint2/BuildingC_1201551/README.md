@@ -17,23 +17,24 @@ Este ficheiro documenta a simulaçôes do edifício C.
 
 ### 1. Informação inicial do Edifício C ###
 
-       End user outlets on the ground floor: 40 nodes
-       End user outlets on floor one: 50 nodes
-       Wi-Fi network: 55 nodes
-       DMZ (Servers, administration workstations, and network infrastructure devices): 20 nodes
-       VoIP (IP-phones): 25 nodes
-        Total Nodes: 190 
+    End user outlets on the ground floor: 40 nodes
+    End user outlets on floor one: 50 nodes
+    Wi-Fi network: 55 nodes
+    DMZ (Servers, administration workstations, and network infrastructure devices): 20 nodes
+    VoIP (IP-phones): 25 nodes
+    Total Nodes: 190 
 
-       Do enunciado
-        Equipa 5:  
-            VTP domain name to be used: rc23dbg5
-            VLANIDs range to be used: 385 - 415
-            IPv4 address space to be used (Block of IPv4 addresses): 10.80.112.0/21
-            ISP router IPv4 node address: 121.60.202.50/30
+Informação retirada do enunciado:
+    
+    VTP domain name to be used: rc23dbg5
+    VLANIDs range to be used: 385 - 415
+    IPv4 address space to be used (Block of IPv4 addresses): 10.80.112.0/21
+    ISP router IPv4 node address: 121.60.202.50/30
 
-      Do planning:
-        Edificio C:
-            Assigned IPv4 block: 10.80.117.0/24
+Do planning:
+        
+    Edificio C:
+    Assigned IPv4 block: 10.80.117.0/24
 
     | VLANID | Nome da VLAN | IPv4 Address Block |
     |:------:|:------------:|:------------------:|
@@ -44,11 +45,12 @@ Este ficheiro documenta a simulaçôes do edifício C.
     |  400   |    dmz_C     |   10.80.117.224/27   |
 
 
-    VTP Domain Name: rc23dbg5
-    Intervalo de VLANID: 385 - 415
-    Espaço de endereço IPv4 a ser usado (Bloco de endereços IPv4): 10.80.117.0/24
-    Endereço IPv4 do node do ISP router: 121.60.202.50/30
-    Endereço IPv4 do node do ISP router(building C): 121.60.202.50/30   10.80.117.0/24 10.80.117.0/24
+
+   * VTP Domain Name: rc23dbg5
+   * Intervalo de VLANID: 385 - 415
+   * Espaço de endereço IPv4 a ser usado (Bloco de endereços IPv4): 10.80.117.0/24
+   * Endereço IPv4 do node do ISP router: 121.60.202.50/30
+   * Endereço IPv4 do node do ISP router(building C): 121.60.202.50/30   10.80.117.0/24 10.80.117.0/24
 
 
 | Nodes | Prefixo de rede |   Dispositivos   | VLANID | Nome da VLAN |        IP        |  Primeiro IP  |   Último IP   | Máscara de rede |   Broadcast   |
@@ -59,7 +61,6 @@ Este ficheiro documenta a simulaçôes do edifício C.
 |  25   |       /27       |       VoIP       |  399   | voIP_C       | 10.80.117.192/27 | 10.80.117.193 | 10.80.117.222 | 255.255.255.224 | 10.80.117.223 |
 |  20   |       /27       |       DMZ        |  400   | dmz_C        | 10.80.117.224/27 | 10.80.117.225 | 10.80.117.254 | 255.255.255.224 | 10.80.117.255 |
 
-# TROQUEI VOIP POR DMZ #
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 2. Cálculo do prefixo de rede ###
@@ -75,30 +76,17 @@ No caso do edifício C, temos as seguintes sub-redes:
     VoIP: 25 nodes
     DMZ: 20 nodes
 
-Temos um total de 190 nodes. 
-Conseguimos alocar estes nós com um prefixo de rede /24 (255.255.255.0).
-No entanto,iriamos desperdicar muitos enderecos IP, dado que um prefixo /24 permite 254 hosts.
-
-Vamos utilizar a seguinte fórmula, de modo a saber quantos bits são necessários para alocar o número de nodes presente em cada sub-rede:
-    
-    Número de nós por sub-rede = 2^(número de bits alocados para hosts) - 2
-    O valor "2" é subtraído da fórmula de forma a excluir o endereço de rede e o endereço de broadcast, que não podem ser usados como endereços de host.
-
-Usando esta fórmula, podemos determinar o número de bits necessários para alocar o número de nós em cada sub-rede:
-
-    Rede e Wi-Fi: 55 nós -> 6 bits (2^6 - 2 = 62)
-    Outlets (Piso 1): 50 nós -> 6 bits (2^6 - 2 = 62)
-    Outlets (Piso 0): 40 nós -> 6 bits (2^6 - 2 = 62)
-    VoIP: 25 nós -> 5 bits (2^5 - 2 = 30)
-    DMZ: 20 nós -> 5 bits (2^5 - 2 = 30)
-    Portanto, podemos utilizar um prefixo de rede /26 (255.255.255.192) para alocar a sub-rede Wi-Fi, Floor(0/1) e um prefixo de rede /27 (255.255.255.224) para alocar as sub-redes de VoIP e DMZ.
+Um valor de "/26" representa uma máscara de rede com 26 bits "1" consecutivos à esquerda, o que corresponde a 64 endereços IP únicos. 
+Já um valor de "/27" representa uma máscara de rede com 27 bits "1" consecutivos à esquerda, o que corresponde a 32 endereços IP únicos
+Com isto, para as sub-redes wifi_C, floor1_C e floor0_C, é necessário um prefixo de rede de "/26".
+Para as sub-redes voIP_C e dmz_C, utilizamos um prefixo de rede de "/27".
 
 
 | VLAN ID |   Nome   | Nodes | IPv4 Address Block | Usable IP Addresses | 
 |:-------:|:--------:|:-----:|:------------------:|:-------------------:|
 |   396   |  wifi_C  |  55   |   10.80.117.0/26   |         62          | 
-|   397   | floor1_C |  50   |  10.80.117.64/26   |         64          | 
-|   398   | floor0_C |  40   |  10.80.117.128/26  |         64          | 
+|   397   | floor1_C |  50   |  10.80.117.64/26   |         62          | 
+|   398   | floor0_C |  40   |  10.80.117.128/26  |         62          | 
 |   399   |  voIP_C  |  25   |  10.80.117.192/27  |         30          | 
 |   400   |  dmz_C   |  20   |  10.80.117.224/27  |         30          | 
 
