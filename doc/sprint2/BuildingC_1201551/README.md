@@ -78,8 +78,9 @@ No caso do edifício C, temos as seguintes sub-redes:
 
 Um valor de "/26" representa uma máscara de rede com 26 bits "1" consecutivos à esquerda, o que corresponde a 64 endereços IP únicos. 
 Já um valor de "/27" representa uma máscara de rede com 27 bits "1" consecutivos à esquerda, o que corresponde a 32 endereços IP únicos
-Com isto, para as sub-redes wifi_C, floor1_C e floor0_C, é necessário um prefixo de rede de "/26".
-Para as sub-redes voIP_C e dmz_C, utilizamos um prefixo de rede de "/27".
+Com isto, para as sub-redes wifi_C, floor1_C e floor0_C, é necessário um prefixo de rede de "/26" uma vez que possui 62 endereços IP usáveis. 
+Para as sub-redes voIP_C e dmz_C, utilizamos um prefixo de rede de "/27" visto que possui 30 endereços IP usáveis.
+Apesar de possuirem 64 e 32 endereços de ip únicos, respectivamente, dois endereços são reservados para o identificador da rede e o endereço de broadcast.
 
 
 | VLAN ID |   Nome   | Nodes | IPv4 Address Block | Usable IP Addresses | 
@@ -100,7 +101,8 @@ A máscara de rede é uma sequência de bits que define o tamanho da sub-rede.
 Esta é usada para separar o endereço IP em duas partes: a parte da rede e a parte do host. 
 A parte da rede é formada pelos primeiros bits do endereço IP, enquanto a parte do host é formada pelos últimos bits.
 
-Para calcular a máscara de rede, é necessário converter o comprimento do prefixo de rede em binário e preencher com zeros os bits restantes até 32 bits. Em seguida, basta converter essa sequência de bits em decimal e obter a máscara de rede correspondente.
+Para calcular a máscara de rede, é necessário converter o comprimento do prefixo de rede em binário e preencher com zeros os bits restantes até 32 bits. 
+Em seguida, basta converter essa sequência de bits em decimal e obter a máscara de rede correspondente.
 
 | VLAN ID |   Nome   | IPv4 Address Block |           Prefixo de Rede           | Comprimento do Prefixo | Máscara de Rede | 
 |:-------:|:--------:|:------------------:|:-----------------------------------:|:----------------------:|:---------------:|
@@ -145,13 +147,16 @@ em alguns casos, a métrica ou custo associado a essa rota.
 
 * Tabela de roteamento do router C_F0_HCC:
 
-| Network       | Máscara de rede | Next-Hop |
-|---------------|-----------------|----------|
-| 10.80.117.0   | 255.255.255.192 | xxxx     |
-| 10.80.117.64  | 255.255.255.192 | xxxx     |
-| 10.80.117.128 | 255.255.255.192 | xxxx     |
-| 10.80.117.192 | 255.255.255.224 | xxxx     |
-| 10.80.117.224 | 255.255.255.224 | xxxx     |
+| Network       | Máscara de rede | Next-Hop      |
+|---------------|-----------------|---------------|
+| 10.80.112.0   | 255.255.255.0   | 10.80.112.4   |
+| 10.80.116.0   | 255.255.255.0   | 10.80.112.2   |
+| 10.80.118.0   | 255.255.255.0   | 10.80.112.1   |
+| 0.0.0.0       | 0.0.0.0         | 121.60.202.50 |
+
+* O router do edifício C contém na ‘interface’ Fa0/0 o endereço IP de todas as VLANS através de encapsulamento de subinterfaces, podendo assim enviar tráfego para todas as VLANS dentro do edifício C.
 
 
-===========================================================================
+
+
+
