@@ -37,22 +37,23 @@ The following were the design decisions made for the project, and are to be foll
 
 | Building | Total Nodes | Assigned IPv4 block |
 |:--------:|:-----------:|:-------------------:|
-|    A     |     435     |   10.80.112.0/22    |
+|    A     |     335     |   10.80.112.0/23    |
 |    B     |     218     |   10.80.116.0/24    |
 |    C     |     190     |   10.80.117.0/24    |
 |    D     |     188     |   10.80.118.0/24    |
+| Backbone |     100     |   10.80.115.0/25    |
 
 
 ### VLAN database + SubNet associated ###
 
 | VLANID | Nome da VLAN | IPv4 Address Block |
 |:------:|:------------:|:------------------:|
-|  385   |   backbone   |   10.80.112.0/25   |
+|  385   |   backbone   |   10.80.115.0/25   |
 |  386   |    wifi_A    |  10.80.112.128/25  |
 |  387   |    dmz_A     |   10.80.113.0/25   |
 |  388   |   piso1_A    |  10.80.113.128/25  |
-|  389   |   piso0_A    |   10.80.114.0/26   |
-|  390   |    voIP_A    |  10.80.114.64/26   |
+|  389   |   piso0_A    |   10.80.112.0/26   |
+|  390   |    voIP_A    |  10.80.112.64/26   |
 |  391   |    wifi_B    |   10.80.116.0/25   |
 |  392   |   piso1_B    |  10.80.116.128/26  |
 |  393   |   piso0_B    |  10.80.116.192/27  |
