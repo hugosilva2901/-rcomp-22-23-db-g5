@@ -78,12 +78,12 @@ Isto traduz-se em:
 * Esta é a tabela utilizada no router do edifício D.
 * Através desta tabela, o router consegue enviar tráfego para os outros edifícios no campus.
 
-|   Destino   |    Máscara    |   Next Hop    |
-|:-----------:|:-------------:|:-------------:|
-| 10.80.112.0 | 255.255.252.0 |  10.80.112.1  |
-| 10.80.116.0 | 255.255.255.0 |  10.80.112.2  |
-| 10.80.117.0 | 255.255.255.0 |  10.80.112.3  |
-|   0.0.0.0   |    0.0.0.0    | 121.60.202.50 |
+|   Destino   |    Máscara    |   Next Hop   |
+|:-----------:|:-------------:|:------------:|
+| 10.80.112.0 | 255.255.252.0 | 10.80.115.1  |
+| 10.80.116.0 | 255.255.255.0 | 10.80.115.2  |
+| 10.80.117.0 | 255.255.255.0 | 10.80.115.3  |
+|   0.0.0.0   |    0.0.0.0    | 10.80.115.1  |
 
 * O router do edifício D contém na interface FastEthernet0/0 o endereço IP de todas as VLANS através de encapsulamento de sub-interfaces, podendo assim enviar tráfego para todas as VLANS dentro do edifício D.
 
