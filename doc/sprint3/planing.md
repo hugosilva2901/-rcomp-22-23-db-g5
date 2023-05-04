@@ -35,6 +35,10 @@ The following were the design decisions made for the project, and are to be foll
 * **VoIP phone numbers and prefix digits**
 
 * **DNS domain names**
+    * Building A - rcomp-22-23-db-g5
+    * Building B - building-B.rcomp-22-23-db-g5
+    * Building C - building-C.rcomp-22-23-db-g5
+    * Building D - building-D.rcomp-22-23-db-g5
 
 * **IPv4 node address of the DNS name server of each DNS domain**
 
