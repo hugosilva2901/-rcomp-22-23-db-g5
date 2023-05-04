@@ -23,6 +23,14 @@ building D.
 
 # 2. Technical decisions and coordination #
 
+The following were the design decisions made for the project, and are to be followed by all members of the project:
 
 
 
+
+# 3. Subtasks assignment #
+
+* 1211148 - T.3.1
+* 1221693 - T.3.2
+* 1201551 - T.3.3
+* 1211016 - T.3.4
