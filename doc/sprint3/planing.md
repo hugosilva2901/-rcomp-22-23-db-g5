@@ -25,6 +25,19 @@ building D.
 
 The following were the design decisions made for the project, and are to be followed by all members of the project:
 
+* **OSPF area ids**
+    * Area 0 - Campus backbone
+    * Area 1 - Building A
+    * Area 2 - Building B
+    * Area 3 - Building C
+    * Area 4 - Building D
+  
+* **VoIP phone numbers and prefix digits**
+
+* **DNS domain names**
+
+* **IPv4 node address of the DNS name server of each DNS domain**
+
 
 
 

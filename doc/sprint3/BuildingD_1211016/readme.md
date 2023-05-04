@@ -9,3 +9,7 @@ Este ficheiro documenta as simulações do edifício D, referentes ao sprint 3.
 
 ### Índice: ###
 1. **Base de dados DNS no servidor DNS**
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### 1. Base de dados DNS no servidor DNS ###
