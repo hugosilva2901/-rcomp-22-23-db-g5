@@ -1,0 +1,127 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname rc23dbg5
+!
+!
+!
+!
+ip dhcp excluded-address 10.80.118.1
+ip dhcp excluded-address 10.80.118.129
+ip dhcp excluded-address 10.80.118.193
+ip dhcp excluded-address 10.80.118.225
+!
+ip dhcp pool NET-401
+ network 10.80.118.0 255.255.255.128
+ default-router 10.80.118.1
+ip dhcp pool NET-402
+ network 10.80.118.128 255.255.255.192
+ default-router 10.80.118.129
+ip dhcp pool NET-403
+ network 10.80.118.192 255.255.255.224
+ default-router 10.80.118.193
+ip dhcp pool NET-404
+ network 10.80.118.224 255.255.255.240
+ default-router 10.80.118.225
+ option 150 ip 10.80.118.225
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2811/K9 sn FTX101781JA-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0.1
+ encapsulation dot1Q 401
+ ip address 10.80.118.1 255.255.255.128
+!
+interface FastEthernet0/0.2
+ encapsulation dot1Q 402
+ ip address 10.80.118.129 255.255.255.192
+!
+interface FastEthernet0/0.3
+ encapsulation dot1Q 403
+ ip address 10.80.118.193 255.255.255.224
+!
+interface FastEthernet0/0.4
+ encapsulation dot1Q 404
+ ip address 10.80.118.225 255.255.255.240
+!
+interface FastEthernet0/0.5
+ encapsulation dot1Q 405
+ ip address 10.80.118.241 255.255.255.240
+!
+interface FastEthernet0/0.6
+ encapsulation dot1Q 385
+ ip address 10.80.115.4 255.255.255.128
+!
+interface FastEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 1
+ log-adjacency-changes
+ network 10.80.115.0 0.0.0.127 area 0
+ network 10.80.118.0 0.0.0.255 area 4
+!
+router rip
+!
+ip classless
+ip route 0.0.0.0 0.0.0.0 10.80.115.1 
+ip route 10.80.112.0 255.255.254.0 10.80.115.1 
+ip route 10.80.116.0 255.255.255.0 10.80.115.2 
+ip route 10.80.117.0 255.255.255.0 10.80.115.3 
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+

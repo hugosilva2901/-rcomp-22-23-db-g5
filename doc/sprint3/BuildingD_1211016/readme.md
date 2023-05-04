@@ -18,10 +18,10 @@ Este ficheiro documenta as simulações do edifício D, referentes ao sprint 3.
 
 
 ## RCOMP SPRINT 3 checklist ##
-* [ ] OSPF
-* [ ] DHCP
+* [x] OSPF
+* [x] DHCP
 * [ ] VOIP
 * [x] Adding a second server to each DMZ network to run the HTTP service.
 * [ ] Configuring DNS servers to establish a DNS domains tree
-* [ ] VTP
-* [ ] STP
+* [ ] NAT
+* [ ] Firewall
