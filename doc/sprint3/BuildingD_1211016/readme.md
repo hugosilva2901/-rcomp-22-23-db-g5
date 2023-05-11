@@ -30,6 +30,6 @@ Este ficheiro documenta as simulações do edifício D, referentes ao sprint 3.
 * [x] DHCP
 * [x] VOIP
 * [x] Adding a second server to each DMZ network to run the HTTP service.
-* [ ] Configuring DNS servers to establish a DNS domain tree
+* [x] Configuring DNS servers to establish a DNS domain tree
 * [ ] NAT
 * [ ] Firewall

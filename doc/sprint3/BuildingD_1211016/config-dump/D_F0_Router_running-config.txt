@@ -17,16 +17,24 @@ ip dhcp excluded-address 10.80.118.225
 ip dhcp pool NET-401
  network 10.80.118.0 255.255.255.128
  default-router 10.80.118.1
+ dns-server 10.80.118.242
+ domain-name building-d.rcomp-22-23-db-g5
 ip dhcp pool NET-402
  network 10.80.118.128 255.255.255.192
  default-router 10.80.118.129
+ dns-server 10.80.118.242
+ domain-name building-d.rcomp-22-23-db-g5
 ip dhcp pool NET-403
  network 10.80.118.192 255.255.255.224
  default-router 10.80.118.193
+ dns-server 10.80.118.242
+ domain-name building-d.rcomp-22-23-db-g5
 ip dhcp pool NET-404
  network 10.80.118.224 255.255.255.240
  default-router 10.80.118.225
  option 150 ip 10.80.118.225
+ dns-server 10.80.118.242
+ domain-name building-d.rcomp-22-23-db-g5
 !
 !
 !
