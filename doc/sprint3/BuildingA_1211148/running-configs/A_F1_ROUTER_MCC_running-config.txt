@@ -111,6 +111,18 @@ ip flow-export version 9
 !
 !
 !
+telephony-service
+ max-ephones 2
+ max-dn 2
+ ip source-address 10.80.112.65 port 2000
+ auto assign 1 to 2
+!
+ephone-dn 1
+ number 1000
+!
+ephone-dn 2
+ number 1001
+!
 line con 0
 !
 line aux 0
