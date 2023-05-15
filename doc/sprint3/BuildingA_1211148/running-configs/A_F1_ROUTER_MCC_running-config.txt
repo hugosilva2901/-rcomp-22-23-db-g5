@@ -124,6 +124,12 @@ ephone-dn 1
 ephone-dn 2
  number 1001
 !
+ephone 2
+ device-security-mode none
+!
+ephone 1
+ device-security-mode none
+!
 line con 0
 !
 line aux 0
