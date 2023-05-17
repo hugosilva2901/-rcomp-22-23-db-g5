@@ -97,6 +97,7 @@ router ospf 1
  log-adjacency-changes
  network 10.80.112.0 0.0.1.255 area 1
  network 10.80.115.0 0.0.0.127 area 0
+ default-information originate
 !
 router rip
 !
@@ -122,6 +123,12 @@ ephone-dn 1
 !
 ephone-dn 2
  number 1001
+!
+ephone 2
+ device-security-mode none
+!
+ephone 1
+ device-security-mode none
 !
 line con 0
 !
