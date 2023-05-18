@@ -49,7 +49,7 @@ The following were the design decisions made for the project, and are to be foll
 
 * **IPv4 node address of the DNS name server of each DNS domain**
   * Building A - 
-  * Building B - 
+  * Building B - 10.80.116.242
   * Building C - 
   * Building D - 10.80.118.242
 
