@@ -139,12 +139,36 @@ Sub-interface backbone: 10.80.115.4
 A implementação da firewall foi baseada em listas de acesso, que foram aplicadas nas sub-interfaces do router.
 
 Access List para a sub-interface wifi: ACL 101
-Access List para a sub-interface floor 1: ACL 201
-Access List para a sub-interface floor 0: ACL 301
-Access List para a sub-interface voip: ACL 401
-Access List para bloquear 
+Access List para a sub-interface floor 1: ACL 102
+Access List para a sub-interface floor 0: ACL 103
+Access List para a sub-interface voip: ACL 104
+Access List para bloquear spoofing externo: ACL 100
 
 
+As access lists têm o seguinte aspeto genérico:
+
+```
+access-list x deny ip any host 10.80.118.1
+access-list x deny ip any host 10.80.118.129
+access-list x deny ip any host 10.80.118.193
+access-list x deny ip any host 10.80.118.225
+access-list x deny ip any host 10.80.118.241
+access-list x permit icmp any 10.80.118.240 0.0.0.15 echo-reply
+access-list x permit tcp any 10.80.118.240 0.0.0.15 eq www
+access-list x permit tcp any 10.80.118.240 0.0.0.15 eq 443
+access-list x permit tcp any 10.80.118.240 0.0.0.15 eq domain
+access-list x permit udp any 10.80.118.240 0.0.0.15 eq domain
+access-list x deny ip any 10.80.118.240 0.0.0.15
+access-list x permit ip x.x.x.x 0.0.0.x any
+access-list x permit udp any eq bootpc any eq bootps
+```
+
+Posteriormente, as access lists foram aplicadas nas sub-interfaces:
+  
+    ```
+    interface FastEthernet0/0.x
+    ip access-group x in
+    ```
 
 
 
@@ -155,4 +179,4 @@ Access List para bloquear
 * [x] Adding a second server to each DMZ network to run the HTTP service.
 * [x] Configuring DNS servers to establish a DNS domain tree
 * [x] NAT
-* [ ] Firewall
+* [x] Firewall
