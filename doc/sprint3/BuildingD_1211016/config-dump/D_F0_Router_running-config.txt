@@ -71,18 +71,22 @@ interface FastEthernet0/0
 interface FastEthernet0/0.1
  encapsulation dot1Q 401
  ip address 10.80.118.1 255.255.255.128
+ ip access-group 101 in
 !
 interface FastEthernet0/0.2
  encapsulation dot1Q 402
  ip address 10.80.118.129 255.255.255.192
+ ip access-group 102 in
 !
 interface FastEthernet0/0.3
  encapsulation dot1Q 403
  ip address 10.80.118.193 255.255.255.224
+ ip access-group 103 in
 !
 interface FastEthernet0/0.4
  encapsulation dot1Q 404
  ip address 10.80.118.225 255.255.255.240
+ ip access-group 104 in
 !
 interface FastEthernet0/0.5
  encapsulation dot1Q 405
@@ -113,6 +117,57 @@ ip classless
 ip flow-export version 9
 !
 !
+access-list 101 deny ip any host 10.80.118.1
+access-list 101 deny ip any host 10.80.118.129
+access-list 101 deny ip any host 10.80.118.193
+access-list 101 deny ip any host 10.80.118.225
+access-list 101 deny ip any host 10.80.118.241
+access-list 101 permit icmp any 10.80.118.240 0.0.0.15 echo-reply
+access-list 101 permit tcp any 10.80.118.240 0.0.0.15 eq www
+access-list 101 permit tcp any 10.80.118.240 0.0.0.15 eq 443
+access-list 101 permit tcp any 10.80.118.240 0.0.0.15 eq domain
+access-list 101 permit udp any 10.80.118.240 0.0.0.15 eq domain
+access-list 101 deny ip any 10.80.118.240 0.0.0.15
+access-list 101 permit ip 10.80.118.0 0.0.0.127 any
+access-list 101 permit udp any eq bootpc any eq bootps
+access-list 102 deny ip any host 10.80.118.1
+access-list 102 deny ip any host 10.80.118.129
+access-list 102 deny ip any host 10.80.118.193
+access-list 102 deny ip any host 10.80.118.225
+access-list 102 deny ip any host 10.80.118.241
+access-list 102 permit icmp any 10.80.118.240 0.0.0.15 echo-reply
+access-list 102 permit tcp any 10.80.118.240 0.0.0.15 eq www
+access-list 102 permit tcp any 10.80.118.240 0.0.0.15 eq 443
+access-list 102 permit tcp any 10.80.118.240 0.0.0.15 eq domain
+access-list 102 permit udp any 10.80.118.240 0.0.0.15 eq domain
+access-list 102 deny ip any 10.80.118.240 0.0.0.15
+access-list 102 permit ip 10.80.118.128 0.0.0.63 any
+access-list 102 permit udp any eq bootpc any eq bootps
+access-list 103 deny ip any host 10.80.118.1
+access-list 103 deny ip any host 10.80.118.129
+access-list 103 deny ip any host 10.80.118.193
+access-list 103 deny ip any host 10.80.118.225
+access-list 103 deny ip any host 10.80.118.241
+access-list 103 permit icmp any 10.80.118.240 0.0.0.15 echo-reply
+access-list 103 permit tcp any 10.80.118.240 0.0.0.15 eq www
+access-list 103 permit tcp any 10.80.118.240 0.0.0.15 eq 443
+access-list 103 permit tcp any 10.80.118.240 0.0.0.15 eq domain
+access-list 103 permit udp any 10.80.118.240 0.0.0.15 eq domain
+access-list 103 deny ip any 10.80.118.240 0.0.0.15
+access-list 103 permit ip 10.80.118.192 0.0.0.31 any
+access-list 103 permit udp any eq bootpc any eq bootps
+access-list 104 deny ip any host 10.80.118.1
+access-list 104 deny ip any host 10.80.118.129
+access-list 104 deny ip any host 10.80.118.193
+access-list 104 deny ip any host 10.80.118.241
+access-list 104 permit icmp any 10.80.118.240 0.0.0.15 echo-reply
+access-list 104 permit tcp any 10.80.118.240 0.0.0.15 eq www
+access-list 104 permit tcp any 10.80.118.240 0.0.0.15 eq 443
+access-list 104 permit tcp any 10.80.118.240 0.0.0.15 eq domain
+access-list 104 permit udp any 10.80.118.240 0.0.0.15 eq domain
+access-list 104 deny ip any 10.80.118.240 0.0.0.15
+access-list 104 permit ip 10.80.118.224 0.0.0.15 any
+access-list 104 permit udp any eq bootpc any eq bootps
 !
 !
 !

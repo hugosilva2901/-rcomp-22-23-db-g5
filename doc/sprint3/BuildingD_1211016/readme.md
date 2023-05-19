@@ -136,6 +136,15 @@ Sub-interface backbone: 10.80.115.4
 ```
 
 ## 6. Implementação da Firewall ##
+A implementação da firewall foi baseada em listas de acesso, que foram aplicadas nas sub-interfaces do router.
+
+Access List para a sub-interface wifi: ACL 101
+Access List para a sub-interface floor 1: ACL 201
+Access List para a sub-interface floor 0: ACL 301
+Access List para a sub-interface voip: ACL 401
+Access List para bloquear 
+
+
 
 
 
