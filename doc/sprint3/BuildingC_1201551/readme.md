@@ -161,17 +161,17 @@ Access List para bloquear spoofing externo: ACL 100
 As access lists têm o seguinte aspeto genérico:
 
 ```
-access-list x deny ip any host 10.80.118.1
-access-list x deny ip any host 10.80.118.129
-access-list x deny ip any host 10.80.118.193
-access-list x deny ip any host 10.80.118.225
-access-list x deny ip any host 10.80.118.241
-access-list x permit icmp any 10.80.118.240 0.0.0.15 echo-reply
-access-list x permit tcp any 10.80.118.240 0.0.0.15 eq www
-access-list x permit tcp any 10.80.118.240 0.0.0.15 eq 443
-access-list x permit tcp any 10.80.118.240 0.0.0.15 eq domain
-access-list x permit udp any 10.80.118.240 0.0.0.15 eq domain
-access-list x deny ip any 10.80.118.240 0.0.0.15
+access-list x deny ip any host 10.80.117.1
+access-list x deny ip any host 10.80.117.65
+access-list x deny ip any host 10.80.117.129
+access-list x deny ip any host 10.80.117.193
+access-list x deny ip any host 10.80.117.225
+access-list x permit icmp any 10.80.117.224 0.0.0.31 echo-reply
+access-list x permit tcp any 10.80.117.224 0.0.0.31 eq www
+access-list x permit tcp any 10.80.117.224 0.0.0.31 eq 443
+access-list x permit tcp any 10.80.117.224 0.0.0.31 eq domain
+access-list x permit udp any 10.80.117.224 0.0.0.31 eq domain
+access-list x deny ip any 10.80.117.224 0.0.0.31
 access-list x permit ip x.x.x.x 0.0.0.x any
 access-list x permit udp any eq bootpc any eq bootps
 ```
