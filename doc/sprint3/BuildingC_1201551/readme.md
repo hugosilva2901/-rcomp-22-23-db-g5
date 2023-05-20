@@ -63,6 +63,7 @@ ip dhcp pool NET-398
 
 ip dhcp pool NET-399
  network 10.80.117.192 255.255.255.224
+ default-router 10.80.117.193
  option 150 ip 10.80.117.193
 
 
