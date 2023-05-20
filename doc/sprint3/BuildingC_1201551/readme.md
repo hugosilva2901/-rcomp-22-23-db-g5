@@ -34,6 +34,10 @@ Este ficheiro documenta as simulações do edifício C, referentes ao sprint 3.
 
 ![DNS_database.png](config%2Fdns_database_C.png)
 
+* A página HTML do servidor HTTP encontra-se descrita na seguinte imagem:
+
+![HTTP_page.png](config%2Fhttp_server_html_page.png)
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 2. DHCP implementação ##
@@ -67,14 +71,7 @@ ip dhcp pool NET-399
  option 150 ip 10.80.117.193
 
 
-
 ```
-[comment]: <> (Verificar os coisos acima. No net-99 não tenho default router)
-[comment]: <> ( 
-dns-server 10.80.117.226
- domain-name building-c.rcomp-22-23-db-g5
-tenho sempre isto tambem?)
-
 
 ## 3. OSPF implementação ##
 Para estabelecer o OSPF no building C, foi apenas necessário definir a área de backbone e a área do próprio edifício:
@@ -128,9 +125,27 @@ ephone-dn 2
 Uma vez que no packet tracer haviam problemas na implementação do NAT, derivados da própria simulação, aqui fica a implementação teórica do NAT:
 Primeiro, seria necessário definir as interfaces inside e outside:
 
-[comment]: <> (TODO)
+```
+ip nat inside source 10.80.117.225 (interface DMZ)
+ip nat outside source 10.80.115.3 (interface Backbone)
+```
+
+Posteriormente, seria necessário definir as rotas estáticas:
 
 ```
+
+syntax: ip nat inside source static <prtocol> <inside local IP> <inside local port> <outside global IP> <outside global port>
+
+ip nat inside source static tcp 10.80.117.227 443 10.80.115.3 443
+ip nat inside source static tcp 10.80.117.227 80 10.80.115.3 80
+ip nat inside source static tcp 10.80.117.226 53 10.80.115.3 53
+ip nat inside source static udp 10.80.117.226 53 10.80.115.3 53
+
+Servidor HTTP: 10.80.117.227
+
+Servidor DNS: 10.80.117.226
+
+Sub-interface backbone: 10.80.115.3
 ```
 
 ## 6. Implementação da Firewall ##
