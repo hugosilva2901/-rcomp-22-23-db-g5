@@ -195,10 +195,6 @@ access-list 100 permit ospf any any
 !
 !
 !
-dial-peer voice 10 voip
- destination-pattern 1
- session target ipv4:10.80.115.1
-!
 dial-peer voice 20 voip
  destination-pattern 2
  session target ipv4:10.80.115.2
