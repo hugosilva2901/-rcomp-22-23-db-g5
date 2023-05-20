@@ -131,7 +131,6 @@ access-list 101 deny ip any host 10.80.113.129
 access-list 101 permit icmp any 10.80.113.0 0.0.0.127 echo-reply
 access-list 101 permit tcp any 10.80.113.0 0.0.0.127 eq www
 access-list 101 permit tcp any 10.80.113.0 0.0.0.127 eq 443
-access-list 101 permit tcp any 10.80.113.0 0.0.0.127 eq domain
 access-list 101 permit udp any 10.80.113.0 0.0.0.127 eq domain
 access-list 101 deny ip any 10.80.113.0 0.0.0.127
 access-list 101 permit ip 10.80.112.128 0.0.0.127 any
@@ -144,7 +143,6 @@ access-list 102 deny ip any host 10.80.113.129
 access-list 102 permit icmp any 10.80.113.0 0.0.0.127 echo-reply
 access-list 102 permit tcp any 10.80.113.0 0.0.0.127 eq www
 access-list 102 permit tcp any 10.80.113.0 0.0.0.127 eq 443
-access-list 102 permit tcp any 10.80.113.0 0.0.0.127 eq domain
 access-list 102 permit udp any 10.80.113.0 0.0.0.127 eq domain
 access-list 102 deny ip any 10.80.113.0 0.0.0.127
 access-list 102 permit ip 10.80.113.128 0.0.0.127 any
@@ -157,7 +155,6 @@ access-list 103 deny ip any host 10.80.113.129
 access-list 103 permit icmp any 10.80.113.0 0.0.0.127 echo-reply
 access-list 103 permit tcp any 10.80.113.0 0.0.0.127 eq www
 access-list 103 permit tcp any 10.80.113.0 0.0.0.127 eq 443
-access-list 103 permit tcp any 10.80.113.0 0.0.0.127 eq domain
 access-list 103 permit udp any 10.80.113.0 0.0.0.127 eq domain
 access-list 103 deny ip any 10.80.113.0 0.0.0.127
 access-list 103 permit ip 10.80.112.0 0.0.0.63 any
@@ -169,11 +166,30 @@ access-list 104 deny ip any host 10.80.113.129
 access-list 104 permit icmp any 10.80.113.0 0.0.0.127 echo-reply
 access-list 104 permit tcp any 10.80.113.0 0.0.0.127 eq www
 access-list 104 permit tcp any 10.80.113.0 0.0.0.127 eq 443
-access-list 104 permit tcp any 10.80.113.0 0.0.0.127 eq domain
 access-list 104 permit udp any 10.80.113.0 0.0.0.127 eq domain
 access-list 104 deny ip any 10.80.113.0 0.0.0.127
 access-list 104 permit ip 10.80.112.64 0.0.0.63 any
 access-list 104 permit udp any eq bootpc any eq bootps
+access-list 100 deny ip 10.80.113.0 0.0.0.127 any
+access-list 100 permit tcp any 10.80.113.0 0.0.0.127 eq www
+access-list 100 permit tcp any 10.80.113.0 0.0.0.127 eq 443
+access-list 100 permit udp any 10.80.113.0 0.0.0.127 eq domain
+access-list 100 permit udp any eq domain 10.80.113.0 0.0.0.127
+access-list 100 deny ip 10.80.112.128 0.0.0.127 any
+access-list 100 deny ip any host 10.80.112.129
+access-list 100 permit ip any 10.80.112.128 0.0.0.127
+access-list 100 deny ip 10.80.113.128 0.0.0.127 any
+access-list 100 deny ip any host 10.80.113.129
+access-list 100 permit ip any 10.80.113.128 0.0.0.127
+access-list 100 deny ip 10.80.112.0 0.0.0.63 any
+access-list 100 deny ip any host 10.80.112.1
+access-list 100 permit ip any 10.80.112.0 0.0.0.63
+access-list 100 deny ip 10.80.112.64 0.0.0.63 any
+access-list 100 permit ip any 10.80.112.64 0.0.0.63
+access-list 100 permit ip any 10.80.115.0 0.0.0.127
+access-list 100 deny ip any host 10.80.113.1
+access-list 100 permit icmp any 10.80.113.0 0.0.0.127 echo-reply
+access-list 100 permit ospf any any
 !
 !
 !
