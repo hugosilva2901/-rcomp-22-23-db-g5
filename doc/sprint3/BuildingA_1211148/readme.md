@@ -26,9 +26,13 @@ Este ficheiro documenta as simulações do edifício A, referentes ao sprint 3.
 * Servidor HTTP do Edifício A (A_F1_SERVER):
   * IP: 10.80.113.3
 
-* * A base de dados DNS encontra-se descrita na seguinte imagem:
+* A base de dados DNS encontra-se descrita na seguinte imagem:
 
 ![DNS_database.png](dns-database.png)
+
+* A página HTML do servidor HTTP encontra-se descrita na seguinte imagem:
+
+![http_server_page.png](http-server-page.png)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
