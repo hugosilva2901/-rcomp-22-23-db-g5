@@ -34,6 +34,10 @@ Este ficheiro documenta as simulações do edifício C, referentes ao sprint 3.
 
 ![DNS_database.png](config%2Fdns_database_C.png)
 
+
+* Servidor HTTP do Edifício C:
+  * IP: 10.80.117.227
+
 * A página HTML do servidor HTTP encontra-se descrita na seguinte imagem:
 
 ![HTTP_page.png](config%2Fhttp_server_html_page.png)
@@ -172,7 +176,7 @@ access-list x permit tcp any 10.80.117.224 0.0.0.31 eq 443
 access-list x permit tcp any 10.80.117.224 0.0.0.31 eq domain
 access-list x permit udp any 10.80.117.224 0.0.0.31 eq domain
 access-list x deny ip any 10.80.117.224 0.0.0.31
-access-list x permit ip x.x.x.x 0.0.0.x any
+access-list x permit ip x.x.x.x 0.0.0.x any 
 access-list x permit udp any eq bootpc any eq bootps
 ```
 
@@ -188,7 +192,6 @@ access-list 101 deny ip any host 10.80.117.225
 access-list 101 permit icmp any 10.80.117.224 0.0.0.31 echo-reply
 access-list 101 permit tcp any 10.80.117.224 0.0.0.31 eq www
 access-list 101 permit tcp any 10.80.117.224 0.0.0.31 eq 443
-access-list 101 permit tcp any 10.80.117.224 0.0.0.31 eq domain
 access-list 101 permit udp any 10.80.117.224 0.0.0.31 eq domain
 access-list 101 deny ip any 10.80.117.224 0.0.0.31
 access-list 101 permit ip 10.80.117.0 0.0.0.63 any
@@ -207,7 +210,6 @@ access-list 102 deny ip any host 10.80.117.225
 access-list 102 permit icmp any 10.80.117.224 0.0.0.31 echo-reply
 access-list 102 permit tcp any 10.80.117.224 0.0.0.31 eq www
 access-list 102 permit tcp any 10.80.117.224 0.0.0.31 eq 443
-access-list 102 permit tcp any 10.80.117.224 0.0.0.31 eq domain
 access-list 102 permit udp any 10.80.117.224 0.0.0.31 eq domain
 access-list 102 deny ip any 10.80.117.224 0.0.0.31
 access-list 102 permit ip 10.80.117.64 0.0.0.63 any
@@ -225,7 +227,6 @@ access-list 103 deny ip any host 10.80.117.225
 access-list 103 permit icmp any 10.80.117.224 0.0.0.31 echo-reply
 access-list 103 permit tcp any 10.80.117.224 0.0.0.31 eq www
 access-list 103 permit tcp any 10.80.117.224 0.0.0.31 eq 443
-access-list 103 permit tcp any 10.80.117.224 0.0.0.31 eq domain
 access-list 103 permit udp any 10.80.117.224 0.0.0.31 eq domain
 access-list 103 deny ip any 10.80.117.224 0.0.0.31
 access-list 103 permit ip 10.80.117.128 0.0.0.63 any
@@ -242,7 +243,6 @@ access-list 104 deny ip any host 10.80.117.225
 access-list 104 permit icmp any 10.80.117.224 0.0.0.31 echo-reply
 access-list 104 permit tcp any 10.80.117.224 0.0.0.31 eq www
 access-list 104 permit tcp any 10.80.117.224 0.0.0.31 eq 443
-access-list 104 permit tcp any 10.80.117.224 0.0.0.31 eq domain
 access-list 104 permit udp any 10.80.117.224 0.0.0.31 eq domain
 access-list 104 deny ip any 10.80.117.224 0.0.0.31
 access-list 104 permit ip 10.80.117.192 0.0.0.31 any
@@ -255,7 +255,6 @@ Para bloquear spoofing externo, a access list foi aplicada da seguinte forma:
 access-list 100 deny ip 10.80.117.224 0.0.0.31 any
 access-list 100 permit tcp any 10.80.117.224 0.0.0.31 eq www
 access-list 100 permit tcp any 10.80.117.224 0.0.0.31 eq 443
-access-list 100 permit tcp any 10.80.117.224 0.0.0.31 eq domain
 access-list 100 permit udp any 10.80.117.224 0.0.0.31 eq domain
 access-list 100 deny ip 10.80.117.0 0.0.0.63 any
 access-list 100 deny ip any host 10.80.117.1
@@ -313,10 +312,6 @@ Para bloquear spoofing externo:
     interface FastEthernet0/0.6
     ip access-group 100 in
     ```
-
-
-
-
 
 
 ## RCOMP SPRINT 3 checklist ##
