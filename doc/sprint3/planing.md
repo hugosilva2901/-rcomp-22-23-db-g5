@@ -35,7 +35,7 @@ The following were the design decisions made for the project, and are to be foll
   
 * **VoIP phone numbers and prefix digits**
   * Building A - 1
-  * Building B - 2
+  * Building B - 2 (numbers 2000 and 2001)
   * Building C - 3 (numbers 3000 and 3001)
   * Building D - 4 (numbers 4000 and 4001)
 
