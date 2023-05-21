@@ -98,10 +98,6 @@ dial-peer voice 20 voip
  destination-pattern 2
  session target ipv4:10.80.115.2 (IP do router do edificio B)
 !
-dial-peer voice 30 voip
- destination-pattern 3
- session target ipv4:10.80.115.3 (IP do router do edificio C)
-!
 dial-peer voice 40 voip
  destination-pattern 4
  session target ipv4:10.80.115.4 (IP do router do edificio D)
